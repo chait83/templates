@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+<size>
+	<h>80</h>
+	<w>100</w>
+</size>
+	<property id="proName1">
+		<name>DIRECTION</name>
+		<veneer type="S" />
+		<desc>Set the resolution for data conversion</desc>
+		<type>I</type>
+                <defaultValue> Default</defaultValue>
+	<!--A entery menu for setting type : INPUT,OUTPUT OR BY-->
+	</property>
+
+	<property id="proName2">
+		<name>SIGNAL TYPE</name>	
+                <defaultValue> Default</defaultValue>
+		<veneer type="S" />
+		<desc>Set the resolution for data conversion</desc>
+		<type>I</type>
+	<!--Define signal as ANALOG OR DIGITAL OR CLOCK -->
+	</property>
+
+	<property id="output" st="O">
+		<name>Output</name>
+		<defaultValue> 0</defaultValue>
+		<veneer type="T">name</veneer>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Output of the variable</desc>
+	</property>
+
+<validHost>
+<host>Block</host>
+<host>Loop</host>
+</validHost>
+
+</Properties>

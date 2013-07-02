@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id>FLOATING-POINT</id>
+	<name>FLOATING-POINT</name>
+	<type>M</type>
+	<size>
+		<h>40</h>
+		<w>20</w>
+	</size>
+	<desc>Variable of FLOATING POINT type</desc>
+
+	<property id="type" st="M">
+		<name>type</name>
+		<defaultValue>ufloat32_t</defaultValue>
+		<type>F</type>
+		<dataType>ufloat32_t</dataType>
+		<desc>assigned type to the variable</desc>
+	</property>
+
+	<property id="input">
+		<name>input</name>
+		<defaultValue>ufloat32_t</defaultValue>
+		<dataType>ufloat32_t</dataType>
+		<type>I</type>
+		<desc>FLOATING POINT input</desc>
+	</property>
+
+	<property id="output">
+		<name>Ouput</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>ufloat32_t</dataType>
+		<type>O</type>
+		<desc>FLOATING POINT output</desc>
+	</property>
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>

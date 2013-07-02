@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+
+	<id>Init_ETHERNET</id>
+	<name>Initialiase ETHERNET</name>
+	<type>M</type>
+	<size>
+		<h>100</h>
+		<w>140</w>
+	</size>
+	<desc>This unit is used to provide ETHERNET functionality</desc>
+
+	<property id="type" st="M">
+		<name>type</name>
+		<defaultValue>uint32_t</defaultValue>
+		<type>F</type>
+		<dataType>
+			uint32_t
+			<nature type="D">
+				<listner id="output">
+					<clone I="value" O="dataType" />
+				</listner>
+				<listner id="input">
+					<clone I="value" O="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<desc>assign value to the variable</desc>
+	</property>
+
+	<property id="Source address">
+		<name>Input</name>
+		<veneer type="S" />
+		<defaultValue>Default</defaultValue>
+		<dataType>
+			uint32_t
+			<nature type="D">
+				<listner id="output"></listner>
+				<listner id="type">
+					<clone O="value" I="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<type>I</type>
+		<desc>Input to Ethernet</desc>
+	</property>
+
+
+	<property id="Destinaton address">
+		<name>Input</name>
+		<veneer type="S" />
+		<defaultValue>Default</defaultValue>
+		<dataType>
+			uint32_t
+			<nature type="D">
+				<listner id="output"></listner>
+				<listner id="type">
+					<clone O="value" I="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<type>I</type>
+		<desc>Input to Ethernet</desc>
+	</property>
+
+	<property id="DATA_Frame_LENGTH">
+		<name>Length of data Frame</name>
+		<veneer type="S" />
+		<defaultValue>Default</defaultValue>
+		<dataType>
+			uint32_t
+			<nature type="D">
+				<listner id="output"></listner>
+				<listner id="type">
+					<clone O="value" I="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<type>I</type>
+		<desc>Input to I2C</desc>
+	</property>
+
+
+	<property id="DATA">
+		<name>Input</name>
+		<veneer type="S" />
+		<defaultValue>Default</defaultValue>
+		<dataType>
+			uint32_t
+			<nature type="D">
+				<listner id="output"></listner>
+				<listner id="type">
+					<clone O="value" I="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<type>I</type>
+		<desc>Input to Ethernet</desc>
+	</property>
+
+	<property id="Checksum">
+		<name>Length of data Frame</name>
+		<veneer type="S" />
+		<defaultValue>Default</defaultValue>
+		<dataType>
+			uint32_t
+			<nature type="D">
+				<listner id="output"></listner>
+				<listner id="type">
+					<clone O="value" I="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<type>I</type>
+		<desc>Input to Ethernet</desc>
+	</property>
+
+	<property id="output">
+		<name>Mode</name>
+		<veneer type="S" />
+		<defaultValue> Default</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Output from Ethernet</desc>
+	</property>
+
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>

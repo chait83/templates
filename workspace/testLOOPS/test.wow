@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><lib><ID>87</ID><Comment></Comment><layout><x>10</x><y>10</y><w>100</w><h>100</h></layout><conn></conn><V><I></I><O></O></V><children><function id="org.wow.model.BlockModel"><ID>4</ID><Comment></Comment><layout><x>15</x><y>34</y><w>285</w><h>165</h></layout><conn></conn><V><I></I><O></O></V><children></children></function></children></lib>

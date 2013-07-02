@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id>variable</id>
+	<name>division</name>
+	<type>M</type>
+	<desc>This is a generic variable</desc>
+	<size>
+		<h>60</h>
+		<w>60</w>
+	</size>
+	<property id="quo">
+		<name>INPUT</name>
+		<veneer type="S" />
+		<desc>Set input for Multiplication</desc>
+		<type>I</type>
+		<dataType>float</dataType>
+		<defaultValue> 1</defaultValue>
+	</property>
+
+	<property id="divisor">
+		<name>INPUT</name>
+		<veneer type="S" />
+		<desc>Set input for Multiplication</desc>
+		<type>I</type>
+		<dataType>float</dataType>
+		<defaultValue> 1</defaultValue>
+	</property>
+
+	<property id="divident">
+		<name>Ouput</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>double</dataType>
+		<type>O</type>
+		<desc>Integer output</desc>
+	</property>
+	<property id="remainder">
+		<name>Ouput</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>double</dataType>
+		<type>O</type>
+		<desc>Integer output</desc>
+	</property>
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id>Init_STRUCTURES</id>
+	<name>Initialiase STRUCTURES</name>
+	<type>M</type>
+	<size>
+		<h>120</h>
+		<w>140</w>
+	</size>
+	<desc>This is used to store the set of STRUCTURES</desc>
+
+	<property id="type" st="M">
+		<name>type</name>
+		<defaultValue>uint32_t</defaultValue>
+		<type>F</type>
+		<dataType>
+			uint32_t
+			<nature type="D">
+				<listner id="input">
+					<clone I="value" O="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<desc>assign value to the variable</desc>
+	</property>
+
+	<property id="strcuturetype">
+		<name>Structure Type</name>
+		<defaultValue>uint32_t</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>F</type>
+		<desc>assign type to the array</desc>
+	</property>
+
+	<property id="input">
+		<name>Input</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>
+			uint32_t
+			<nature type="D">
+				<listner id="output"></listner>
+				<listner id="type">
+					<clone O="value" I="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<type>I</type>
+		<desc>Provide an input and define the structure</desc>
+	</property>
+
+	<property id="Variable of structure">
+		<name>variable for Accessing structure </name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>
+			uint32_t
+			<nature type="D">
+				<listner id="output"></listner>
+				<listner id="type">
+					<clone O="value" I="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<type>O</type>
+		<desc>Provide variable of structure</desc>
+	</property>
+
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id>Switch_Case</id>
+	<name>Switch_Case</name>
+	<type>M</type>
+	<desc>This is a generic variable</desc>
+	<size>
+		<h>80</h>
+		<w>120</w>
+	</size>
+	<property id="Input1">
+		<name>CASE</name>
+		<veneer type="S" />
+		<desc>Set the resolution for data conversion</desc>
+		<type>I</type>
+		<defaultValue> Default</defaultValue>
+	</property>
+
+	<!-- <property id="proName2"> <name>PRINT/OUTPUT</name> <defaultValue> Default</defaultValue> 
+		</property> -->
+	<property id="Input2">
+		<name>CASE</name>
+		<veneer type="S" />
+		<desc>Set the resolution for data conversion</desc>
+		<type>I</type>
+		<defaultValue> Default</defaultValue>
+	</property>
+
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+
+	<id>Init_FOR-LOOP</id>
+	<name>FOR LOOP</name>
+	<type>M</type>
+	<desc>This unit is used to create a continuous for loop</desc>
+
+	<property id="input">
+		<name>Input</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<desc>Provide an Input</desc>
+	</property>
+
+	<property id="count">
+		<name>Count</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<desc>Provide a count</desc>
+	</property>
+
+	<property id="output">
+		<name>Output</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Provides an Output of the input</desc>
+	</property>
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+	<children id="INTEGER">
+		<position>
+			<x>10</x>
+			<y>10</y>
+		</position>
+		<defaultValue>0</defaultValue>
+	</children>
+
+</Properties>

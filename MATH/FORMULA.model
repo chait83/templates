@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<name>Formula</name>
+	<type>M</type>
+	<desc>This is a generic variable</desc>
+	<size>
+		<h>100</h>
+		<w>140</w>
+	</size>
+	<property id="proName1">
+		<name>NO. OF VARIABLES</name>
+		<veneer type="S" />
+		<desc>Set the resolution for data conversion</desc>
+		<type>I</type>
+		<defaultValue> Default</defaultValue>
+	</property>
+
+	<property id="proName2">
+		<name>DEFINE FORMULA</name>
+		<veneer type="S" />
+		<desc>Set the resolution for data conversion</desc>
+		<type>I</type>
+		<defaultValue> Default</defaultValue>
+	</property>
+
+
+	<property id="output">
+		<name>Ouput</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Integer output</desc>
+	</property>
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>

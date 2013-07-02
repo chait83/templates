@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id>DAC_init</id>
+	<name>Initailze DAC</name>
+	<type>M</type>
+	<desc>This is a generic variable</desc>
+	<size>
+		<h>120</h>
+		<w>140</w>
+	</size>
+
+	<property id="INPUT">
+		<name>AQUISITION TYPE</name>
+		<defaultValue> Default</defaultValue>
+		<veneer type="T">name</veneer>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<desc>Single channel, Double channel aquisition </desc>
+	</property>
+
+	<property id="Input" st="O">
+		<name>Input</name>
+		<defaultValue> 0</defaultValue>
+		<veneer type="T">name</veneer>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<desc>Intput of the variable</desc>
+	</property>
+
+	<property id="mode">
+		<name>MODE</name>
+		<veneer type="T">name</veneer>
+                <defaultValue> 0</defaultValue>
+		<type>F</type>
+		<dataType>uint32_t</dataType>
+		<desc>A entery menu for setting type : LEFT or RIGHT ALIGNED </desc>
+	</property>
+
+	<property id="channelSel">
+		<name>CHANNEL SELECTION</name>
+		<type>F</type>
+		<veneer type="T">name</veneer>
+		<dataType>uint32_t</dataType>
+		<defaultValue> 0</defaultValue>
+		<desc>Channel selection</desc>
+	</property>
+
+	<property id="clock">
+		<name>DAC CLOCK</name>
+		<type>F</type>
+		<veneer type="T">name</veneer>
+		<dataType>uint32_t</dataType>
+		<defaultValue> 100</defaultValue>
+		<desc>A entery menu for setting CLOCK</desc>
+	</property>
+
+	<property id="output" st="O">
+		<name>Output</name>
+		<defaultValue> 0</defaultValue>
+		<veneer type="T">name</veneer>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Output of the variable</desc>
+	</property>
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>

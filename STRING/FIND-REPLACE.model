@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+    <id>Find_and_Replace</id>
+	<name>Variable</name>
+	<type>M</type>
+	<desc>This is a generic variable</desc>
+	<size>
+		<h>100</h>
+		<w>140</w>
+	</size>
+	
+	<property id="Input1">
+		<name>FIND</name>
+		<defaultValue>Default</defaultValue>
+		<veneer type="S" />
+		<desc>Set the resolution for data conversion</desc>
+		<type>I</type>
+	</property>
+
+	<property id="input2">
+		<name>REPLACE</name>
+		<veneer type="S" />
+		<desc>Set the resolution for data conversion</desc>
+		<type>I</type>
+		<defaultValue> Default</defaultValue>
+	</property>
+
+	<property id ="Output">
+		<name>Output</name>
+		<veneer type="S" />
+		<desc>Set Output of inputs</desc>
+		<type>O</type>
+		<defaultValue> Default</defaultValue>
+	</property>
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+
+<size>
+	<h>120</h>
+	<w>140</w>
+</size>
+	<property id="proName1">
+	<name>MATCH WITH</name>
+	<defaultValue> Default</defaultValue>
+	<veneer type="S" />
+	<desc>Set the resolution for data conversion</desc>
+	<type>I</type>
+	</property>
+
+	<property id="output">
+	    <name>String Output</name>
+		<veneer type="S" />
+		<defaultValue>Default</defaultValue>
+		<dataType>unsigned char</dataType>
+		<type>O</type>
+		<desc>Provide string where first string will be concatenated</desc>
+	</property>
+<validHost>
+<host>Block</host>
+<host>Loop</host>
+</validHost>
+
+</Properties>

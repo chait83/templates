@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id>Init_IO</id>
+	<name>Initialiase IO</name>
+	<type>M</type>
+	<size>
+		<h>40</h>
+		<w>20</w>
+	</size>
+	<desc>This unit is used to provide input or output functionality</desc>
+
+	<property id="direction">
+		<name>Direction</name>
+		<defaultValue>INPUT</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<desc>INPUT or OUTPUT Mode</desc>
+	</property>
+
+	<property id="signaltype">
+		<name>Signal Type</name>
+		<defaultValue>ANALOG</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<desc>Define signal as ANALOG OR DIGITAL OR CLOCK</desc>
+	</property>
+
+	<property id="output">
+		<name>Output IO init</name>
+		<defaultValue>OUTPUT</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<desc>IO_init OUTPUT </desc>
+	</property>
+
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>

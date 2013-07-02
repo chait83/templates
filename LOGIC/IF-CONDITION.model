@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id>Conditional statement</id>
+	<name>Variable</name>
+	<type>M</type>
+	<desc>This is a generic variable for conditional statement </desc>
+	<size>
+		<h>80</h>
+		<w>120</w>
+	</size>
+
+	<property id="INPUT1">
+		<name>CONDITION</name>
+		<veneer type="S" />
+		<desc>Set the Input for condition</desc>
+		<type>I</type>
+		<defaultValue> Default</defaultValue>
+	</property>
+<property id="OUTPUT">
+		<name>CONDITION</name>
+		<veneer type="S" />
+		<desc>Set the Input for condition</desc>
+		<type>O</type>
+		<defaultValue> Default</defaultValue>
+	</property>
+
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>
