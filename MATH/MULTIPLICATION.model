@@ -5,15 +5,16 @@
 	<type>M</type>
 	<desc>This is a generic variable</desc>
 	<size>
-		<h>60</h>
+		<h>160</h>
 		<w>60</w>
 	</size>
-	<property id="INPUT1">
+	<property id="INPUT1" clone="Y">
 		<name>INPUT</name>
 		<veneer type="S" />
 		<desc>Set input for Multiplication</desc>
 		<type>I</type>
-		<defaultValue> Default</defaultValue>
+		<dataType>double</dataType>
+		<defaultValue> 0</defaultValue>
 	</property>
 
 	<property id="INPUT2">
