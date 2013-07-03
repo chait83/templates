@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id>Average</id>
+	<name>Average</name>
+	<type>M</type>
+	<desc>This is a generic variable</desc>
+	<size>
+		<h>80</h>
+		<w>70</w>
+	</size>
+
+	<property id="input1">
+		<name> INPUT</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType>uint32_t</dataType>
+		<defaultValue>0</defaultValue>
+				<desc>Set input For averaging</desc>
+	</property>
+
+	<property id="input2">
+		<name> INPUT</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType>uint32_t</dataType>
+		<defaultValue>0</defaultValue>
+		<desc>Set input For averaging</desc>
+	</property>
+	
+	<property id="input3">
+		<name> INPUT</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType>uint32_t</dataType>
+		<defaultValue>0</defaultValue>
+		<desc>Set input For averaging</desc>
+	</property>
+	
+<property id="input4">
+		<name> INPUT</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType>uint32_t</dataType>
+		<defaultValue>0</defaultValue>
+		<desc>Set input For averaging</desc>
+	</property>
+
+
+	<property id="Average">
+		<name>Output</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>float</dataType>
+		<type>O</type>
+		<desc>Average of Numbers</desc>
+	</property>
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>

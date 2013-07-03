@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-
+	<id>variable</id>
 <size>
-	<h>140</h>
-	<w>160</w>
+	<h>40</h>
+	<w>20</w>
 </size>
-    <id>Init_EXPONENTIAL</id>
-        <name>Initialiase EXPONENTIAL</name>
-    	<type>M</type>
-	    <desc>This unit is return the exponential value of input</desc>
-
-    <property id="type" st="M">
+	<name>Variable</name>
+	<type>M</type>
+	<desc>This is a generic variable</desc>
+	<property id="type" st="M">
 		<name>type</name>
 		<defaultValue>uint32_t</defaultValue>
 		<type>F</type>
@@ -25,11 +23,12 @@
 		</dataType>
 		<desc>assign value to the variable</desc>
 	</property>
-
-	<property id="input">
-	    <name>Input</name>
-		<veneer type="S" />
+	
+	<property id="input" st="O">
+		<name>input</name>
 		<defaultValue>0</defaultValue>
+		<type>I</type>
+		<veneer type="T">Name</veneer>
 		<dataType>uint32_t<nature type="D">
 				<listner id="output"></listner>
 				<listner id="type">
@@ -37,22 +36,21 @@
 				</listner>
 			</nature>
 		</dataType>
-		<type>I</type>
-		<desc>Provide an Input</desc>
+		<desc>assign value to the variable</desc>
 	</property>
 	
-    <property id="output">
-	    <name>Output</name>
-		<veneer type="S" />
+	<property id="output" st="O">
+		<name>Output</name>
 		<defaultValue>0</defaultValue>
+		<veneer type="T">Name</veneer>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
-		<desc>Store the calculated exponential</desc>
+		<desc>Output of the variable</desc>
 	</property>
 	
-<validHost>
-<host>Block</host>
-<host>Loop</host>
-</validHost>
-
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+	
 </Properties>

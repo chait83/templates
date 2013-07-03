@@ -3,37 +3,35 @@
 	<id>Add</id>
 	<name>Addition</name>
 	<size>
-		<h>140</h>
-		<w>160</w>
+		<h>52</h>
+		<w>70</w>
 	</size>
 	<desc>variable for Addition</desc>
 
 	<property id="input1">
-		<size>
-			<h>140</h>
-			<w>160</w>
-		</size>
-		<name>INPUT</name>
+		<name>INPUTS</name>
 		<veneer type="S" />
-		<desc>Set Input for Addition</desc>
 		<type>I</type>
-		<defaultValue> Default</defaultValue>
+		<dataType>uint32_t</dataType>
+		<defaultValue>0</defaultValue>
+		<desc>Set Input for Addition</desc>
 	</property>
 
 	<property id="input2">
 		<name>INPUTS</name>
 		<veneer type="S" />
-		<desc>Set Input for Addition</desc>
 		<type>I</type>
-		<defaultValue> Default</defaultValue>
+		<dataType>uint32_t</dataType>
+		<defaultValue>0</defaultValue>
+		<desc>Set Input for Addition</desc>
 	</property>
 
-	<property id="output">
+	<property id="Sum">
 		<name>Output</name>
 		<veneer type="S" />
-		<defaultValue>0</defaultValue>
-		<dataType>uint32_t</dataType>
 		<type>O</type>
+		<dataType>uint32_t</dataType>
+		<defaultValue>0</defaultValue>
 		<desc>set Output after addition</desc>
 	</property>
 
