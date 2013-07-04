@@ -6,8 +6,8 @@
 	<name>Initialiase NOT-EQUAL-TO</name>
 	<type>M</type>
 	<size>
-		<h>100</h>
-		<w>140</w>
+		<h>80</h>
+		<w>70</w>
 	</size>
 	<desc>This unit is used to provide NOT EQUAL TO logical functionality
 	</desc>

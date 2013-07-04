@@ -5,8 +5,8 @@
 	<name>Initialiase ETHERNET</name>
 	<type>M</type>
 	<size>
-		<h>100</h>
-		<w>140</w>
+		<h>92</h>
+		<w>50</w>
 	</size>
 	<desc>This unit is used to provide ETHERNET functionality</desc>
 

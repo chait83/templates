@@ -6,8 +6,8 @@
 	<type>M</type>
 	<desc>This unit is used to assign a counter</desc>
 	<size>
-		<h>140</h>
-		<w>160</w>
+		<h>80</h>
+		<w>70</w>
 	</size>
 
 	<property id="type" st="M">

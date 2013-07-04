@@ -6,8 +6,8 @@
 	<type>M</type>
 
 	<size>
-		<h>40</h>
-		<w>20</w>
+		<h>80</h>
+		<w>70</w>
 	</size>
 	<desc>This unit is used to initialize ADC. Default mode of operation is
 		interrupt based continuous mode. The ADC is

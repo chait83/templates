@@ -4,6 +4,10 @@
 	<id>Init_WHILE-LOOP</id>
 	<name>Initialiase WHILE-LOOP</name>
 	<type>M</type>
+	<size>
+		<h>140</h>
+		<w>120</w>
+	</size>
 	<desc>This unit is used to create a continuous loop</desc>
 
 	<property id="input">

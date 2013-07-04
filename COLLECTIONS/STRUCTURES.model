@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>Init_STRUCTURES</id>
-	<name>Initialiase STRUCTURES</name>
+	<id>stucture</id>
+	<name>Struct</name>
 	<type>M</type>
 	<size>
-		<h>120</h>
-		<w>140</w>
+		<h>50</h>
+		<w>50</w>
 	</size>
 	<desc>This is used to store the set of STRUCTURES</desc>
 
@@ -65,6 +65,12 @@
 		<type>O</type>
 		<desc>Provide variable of structure</desc>
 	</property>
+
+	<includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+		<lib>lib</lib>
+	</includes>
 
 
 	<validHost>

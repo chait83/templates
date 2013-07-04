@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
 
-<size>
-	<h>120</h>
-	<w>140</w>
-</size>
     <id>Init_RTC</id>
         <name>Initialiase RTC</name>
         <type>M</type>
+<size>
+	<h>80</h>
+	<w>70</w>
+</size>
 	    <desc>This unit is used to initialize RTC</desc>
 	    
 	<property id="type" st="M">

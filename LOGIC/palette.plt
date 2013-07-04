@@ -22,10 +22,27 @@
         <desc>This is OR-LOGIC</desc>
         <icon>This is OR-LOGIC</icon>
 </item>
+<item id="NAND">
+        <name>NAND-LOGIC</name>
+        <desc>This is NAND-LOGIC</desc>
+        <icon>This is NAND-LOGIC</icon>
+</item>
 <item id="NOR">
         <name>NOR-LOGIC</name>
         <desc>This is NOR-LOGIC</desc>
         <icon>This is NOR-LOGIC</icon>
+</item>
+<item id="XOR">
+        <name>XOR-LOGIC</name>
+        <desc>This is XOR-LOGIC</desc>
+        <icon>This is XOR-LOGIC</icon>
+</item>
+
+
+<item id="NOT">
+        <name>NOT-LOGIC</name>
+        <desc>This is NOT-LOGIC</desc>
+        <icon>This is NOT-LOGIC</icon>
 </item>
 <item id="NOT_EQUAL">
         <name>NOT_EQUAL-LOGIC</name>
@@ -57,5 +74,4 @@
         <desc>This is LESS_THAN_OR_EQUAL_TO-LOGIC</desc>
         <icon>This is LESS_THAN_OR_EQUAL_TO-LOGIC</icon>
 </item>
-
 </palette>

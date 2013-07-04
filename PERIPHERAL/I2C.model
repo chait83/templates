@@ -4,8 +4,8 @@
 	<name>Initialiase I2C</name>
 	<type>M</type>
 	<size>
-		<h>120</h>
-		<w>140</w>
+		<h>80</h>
+		<w>70</w>
 	</size>
 	<desc>This unit is used to initialize I2C</desc>
 

@@ -12,10 +12,4 @@
         <desc>This is STRUCTURES</desc>
         <icon>This is STRUCTURES</icon>
 </item>
-
-<item id="VARIABLE">
-        <name>VARIABLE</name>
-        <desc>This is VARIABLE</desc>
-        <icon>This is VARIABLE</icon>
-</item>
 </palette>

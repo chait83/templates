@@ -2,7 +2,7 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:template match="/">
 	
-        strcat (<xsl:value-of select="Init_STRING-CONCATENATE/V/O/output"/>,"<xsl:value-of select="Init_STRING-CONCATENATE/V/I/string"/>");
+        strcat (<xsl:value-of select="str_concatenate/V/O/output"/>,"<xsl:value-of select="str_concatenate/V/I/string1"/>");
 		
 	</xsl:template>
 </xsl:stylesheet>

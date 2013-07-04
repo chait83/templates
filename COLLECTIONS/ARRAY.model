@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>Init_ARRAY</id>
-	<name>Initialiase ARRAY</name>
+	<id init="Y">Array</id>
+	<name>arr</name>
 	<type>M</type>
 	<size>
-		<h>80</h>
-		<w>120</w>
+		<h>50</h>
+		<w>50</w>
 	</size>
 	<desc>This is used to store the set of arrays</desc>
 
@@ -32,10 +32,10 @@
 		<desc>assign type to the array</desc>
 	</property>
 
-	<property id="input">
+	<property id="Name">
 		<name>Input</name>
 		<veneer type="S" />
-		<defaultValue>0</defaultValue>
+		<defaultValue>arr</defaultValue>
 		<dataType>
 			uint32_t
 			<nature type="D">
@@ -70,5 +70,10 @@
 		<host>Block</host>
 		<host>Loop</host>
 	</validHost>
+	<includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+		<lib>lib</lib>
+	</includes>
 
 </Properties>

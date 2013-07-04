@@ -4,8 +4,8 @@
 	<name>Initialiase IO</name>
 	<type>M</type>
 	<size>
-		<h>40</h>
-		<w>20</w>
+		<h>80</h>
+		<w>70</w>
 	</size>
 	<desc>This unit is used to provide input or output functionality</desc>
 

@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Palette id="TIMING FUNCTION" dispName="TIMING FUNCTION" editor="org.wow.editor.logiceditor">
 
-<item id="TIME">
-        <name>TIME</name>
-        <desc>This is TIME</desc>
-        <icon>This is TIME</icon>
-</item>
-
 <item id="TIMER">
         <name>TIMER</name>
         <desc>This is TIMER</desc>

@@ -4,8 +4,8 @@
 	<name>Initialiase WAVEFORM</name>
 	<type>M</type>
 	<size>
-		<h>120</h>
-		<w>140</w>
+		<h>80</h>
+		<w>60</w>
 	</size>
 	<desc>This unit is used to set waveform</desc>
 

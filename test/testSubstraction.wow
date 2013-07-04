@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lib>
+	<ID>129</ID>
+	<Comment></Comment>
+	<layout>
+		<x>10</x>
+		<y>10</y>
+		<w>100</w>
+		<h>100</h>
+	</layout>
+	<conn></conn>
+	<V>
+		<I></I>
+		<O></O>
+	</V>
+	<children>
+		<function id="org.wow.model.BlockModel">
+			<ID>130</ID>
+			<Comment></Comment>
+			<layout>
+				<x>59</x>
+				<y>72</y>
+				<w>502</w>
+				<h>370</h>
+			</layout>
+			<conn></conn>
+			<V>
+				<I></I>
+				<O></O>
+			</V>
+			<children>
+				<INTEGER id="org.wow.model.GenModel" model="INTEGER"
+					palette="VARIABLE">
+					<Name>a</Name>
+					<input>0</input>
+					<output>0</output>
+					<type>uint32_t</type>
+					<AbsModelLayout>Rectangle(453.0, 231.0, -1.0, -1.0)
+					</AbsModelLayout>
+					<ID>131</ID>
+					<Comment></Comment>
+					<layout>
+						<x>87</x>
+						<y>47</y>
+						<w>100</w>
+						<h>100</h>
+					</layout>
+					<conn></conn>
+					<V>
+						<I></I>
+						<O></O>
+					</V>
+					<children></children>
+				</INTEGER>
+				<INTEGER id="org.wow.model.GenModel" model="INTEGER"
+					palette="VARIABLE">
+					<Name>b</Name>
+					<input>0</input>
+					<output>0</output>
+					<type>uint32_t</type>
+					<AbsModelLayout>Rectangle(107.0, 364.0, -1.0, -1.0)
+					</AbsModelLayout>
+					<ID>132</ID>
+					<Comment></Comment>
+					<layout>
+						<x>84</x>
+						<y>199</y>
+						<w>100</w>
+						<h>100</h>
+					</layout>
+					<conn></conn>
+					<V>
+						<I></I>
+						<O></O>
+					</V>
+					<children></children>
+					<INTEGER id="org.wow.model.GenModel" model="SUBTRACTION"
+						palette="MATH">
+						<Name>2 INPUTS</Name>
+						<INPUTS> Default</INPUTS>
+						<output>0</output>
+						<AbsModelLayout>Rectangle(486.0, 74.0, -1.0, -1.0)
+						</AbsModelLayout>
+						<ID>133</ID>
+						<Comment></Comment>
+						<layout>
+							<x>208</x>
+							<y>116</y>
+							<w>100</w>
+							<h>100</h>
+						</layout>
+						<conn></conn>
+						<V>
+							<I></I>
+							<O></O>
+						</V>
+						<children></children>
+						<INTEGER id="org.wow.model.GenModel" model="INTEGER"
+							palette="VARIABLE">
+							<Name>output</Name>
+							<input>0</input>
+							<output>0</output>
+							<type>uint32_t</type>
+							<AbsModelLayout>Rectangle(392.0, 157.0, -1.0, -1.0)
+							</AbsModelLayout>
+							<ID>135</ID>
+							<Comment></Comment>
+							<layout>
+								<x>355</x>
+								<y>115</y>
+								<w>100</w>
+								<h>100</h>
+							</layout>
+							<conn></conn>
+							<V>
+								<I></I>
+								<O></O>
+							</V>
+							<children></children>
+						</INTEGER>
+						<returnType>void</returnType>
+						<Name>substraction</Name>
+					</INTEGER>
+				</INTEGER>
+			</children>
+		</function>
+	</children>
+
+</lib>

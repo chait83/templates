@@ -5,8 +5,8 @@
 	<name>Initialiase LPF</name>
 	<type>M</type>
 	<size>
-		<h>100</h>
-		<w>140</w>
+		<h>90</h>
+		<w>80</w>
 	</size>
 	<desc>Make use of inbuilt LOW PASS FILTER to carry out DSP operations
 	</desc>

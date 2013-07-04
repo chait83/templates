@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
 
-<size>
-	<h>120</h>
-	<w>140</w>
-</size>
-    <id>Init_STRING-CONCATENATE</id>
-        <name>Initialiase STRING-CONCATENATE</name>
-    	<type>M</type>
-	    <desc>This unit is used to concatenate the strings</desc>
-	    
-    <property id="type" st="M">
+	<id>str_concatenate</id>
+	<name>strcat</name>
+	<type>M</type>
+	<size>
+		<h>55</h>
+		<w>70</w>
+	</size>
+	<desc>This unit is used to concatenate the strings</desc>
+
+	<property id="type" st="M">
 		<name>type</name>
-		<defaultValue>uint32_t</defaultValue>
+		<defaultValue>unsigned char</defaultValue>
 		<type>F</type>
-		<dataType>uint32_t<nature type="D">
+		<dataType type="array">
+			<nature type="D">
 				<listner id="output">
-					<clone I="value" O="dataType" /> 
+					<clone I="value" O="dataType" />
 				</listner>
-				<listner id="string2">
-					<clone I="value" O="dataType" /> 
+				<listner id="string1">
+					<clone I="value" O="dataType" />
 				</listner>
 			</nature>
 		</dataType>
@@ -27,33 +28,40 @@
 	</property>
 
 	<property id="string1">
-	    <name>String Input</name>
+		<name>String Input</name>
 		<veneer type="S" />
-		<defaultValue>Default</defaultValue>
-		<dataType>unsigned char<nature type="D">
+		<defaultValue>unsigned char</defaultValue>
+		<dataType type="array">
+			unsigned char
+			<nature type="D">
 				<listner id="output"></listner>
 				<listner id="type">
-					<clone O="value" I="dataType" /> 
+					<clone O="value" I="dataType" />
 				</listner>
 			</nature>
 		</dataType>
 		<type>I</type>
-		<desc>Provide first string</desc>
+		<desc>Provide Source string</desc>
 	</property>
-	
+
 	<property id="output">
-	    <name>String Output</name>
+		<name>String Output</name>
 		<veneer type="S" />
 		<defaultValue>Default</defaultValue>
-		<dataType>unsigned char</dataType>
+		<dataType type="array">unsigned char</dataType>
 		<type>O</type>
 		<desc>Provide string where first string will be concatenated</desc>
 	</property>
 
+	<includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+		<lib>string</lib>
+	</includes>
 
-<validHost>
-<host>Block</host>
-<host>Loop</host>
-</validHost>
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
 
 </Properties>

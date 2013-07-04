@@ -12,11 +12,10 @@
         <icon>This is to initialize IO</icon>
 </item>
 
-
 <item id="typecast">
         <name>Type Cast</name>
         <desc>This is variable</desc>
         <icon>This is variable</icon>
 </item>
-typecast
+
 </Palette>
