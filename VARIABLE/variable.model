@@ -39,6 +39,7 @@
 	<validHost>
 		<host>Block</host>
 		<host>Loop</host>
+		<host>BlockBlModel</host>
 	</validHost>
 	<includes>
 		<lib>stdio</lib>

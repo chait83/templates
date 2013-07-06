@@ -8,10 +8,4 @@
         <icon>This is DATATYPE CONVERSION</icon>
 </item>
 
-<item id="VARIABLE">
-        <name>VARIABLE</name>
-        <desc>This is IO</desc>
-        <icon>This is IO</icon>
-</item>
-
 </Palette>
