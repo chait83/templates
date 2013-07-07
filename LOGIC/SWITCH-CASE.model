@@ -3,14 +3,10 @@
 	<id>Switch_Case</id>
 	<name>Switch_Case</name>
 	<type>M</type>
-	<size>
-		<h>80</h>
-		<w>70</w>
-	</size>
 	<desc>This is a generic variable</desc>
 	<size>
 		<h>80</h>
-		<w>60</w>
+		<w>120</w>
 	</size>
 	<property id="Input1">
 		<name>CASE</name>
@@ -25,18 +21,11 @@
 	<property id="Input2">
 		<name>CASE</name>
 		<veneer type="S" />
-		<desc>Set Input for Case selection</desc>
+		<desc>Set the resolution for data conversion</desc>
 		<type>I</type>
 		<defaultValue> Default</defaultValue>
 	</property>
 
-	<property id="OUTPUT">
-		<name>CASE</name>
-		<veneer type="S" />
-		<desc>Set output after case selection</desc>
-		<type>O</type>
-		<defaultValue> Default</defaultValue>
-	</property>
 
 	<validHost>
 		<host>Block</host>

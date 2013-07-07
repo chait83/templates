@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id init="Y">INTEGER</id>
+	<id init="Y">variable</id>
 	<name>var</name>
 	<type>M</type>
 	<desc>Variable of INTEGER type</desc>
@@ -39,7 +39,7 @@
 	<validHost>
 		<host>Block</host>
 		<host>Loop</host>
-		<host>BlockBlModel</host>
+		<host>BlockBl</host>
 	</validHost>
 	<includes>
 		<lib>stdio</lib>

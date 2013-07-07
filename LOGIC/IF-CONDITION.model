@@ -6,7 +6,7 @@
 	<desc>This is a generic variable for conditional statement </desc>
 	<size>
 		<h>80</h>
-		<w>70</w>
+		<w>120</w>
 	</size>
 
 	<property id="INPUT1">
