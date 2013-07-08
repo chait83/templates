@@ -19,11 +19,4 @@
         <desc>This is IO</desc>
         <icon>This is IO</icon>
 </item>
-
-<item id="variable">
-        <name>variable</name>
-        <desc>This is IO</desc>
-        <icon>This is IO</icon>
-</item>
-
 </Palette>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-<size>
-	<h>80</h>
-	<w>100</w>
-</size>
 	<property id="proName1">
 		<name>DIRECTION</name>
 		<veneer type="S" />
 		<desc>Set the resolution for data conversion</desc>
 		<type>I</type>
+<size>
+	<h>80</h>
+	<w>70</w>
+</size>
                 <defaultValue> Default</defaultValue>
 	<!--A entery menu for setting type : INPUT,OUTPUT OR BY-->
 	</property>

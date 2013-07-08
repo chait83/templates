@@ -18,6 +18,18 @@
         <icon>This is ADDITION</icon>
 </item>
 
+<item id="DIVISION">
+        <name>DIVISION</name>
+        <desc>This is DIVISION</desc>
+        <icon>This is DIVISION</icon>
+</item>
+
+<item id="AVERAGE">
+        <name>AVERAGE</name>
+        <desc>This is AVERAGE</desc>
+        <icon>This is AVERAGE</icon>
+</item>
+
 <item id="FORMULA">
         <name>FORMULA</name>
         <desc>This is FORMULA</desc>

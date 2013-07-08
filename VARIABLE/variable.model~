@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id init="Y">INTEGER</id>
+	<name>var</name>
+	<type>M</type>
+	<desc>Variable of INTEGER type</desc>
+	<size>
+		<h>37</h>
+		<w>35</w>
+	</size>
+	<property id="type" st="M">
+		<name>type</name>
+		<defaultValue>uint32_t</defaultValue>
+		<type>F</type>
+		
+		<dataType>uint32_t</dataType>
+		<desc>assigned type to the variable</desc>
+	</property>
+
+	<property id="input">
+		<name>input</name>
+		<defaultValue>0</defaultValue>
+		<veneer type="T"></veneer>
+		<dataType>uint32_t</dataType>
+		
+		<type>I</type>
+		<desc>Integer input</desc>
+	</property>
+
+	<property id="output">
+		<name>Output</name>
+		<veneer type="T"></veneer>
+		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Integer output</desc>
+	</property>
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+	<includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+	</includes>
+</Properties>

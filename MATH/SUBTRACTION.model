@@ -2,36 +2,42 @@
 <Properties>
 
 	<id>Subtract</id>
-	<name>Substraction</name>
+	<name>Subtraction</name>
 	<type>M</type>
-    <size>
-		<h>140</h>
-		<w>160</w>
+	<size>
+		<h>52</h>
+		<w>70</w>
 	</size>
-	<property id="INPUT1">
+
+	<property id="input1">
 		<name>INPUT</name>
 		<veneer type="S" />
-		<desc>Set Input For subtraction</desc>
 		<type>I</type>
-		<defaultValue> Default</defaultValue>
+		<dataType>uint32_t</dataType>
+		<defaultValue>0</defaultValue>
+		<desc>Set Input For Subtraction</desc>
+
 	</property>
-	<property id="INPUT2">
+	<property id="input2">
 		<name>INPUT</name>
 		<veneer type="S" />
+		<type>I</type>
+		<dataType>uint32_t</dataType>
+		<defaultValue>0</defaultValue>
 		<desc> Set Input For subtraction</desc>
-		<type>I</type>
-		<defaultValue> Default</defaultValue>
+
 	</property>
 
 
-	<property id="OTPUT">
+	<property id="Subtraction">
 		<name>Output</name>
 		<veneer type="S" />
-		<defaultValue>0</defaultValue>
-		<dataType>uint32_t</dataType>
 		<type>O</type>
-		<desc>integer output </desc>
+		<dataType>uint32_t</dataType>
+		<defaultValue>0</defaultValue>
+		<desc>integer output for Subtraction</desc>
 	</property>
+
 	<validHost>
 		<host>Block</host>
 		<host>Loop</host>
