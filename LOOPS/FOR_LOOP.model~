@@ -41,7 +41,7 @@
 		<host>Block</host>
 		<host>Loop</host>
 	</validHost>
-	<children id="variable">
+	<children id="INTEGER">
 		<position>
 			<x>10</x>
 			<y>10</y>

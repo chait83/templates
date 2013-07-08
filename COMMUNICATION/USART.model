@@ -5,8 +5,8 @@
 	<type>M</type>
 	<desc>This is a generic variable</desc>
 	<size>
-		<h>120</h>
-		<w>140</w>
+		<h>100</h>
+		<w>80</w>
 	</size>
 
 	<property id="INPUT1">

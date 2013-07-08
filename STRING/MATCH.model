@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
 
-<size>
-	<h>120</h>
-	<w>140</w>
-</size>
 	<property id="proName1">
 	<name>MATCH WITH</name>
 	<defaultValue> Default</defaultValue>
+<size>
+	<h>80</h>
+	<w>70</w>
+</size>
 	<veneer type="S" />
 	<desc>Set the resolution for data conversion</desc>
 	<type>I</type>

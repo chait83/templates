@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
 
-	<id>Init_WHILE-LOOP</id>
-	<name>Initialiase WHILE-LOOP</name>
+	<id>WHILE-LOOP</id>
+	<name>WHILE</name>
 	<type>M</type>
 	<size>
 		<h>140</h>
@@ -16,7 +16,16 @@
 		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>I</type>
-		<desc>Provide an Input</desc>
+		<desc>Provide an Input for initializing while loop</desc>
+	</property>
+
+    <property id="Terminating_cond">
+		<name>Input</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<desc>Provide an condition for terminating while loop</desc>
 	</property>
 
 	<validHost>
