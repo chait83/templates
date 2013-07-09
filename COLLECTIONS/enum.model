@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id>enum</id>
+	<name>enum</name>
+	<type>M</type>
+	<size>
+		<h>50</h>
+		<w>50</w>
+	</size>
+	<desc>This is used for enumeration of data</desc>
+
+	<property id="Name">
+		<name>enum_identifier</name>
+		<veneer type="S" />
+		<defaultValue>enum_Name</defaultValue>
+		<dataType> const unsigned char</dataType>
+		<type>F</type>
+		<desc>name of enum identifier </desc>
+	</property>
+
+	<property id="input_parameters1">
+		<name>Input1</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<desc>Provide list of element in enum-list</desc>
+	</property>
+
+	<property id="input_parameters2">
+		<name>Input2</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<desc>Provide list of element in enum-list</desc>
+	</property>
+
+	<property id="Variable_of_enumure">
+		<name>enum var</name>
+		<veneer type="S" />
+		<defaultValue>enum_var</defaultValue>
+		<dataType>const unsigned char</dataType>
+		<type>O</type>
+		<desc>Provide variable of enum</desc>
+	</property>
+
+	<includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+		<lib>lib</lib>
+	</includes>
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>
