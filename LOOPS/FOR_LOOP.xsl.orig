@@ -1,0 +1,14 @@
+<xsl:stylesheet version="1.0"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:template match="/">
+	
+<<<<<<< HEAD
+    for ( i = 0 ; i &lt; <xsl:value-of select="FOR_LOOP/V/I/length"/> ; i++ )	{
+    
+    };
+=======
+    for ( i = 0 ; i &#60; <xsl:value-of select="Init_FOR-LOOP/V/I/input"/> ; i++ )	{
+>>>>>>> 21a100b3a091dfcb4952e9b87de575729ceb0251
+    
+	</xsl:template>
+</xsl:stylesheet>
