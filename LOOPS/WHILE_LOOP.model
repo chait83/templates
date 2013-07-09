@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
 
-	<id>WHILE-LOOP</id>
+	<id type="BoundingBl">WHILE-LOOP</id>
 	<name>WHILE</name>
 	<type>M</type>
 	<size>
-		<h>140</h>
+		<h>120</h>
 		<w>120</w>
 	</size>
 	<desc>This unit is used to create a continuous loop</desc>
 
-	<property id="input">
+	<property id="initial_condition">
 		<name>Input</name>
 		<veneer type="S" />
 		<defaultValue>0</defaultValue>
@@ -19,12 +19,21 @@
 		<desc>Provide an Input for initializing while loop</desc>
 	</property>
 
-    <property id="Terminating_cond">
-		<name>Input</name>
+<property id="count">
+		<name>Count</name>
 		<veneer type="S" />
 		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>I</type>
+		<desc>Provide a increment/decrement count </desc>
+	</property>
+
+    <property id="output_Terminating_cond">
+		<name>cond</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
 		<desc>Provide an condition for terminating while loop</desc>
 	</property>
 
@@ -32,5 +41,16 @@
 		<host>Block</host>
 		<host>Loop</host>
 	</validHost>
+	<includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+	</includes>
+	<children id="variable">
+		<position>
+			<x>10</x>
+			<y>10</y>
+		</position>
+		<defaultValue>0</defaultValue>
+	</children>
 
 </Properties>
