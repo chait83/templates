@@ -64,4 +64,12 @@
         <name>LESS_THAN_OR_EQUAL_TO</name>
         <desc>This is LESS_THAN_OR_EQUAL_TO-LOGIC</desc>
 </item>
+<item id="Left_shift">
+        <name>Left_shift</name>
+        <desc>This is Left_shift-LOGIC</desc>
+</item>
+<item id="right_shift">
+        <name>right_shift</name>
+        <desc>This is right_shift-LOGIC</desc>
+</item>
 </palette>

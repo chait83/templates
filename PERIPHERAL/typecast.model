@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id>typecast</id>
+	<name>Type cast</name>
+	<type>M</type>
+	<size>
+		<h>80</h>
+		<w>70</w>
+	</size>
+	<desc>This is a generic variable</desc>
+
+	<property id="input" st="O">
+		<name>input</name>
+		<defaultValue>0</defaultValue>
+		<type>I</type>
+		<veneer type="T">Name</veneer>
+		<dataType type="D">uint32_t</dataType>
+		<desc>assign value to the variable</desc>
+	</property>
+
+	<property id="output" st="O">
+		<name>Output</name>
+		<defaultValue> 0</defaultValue>
+		<veneer type="T">Name</veneer>
+		<dataType type="D">uint32_t</dataType>
+		<type>O</type>
+		<desc>Output of the variable</desc>
+	</property>
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>
+
