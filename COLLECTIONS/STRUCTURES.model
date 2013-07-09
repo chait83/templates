@@ -9,52 +9,39 @@
 	</size>
 	<desc>This is used to store the set of STRUCTURES</desc>
 
-	<property id="type" st="M">
-		<name>type</name>
-		<defaultValue>uint32_t</defaultValue>
+	<property id="Name">
+		<name>Struct_Name</name>
+		<veneer type="S" />
+		<defaultValue>struct_Name</defaultValue>
+		<dataType> const unsigned char</dataType>
 		<type>F</type>
-		<dataType>
-			uint32_t
-			<nature type="D">
-				<listner id="input">
-					<clone I="value" O="dataType" />
-				</listner>
-			</nature>
-		</dataType>
-		<desc>assign value to the variable</desc>
+		<desc>Name of structure</desc>
 	</property>
 
-	<property id="strcuturetype">
-		<name>Structure Type</name>
-		<defaultValue>uint32_t</defaultValue>
-		<dataType>uint32_t</dataType>
-		<type>F</type>
-		<desc>assign type to the array</desc>
-	</property>
-
-	<property id="input">
-		<name>Input</name>
+	<property id="input_parameters1">
+		<name>Input1</name>
 		<veneer type="S" />
 		<defaultValue>0</defaultValue>
-		<dataType>
-			uint32_t
-			<nature type="D">
-				<listner id="output"></listner>
-				<listner id="type">
-					<clone O="value" I="dataType" />
-				</listner>
-			</nature>
-		</dataType>
+		<dataType>uint32_t</dataType>
 		<type>I</type>
 		<desc>Provide an input and define the structure</desc>
 	</property>
 
-	<property id="Variable of structure">
-		<name>variable for Accessing structure </name>
+	<property id="input_parameters2">
+		<name>Input2</name>
 		<veneer type="S" />
 		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<desc>Provide an input and define the structure</desc>
+	</property>
+
+	<property id="Variable_of_structure">
+		<name>struct var</name>
+		<veneer type="S" />
+		<defaultValue>struct_var</defaultValue>
 		<dataType>
-			uint32_t
+			const unsigned char 
 			<nature type="D">
 				<listner id="output"></listner>
 				<listner id="type">

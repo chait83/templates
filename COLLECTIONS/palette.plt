@@ -12,4 +12,11 @@
         <desc>This is STRUCTURES</desc>
         <icon>This is STRUCTURES</icon>
 </item>
+
+<item id="enum">
+        <name>enum</name>
+        <desc>This is Enum</desc>
+        <icon>This is Enum</icon>
+</item>
+
 </palette>
