@@ -4,7 +4,5 @@
 	
     for ( i = 0 ; i &lt; <xsl:value-of select="FOR_LOOP/V/I/length"/> ; i++ )	{
     
-    };
-    
 	</xsl:template>
 </xsl:stylesheet>

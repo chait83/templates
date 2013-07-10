@@ -2,9 +2,14 @@
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:template match="/">
 	<xsl:choose>
-		<xsl:when test="INTEGER/initElement='Y'">
-		  <xsl:value-of select="INTEGER/type" /> &#160; <xsl:value-of select="INTEGER/Name" />;
+		<xsl:when test="variable/initElement='Y'">
+		  <xsl:value-of select="variable/type" /> &#160; <xsl:value-of select="variable/Name" />;
 		</xsl:when>
+		<xsl:otherwise>
+		<xsl:if test="variable/V/I/input">
+		<xsl:value-of select="variable/Name" /> = <xsl:value-of select="variable/V/I/input" />;
+		</xsl:if>
+		</xsl:otherwise>
 	</xsl:choose>
 	
   
