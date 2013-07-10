@@ -12,8 +12,6 @@
 
 	<property id="input" modelType="Collection">
 		<name>Input</name>
-	<property id="initial_condition">
-		<name>i</name>
 		<veneer type="S" />
 		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
