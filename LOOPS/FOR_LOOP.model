@@ -16,7 +16,7 @@
 		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>I</type>
-		<desc>Provide an Input</desc>
+		<desc>Provide an Input as initial condition</desc>
 	</property>
 
 	<property id="count">
@@ -25,22 +25,26 @@
 		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>I</type>
-		<desc>Provide a count</desc>
+		<desc>Provide a increment/decrement count </desc>
 	</property>
 
-	<property id="output">
-		<name>Output</name>
+	<property id="length">
+		<name>len</name>
 		<veneer type="S" />
 		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
-		<desc>Provides an Output of the input</desc>
+		<desc>Provides length of for loop</desc>
 	</property>
 
 	<validHost>
 		<host>Block</host>
 		<host>Loop</host>
 	</validHost>
+	<includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+	</includes>
 	<children id="variable">
 		<position>
 			<x>10</x>
