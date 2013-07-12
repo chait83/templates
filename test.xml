@@ -1,66 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
 
-	<id type="BoundingBl">FOR_LOOP</id>
-	<name>FOR</name>
-	<size>
-		<h>120</h>
-		<w>120</w>
-	</size>
+
+	<id init="Y">INTEGER</id>
+	<name>var</name>
 	<type>M</type>
-	<desc>This unit is used to create a continuous for loop</desc>
+	<desc>Variable of INTEGER type</desc>
+	<size>
+		<h>40</h>
+		<w>60</w>
+	</size>
+	<property id="type" st="M">
+		<name>type</name>
+		<defaultValue>uint32_t</defaultValue>
+		<type>F</type>
+		<dataType>uint32_t</dataType>
+		<desc>assigned type to the variable</desc>
+	</property>
 
-	<property id="input" modelType="Collection">
-		<name>Input</name>
-<<<<<<< .mine=======		<veneer type="S" />
+	<property id="input">
+		<name>input</name>
 		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>I</type>
-		<desc>Provide an Input as initial condition</desc>
-	</property>
-
-	<property id="count">
-		<name>Count</name>
->>>>>>> .theirs		<veneer type="S" />
-		<defaultValue>0</defaultValue>
-		<dataType>uint32_t</dataType>
-		<type>I</type>
-		<desc>Provide an Input</desc>
-	</property>
-
-<<<<<<< .mine	<property id="count">
-		<name>Count</name>
-=======	<property id="length">
-		<name>len</name>
->>>>>>> .theirs		<veneer type="S" />
-<<<<<<< .mine		<defaultValue>0</defaultValue>
-		<dataType>uint32_t</dataType>
-		<type>I</type>
-		<desc>Provide a count</desc>
+		<desc>Integer input</desc>
 	</property>
 
 	<property id="output">
-		<name>Output</name>
+		<name>Ouput</name>
 		<veneer type="S" />
-=======		<defaultValue>0</defaultValue>
-		<dataType>uint32_t</dataType>
->>>>>>> .theirs		<defaultValue>0</defaultValue>
+		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
-<<<<<<< .mine		<desc>Provides an Output of the input</desc>
-=======		<desc>Provides length of for loop</desc>
->>>>>>> .theirs	</property>
+		<desc>Integer output</desc>
+	</property>
 
-<<<<<<< .mine	<validHost>
-		<host>Block</host>
-		<host>Loop</host>
-	</validHost>
-	<children id="variable">
-		<position>
-			<x>10</x>
-			<y>10</y>
-		</position>
-=======	<validHost>
+	<validHost>
 		<host>Block</host>
 		<host>Loop</host>
 	</validHost>
@@ -68,15 +43,4 @@
 		<lib>stdio</lib>
 		<lib>math</lib>
 	</includes>
-	<children id="variable">
->>>>>>> .theirs		<name>len</name>
-<<<<<<< .mine		<defaultValue>0</defaultValue>
-	</children>
-
-=======			<x>10</x>
-			<y>10</y>
-		</position>
-		<defaultValue>0</defaultValue>
-	</children>
-
->>>>>>> .theirs</Properties>
+</Properties>

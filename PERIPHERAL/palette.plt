@@ -20,10 +20,10 @@
         <icon>This is IO</icon>
 </item>
 
-<item id="typecast">
-        <name>typecast</name>
-        <desc>This is typecast logic</desc>
-        <icon>This is typecast logic</icon>
+<item id="variable">
+        <name>variable</name>
+        <desc>This is IO</desc>
+        <icon>This is IO</icon>
 </item>
 
 </Palette>

@@ -2,8 +2,8 @@
 <Properties>
 	<id>Init_ADC</id>
 	<size>
-		<h>80</h>
-		<w>70</w>
+		<h>120</h>
+		<w>140</w>
 	</size>
 	<name>Initialize ADC</name>
 	<type>M</type>
