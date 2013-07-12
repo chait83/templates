@@ -8,13 +8,22 @@
 		<h>37</h>
 		<w>35</w>
 	</size>
+	<property id="data_type" st="M">
+		<name>data_type</name>
+		<defaultValue>uint32_t</defaultValue>
+		<veneer type="T"></veneer>
+		<type>F</type>	
+		<dataType>uint32_t</dataType>
+		<desc>assigned type to the variable</desc>
+	</property>
+
 	<property id="type" st="M">
 		<name>type</name>
 		<defaultValue>uint32_t</defaultValue>
-		<type>F</type>
-		
+		<veneer type="T"></veneer>
+		<type>F</type>	
 		<dataType>uint32_t</dataType>
-		<desc>assigned type to the variable</desc>
+		<desc>static or pointer</desc>
 	</property>
 
 	<property id="input">
@@ -22,7 +31,6 @@
 		<defaultValue>0</defaultValue>
 		<veneer type="T"></veneer>
 		<dataType>uint32_t</dataType>
-		
 		<type>I</type>
 		<desc>Integer input</desc>
 	</property>
