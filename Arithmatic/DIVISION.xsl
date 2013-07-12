@@ -3,6 +3,7 @@
 	<xsl:template match="/">
 	
         <xsl:value-of select="Divide/V/O/Quotient "/> = (<xsl:value-of select="Divide/V/I/Dividend"/>) / (<xsl:value-of select="Divide/V/I/divisor"/>) ;
+		<xsl:value-of select="Divide/V/O/Quotient "/> = (<xsl:value-of select="Divide/V/I/Dividend"/>) % (<xsl:value-of select="Divide/V/I/divisor"/>) ;
 		
 	</xsl:template>
 </xsl:stylesheet>

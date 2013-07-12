@@ -18,5 +18,11 @@
         <desc>This is Enum</desc>
         <icon>This is Enum</icon>
 </item>
+<item id="typedef">
+        <name>typedef</name>
+        <desc>This is typedef</desc>
+        <icon>This is typedef</icon>
+</item>
+
 
 </palette>

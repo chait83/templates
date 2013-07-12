@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+
+	<id>typedef</id>
+	<name>typedef</name>
+	<type>M</type>
+	<size>
+		<h>55</h>
+		<w>70</w>
+	</size>
+	<desc>This unit is used to give another name to entity </desc>
+
+	<property id="input">
+		<name>input</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<desc>Provide an input for typedef</desc>
+	</property>
+
+	<property id="output">
+		<name>output</name>
+		<veneer type="S" />
+		<defaultValue>typedef</defaultValue>
+		<dataType>unsigned char</dataType>
+		<type>O</type>
+		<desc>output of typedef</desc>
+	</property>
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+	<includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+	</includes>
+
+</Properties>
