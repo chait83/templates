@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>Matrix_add</id>
-	<name>addMatrix</name>																																																																																																																																																																																																																																											</name>
+	<id>Matrix_mul</id>
+	<name>mulMatrix</name>																																																																																																																																																																																																																																																																																																																		</name>
 	<size>
 		<h>55</h>
 		<w>70</w>
 	</size>
-	<desc> Addition  of Matrices</desc>
+	<desc> Multiplication of Matrices</desc>
 
-  <property id="Matrix1">
+<property id="Matrix1">
 		<name>Matrix1</name>
 		<veneer type="S" />
 		<type>I</type>
@@ -26,15 +26,14 @@
 		<desc>set pointer which points to the second input matrix structure </desc>
 	</property>
 	
-	<property id="Matrix_addition">
-		<name>Matrix_add</name>
+	<property id="Matrix_multiplication">
+		<name>Matrix_mul</name>
 		<veneer type="S" />
 		<type>O</type>
 		<dataType type="array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
-		<desc>set pointer for  addition of matrices which points to output matrix structure  </desc>
+		<desc>set pointer for  Multiplication of matrices which points to output matrix structure  </desc>
 	</property>
-	
 	<includes>
 		<lib>stdio</lib>
 		<lib>math</lib>

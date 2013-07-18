@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
 	<id>Matrix_add</id>
-	<name>addMatrix</name>																																																																																																																																																																																																																																											</name>
+	<name>addMatrix</name>																																																																																																																																																																																																																																																																																																																		</name>
 	<size>
 		<h>55</h>
 		<w>70</w>
 	</size>
 	<desc> Addition  of Matrices</desc>
 
-  <property id="Matrix1">
+<property id="Matrix1">
 		<name>Matrix1</name>
 		<veneer type="S" />
 		<type>I</type>
@@ -34,7 +34,6 @@
 		<defaultValue>0</defaultValue>
 		<desc>set pointer for  addition of matrices which points to output matrix structure  </desc>
 	</property>
-	
 	<includes>
 		<lib>stdio</lib>
 		<lib>math</lib>

@@ -9,10 +9,6 @@
 	<desc>variable for Addition</desc>
 
 	<property id="input1">
-		<size>
-			<h>140</h>
-			<w>160</w>
-		</size>
 		<name>INPUT</name>
 		<veneer type="S" />
 		<desc>Set Input for Addition</desc>
@@ -36,6 +32,11 @@
 		<type>O</type>
 		<desc>set Output after addition</desc>
 	</property>
+	<includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+		<lib>lib</lib>
+	</includes>
 
 	<validHost>
 		<host>Block</host>

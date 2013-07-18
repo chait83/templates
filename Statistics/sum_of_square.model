@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id>sum_of_squares</id>
+	<name>sum_of_sqrs</name>																																																																																																																																																																																																																																																																																																																		</name>
+	<size>
+		<h>55</h>
+		<w>70</w>
+	</size>
+	<desc> Calculates the um_of_squares of the input vector</desc>
+
+	
+<property id="input_vector1">
+		<name>v_input</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType type="array">uint32_t</dataType>
+		<defaultValue>0</defaultValue>
+		<desc>Set pointer to input vectors</desc>
+	</property>
+	
+	<property id="input_vector2">
+		<name>v_input</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType type="array">uint32_t</dataType>
+		<defaultValue>0</defaultValue>
+		<desc>Set pointer to input vectors</desc>
+	</property>
+	
+	<property id="Blocksize">
+		<name>block_size</name>
+		<veneer type="S" />
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<defaultValue>0</defaultValue>
+		<desc>Set Blocksize of input vector</desc>
+	</property>
+
+	<property id="output_vector">
+		<name>sum_of_squares</name>
+		<veneer type="S" />
+		<type>O</type>
+		<dataType type="array">uint32_t</dataType>
+		<defaultValue>0</defaultValue>
+		<desc>set output for storing sum of squares of input vectors</desc>
+	</property>
+	<includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+		<lib>lib</lib>
+	</includes>
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>
