@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>correlation</id>
-	<name>Co-re</name>																																																																																																																																																																																																																																																																																																																		</name>
+	<id type="array">correlation</id>
+	<name>Co-re</name>
 	<size>
 		<h>55</h>
 		<w>70</w>
 	</size>
 	<desc> correlation of input sequences</desc>
 
-<property id="sequence1">
+	<property id="sequence1">
 		<name>a[]</name>
 		<veneer type="S" />
 		<type>I</type>
@@ -16,7 +16,7 @@
 		<defaultValue>0</defaultValue>
 		<desc>set pointer which points to the first input sequence</desc>
 	</property>
-	
+
 	<property id="sequence2">
 		<name>b[]</name>
 		<veneer type="S" />
@@ -25,7 +25,7 @@
 		<defaultValue>0</defaultValue>
 		<desc>set pointer which points to the second input sequence </desc>
 	</property>
-	
+
 	<property id="correlation_result">
 		<name>out_co-re</name>
 		<veneer type="S" />
@@ -34,7 +34,7 @@
 		<defaultValue>0</defaultValue>
 		<desc>set pointer for output of correlation  </desc>
 	</property>
-	
+
 	<includes>
 		<lib>stdio</lib>
 		<lib>math</lib>

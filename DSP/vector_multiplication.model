@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>vector_sub</id>
-	<name>vect_sub</name>																																																																																																																																																																																																																																																																																																																		</name>
+	<id type="array">vector_mul</id>
+	<name>vect_mul</name>
 	<size>
 		<h>55</h>
 		<w>70</w>
 	</size>
-	<desc> calculate element-by-element subtraction of two vectors/desc>
+	<desc>calculate element-by-element subtraction of two vectors</desc>
 
-<property id="vector1">
+	<property id="vector1">
 		<name>vect1</name>
 		<veneer type="S" />
 		<type>I</type>
 		<dataType type="array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
-		<desc>set pointer which points to the  input vector</desc>
+		<desc>set pointer which points to the input vector</desc>
 	</property>
-	
+
 	<property id="vector2">
 		<name>vect2</name>
 		<veneer type="S" />
@@ -25,7 +25,7 @@
 		<defaultValue>0</defaultValue>
 		<desc>set pointer which points to the input vector </desc>
 	</property>
-	
+
 	<property id="vector_mul_result">
 		<name>dot_prod</name>
 		<veneer type="S" />
@@ -34,7 +34,7 @@
 		<defaultValue>0</defaultValue>
 		<desc>set pointer for output of vector multiplication </desc>
 	</property>
-	
+
 	<includes>
 		<lib>stdio</lib>
 		<lib>math</lib>

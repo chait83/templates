@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>Variance</id>
+	<id type="array">Variance</id>
 	<name>Variance</name>
 	<size>
 		<h>55</h>
@@ -17,7 +17,7 @@
 		<desc>Set pointer to sum of square of input vectors</desc>
 	</property>
 
-<property id="mean_of_input_vector2">
+	<property id="mean_of_input_vector2">
 		<name>v_mean</name>
 		<veneer type="S" />
 		<type>I</type>
@@ -25,7 +25,7 @@
 		<defaultValue> Default</defaultValue>
 		<desc>Set mean of input vectors</desc>
 	</property>
-	
+
 	<property id="Blocksize">
 		<name>block_size</name>
 		<veneer type="S" />
@@ -43,6 +43,7 @@
 		<defaultValue>0</defaultValue>
 		<desc>set output for storing Variance of input vectors</desc>
 	</property>
+	
 	<includes>
 		<lib>stdio</lib>
 		<lib>math</lib>

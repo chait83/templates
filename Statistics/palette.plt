@@ -21,6 +21,6 @@
 <item id="sum_of_square">
         <name>sum_of_square</name>
         <desc>This is sum_of_square</desc>
-        <icon>This is Isum_of_square</icon>
+        <icon>This is sum_of_square</icon>
 </item>
 </Palette>

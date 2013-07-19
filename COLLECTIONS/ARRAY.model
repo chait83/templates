@@ -48,6 +48,15 @@
 		<type>I</type>
 		<desc>Provide an Input and define the array size</desc>
 	</property>
+	
+<property id="No_blocks">
+		<name>no of blocks to be allocated</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>F</type>
+		<desc>Provide no of  continuous  blocks allocated of specified datatypes</desc>
+	</property>
 
 	<property id="output">
 		<name>Output</name>

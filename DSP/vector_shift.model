@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>vector_shift</id>
-	<name>vect_shift</name>																																																																																																																																																																																																																																																																																																																		</name>
+	<id type="array">vector_shift</id>
+	<name>vect_shift</name>
 	<size>
 		<h>55</h>
 		<w>70</w>
 	</size>
-	<desc> calculate shifting of input vector/desc>
+	<desc>desc>calculate shifting of input vector</desc>
 
-<property id="input_vector">
-		<name>vect</name>
-		<veneer type="S" />
-		<type>I</type>
-		<dataType type="array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
-		<desc>set pointer which points to the  input vector</desc>
-	</property>
-	
-	<property id="shifting_factor">
-		<name>vect</name>
-		<veneer type="S" />
-		<type>I</type>
-		<dataType>uint32_t</dataType>
-		<defaultValue>0</defaultValue>
-		<desc>set shifting factor for input vector</desc>
-	</property>
-	
-	<property id="vector_shift_result">
-		<name>vect_result</name>
-		<veneer type="S" />
-		<type>O</type>
-		<dataType type="array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
-		<desc>set pointer for output after shifting of vector</desc>
-	</property>
-	
-	<includes>
-		<lib>stdio</lib>
-		<lib>math</lib>
-		<lib>lib</lib>
-	</includes>
+		<property id="input_vector">
+			<name>vect</name>
+			<veneer type="S" />
+			<type>I</type>
+			<dataType type="array">uint32_t</dataType>
+			<defaultValue>0</defaultValue>
+			<desc>set pointer which points to the input vector</desc>
+		</property>
 
-	<validHost>
-		<host>Block</host>
-		<host>Loop</host>
-	</validHost>
+		<property id="shifting_factor">
+			<name>vect</name>
+			<veneer type="S" />
+			<type>I</type>
+			<dataType>uint32_t</dataType>
+			<defaultValue>0</defaultValue>
+			<desc>set shifting factor for input vector</desc>
+		</property>
+
+		<property id="vector_shift_result">
+			<name>vect_result</name>
+			<veneer type="S" />
+			<type>O</type>
+			<dataType type="array">uint32_t</dataType>
+			<defaultValue>0</defaultValue>
+			<desc>set pointer for output after shifting of vector</desc>
+		</property>
+
+		<includes>
+			<lib>stdio</lib>
+			<lib>math</lib>
+			<lib>lib</lib>
+		</includes>
+
+		<validHost>
+			<host>Block</host>
+			<host>Loop</host>
+		</validHost>
 
 </Properties>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>vector_scale</id>
-	<name>vect_scale</name>																																																																																																																																																																																																																																																																																																																		</name>
+	<id type="array">vector_scale</id>
+	<name>vect_scale</name>
 	<size>
 		<h>55</h>
 		<w>70</w>
 	</size>
-	<desc> calculate scaling of input vector/desc>
+	<desc>calculate scaling of input vector</desc>
 
-<property id="input_vector">
+	<property id="input_vector">
 		<name>vect</name>
 		<veneer type="S" />
 		<type>I</type>
 		<dataType type="array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
-		<desc>set pointer which points to the  input vector</desc>
+		<desc>set pointer which points to the input vector</desc>
 	</property>
-	
+
 	<property id="scaling_factor">
 		<name>vect</name>
 		<veneer type="S" />
@@ -25,7 +25,7 @@
 		<defaultValue>0</defaultValue>
 		<desc>set scaling factor for input vector</desc>
 	</property>
-	
+
 	<property id="vector_scale_result">
 		<name>vect_result</name>
 		<veneer type="S" />
@@ -34,7 +34,7 @@
 		<defaultValue>0</defaultValue>
 		<desc>set pointer for output after scaling of vector</desc>
 	</property>
-	
+
 	<includes>
 		<lib>stdio</lib>
 		<lib>math</lib>

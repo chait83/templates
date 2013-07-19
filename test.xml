@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>Matrix_add</id>
-	<name>addMatrix</name>																																																																																																																																																																																																																																											</name>
+	<id>vector_sub</id>
+	<name>vect_sub</name>
 	<size>
 		<h>55</h>
 		<w>70</w>
 	</size>
-	<desc> Addition  of Matrices</desc>
+	<desc> calculate element-by-element subtraction of two vectors</desc>
 
-  <property id="Matrix1">
-		<name>Matrix1</name>
+	<property id="vector1">
+		<name>vect1</name>
 		<veneer type="S" />
 		<type>I</type>
 		<dataType type="array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
-		<desc>set pointer which points to the first input matrix structure</desc>
+		<desc>set pointer which points to the input vector</desc>
 	</property>
-	
-	<property id="Matrix2">
-		<name>Matrix1</name>
+
+	<property id="vector2">
+		<name>vect2</name>
 		<veneer type="S" />
 		<type>I</type>
 		<dataType type="array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
-		<desc>set pointer which points to the second input matrix structure </desc>
+		<desc>set pointer which points to the input vector </desc>
 	</property>
-	
-	<property id="Matrix_addition">
-		<name>Matrix_add</name>
+
+	<property id="vector_sub_result">
+		<name>dot_prod</name>
 		<veneer type="S" />
 		<type>O</type>
 		<dataType type="array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
-		<desc>set pointer for  addition of matrices which points to output matrix structure  </desc>
+		<desc>set pointer for output of vector subtraction </desc>
 	</property>
-	
+
 	<includes>
 		<lib>stdio</lib>
 		<lib>math</lib>

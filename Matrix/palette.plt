@@ -5,8 +5,8 @@
         <desc>This is Matrix_addition</desc>
 </item>
 
-<item id="Matrix_inverse">
-        <name>Invesre of Matrix</name>
+<item id="matrix_inverse">
+        <name>Inverse of Matrix</name>
         <desc>This is Matrix inversion</desc>
 </item>
 

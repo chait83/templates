@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>mean</id>
+	<id type="array">mean</id>
 	<name>mean</name>
 	<size>
 		<h>55</h>
