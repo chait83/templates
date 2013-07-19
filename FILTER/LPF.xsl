@@ -4,9 +4,9 @@
 	
        initx();
 
-       <xsl:value-of select="Init_LPF/veneer/input"/>;
+       <xsl:value-of select="LPF/veneer/input_signal"/>;
 
-       xTaskCreate(lpfDspTask, (signed char*) "<xsl:value-of select="Init_LPF/veneer/input"/>", 128, NULL,tskIDLE_PRIORITY + 1, NULL);
+       xTaskCreate(lpfDspTask, (signed char*) "<xsl:value-of select="LPF/veneer/input_signal"/>", 128, NULL,tskIDLE_PRIORITY + 1, NULL);
 		
 	</xsl:template>
 </xsl:stylesheet>
