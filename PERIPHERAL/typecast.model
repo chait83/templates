@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
 	<id>typecast</id>
-	<name>Type cast</name>
+	<name>Typecast</name>
 	<type>M</type>
 	<size>
-		<h>80</h>
+		<h>55</h>
 		<w>70</w>
 	</size>
 	<desc>This is a generic variable</desc>
@@ -26,6 +26,12 @@
 		<type>O</type>
 		<desc>Output of the variable</desc>
 	</property>
+
+
+	<includes>
+		<lib>stdio</lib>
+		<lib>string</lib>
+	</includes>
 
 	<validHost>
 		<host>Block</host>

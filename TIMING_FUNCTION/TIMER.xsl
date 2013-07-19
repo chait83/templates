@@ -4,7 +4,7 @@
 	
 		xTimerHandle xTimer;
 
-        xTimer = xTimerCreate("Timer",( <xsl:value-of select="Init_TIMER/veneer/time"/>/portTICK_RATE_MS ),pdTRUE,( void * ) 0,vTimerCallback);
+        xTimer = xTimerCreate("Timer",( <xsl:value-of select="TIMER/veneer/time"/>/portTICK_RATE_MS ),pdTRUE,( void * ) 0,vTimerCallback);
         
         xTimerStart( xTimer,0);
 

@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
+	<id>GPIO</id>
+	<name>GPIO</name>
+	<type>M</type>
+	<size>
+		<h>55</h>
+		<w>70</w>
+	</size>
+	<desc>This unit is used to provide input or output functionality</desc>
 
-<size>
-	<h>140</h>
-	<w>180</w>
-</size>
-    <id>Init_GPIO</id>
-    <name>Initialiase GPIO</name>
-    	<type>M</type>
-	
-        <desc>This unit is used to provide input or output functionality</desc>
-    	
 	<property id="direction">
 		<name>Direction</name>
 		<defaultValue>INPUT</defaultValue>
@@ -18,18 +16,23 @@
 		<type>I</type>
 		<desc>INPUT or OUTPUT Mode</desc>
 	</property>
-	
+
 	<property id="signaltype">
-    	<name>Signal Type</name>
-    	<defaultValue>ANALOG</defaultValue>
-    	<dataType>uint32_t</dataType>
+		<name>Signal Type</name>
+		<defaultValue>ANALOG</defaultValue>
+		<dataType>uint32_t</dataType>
 		<type>I</type>
 		<desc>Define signal as ANALOG OR DIGITAL OR CLOCK</desc>
 	</property>
 
-<validHost>
-<host>Block</host>
-<host>Loop</host>
-</validHost>
+	<includes>
+		<lib>stdio</lib>
+		<lib>stdlib</lib>
+	</includes>
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
 
 </Properties>

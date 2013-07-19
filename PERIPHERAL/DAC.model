@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>DAC_init</id>
-	<name>Initailze DAC</name>
+	<id>DAC</id>
+	<name>DAC</name>
 	<type>M</type>
-	<desc>This is a generic variable</desc>
 	<size>
 		<h>120</h>
 		<w>140</w>
 	</size>
-
-	<property id="INPUT">
+   <desc>Digital to analog conversion</desc>
+   
+	<property id="AQUISITION_TYPE">
 		<name>AQUISITION TYPE</name>
 		<defaultValue> Default</defaultValue>
 		<veneer type="T">name</veneer>
@@ -27,10 +27,18 @@
 		<desc>Intput of the variable</desc>
 	</property>
 
+<property id="Data_format">
+		<name>Data_format</name>
+		<veneer type="T">name</veneer>
+         <defaultValue>8</defaultValue>
+		<type>F</type>
+		<dataType>uint32_t</dataType>
+		<desc>set data format 8 bit or 12 bit </desc>
+	</property>
 	<property id="mode">
 		<name>MODE</name>
 		<veneer type="T">name</veneer>
-                <defaultValue> 0</defaultValue>
+         <defaultValue> 0</defaultValue>
 		<type>F</type>
 		<dataType>uint32_t</dataType>
 		<desc>A entery menu for setting type : LEFT or RIGHT ALIGNED </desc>
@@ -62,7 +70,12 @@
 		<type>O</type>
 		<desc>Output of the variable</desc>
 	</property>
-
+	
+    <includes>
+		<lib>stdio</lib>
+		<lib>stdlib</lib>
+	</includes>
+	
 	<validHost>
 		<host>Block</host>
 		<host>Loop</host>
