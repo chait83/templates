@@ -21,6 +21,15 @@
 		is overrun
 	</desc>
 
+<property id="Analog_input">
+		<name>A_Input</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<type>I</type>
+		<dataType>volts</dataType>
+		<desc>Set analog input like Pressure ,temperature,humidity sensor to ADC</desc>
+	</property>
+
 	<property id="resolution">
 		<name>Resolution</name>
 		<veneer type="S" />
@@ -45,6 +54,7 @@
 	<property id="channel">
 		<name>CHANNEL SELECTION</name>
 		<defaultValue> 1</defaultValue>
+		<veneer type="S" />
 		<dataType>uint32_t</dataType>
 		<type>F</type>
 		<desc>The channel for which the data conversion has to be done</desc>
@@ -56,7 +66,7 @@
 		<veneer type="T">name</veneer>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
-		<desc>Output of the variable</desc>
+		<desc>Output of the ADC</desc>
 	</property>
 
 	<includes>
