@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id type="array">Matrix_transpose</id>
+	<id type="Array">Matrix_transpose</id>
 	<name>tranMatrix</name>
 	<size>
 		<h>55</h>
@@ -12,7 +12,7 @@
 		<name>Matrix1</name>
 		<veneer type="S" />
 		<type>I</type>
-		<dataType type="array">uint32_t</dataType>
+		<dataType type="Array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
 		<desc>set pointer which points to the input matrix structure</desc>
 	</property>
@@ -21,7 +21,7 @@
 		<name>Matrix_trans</name>
 		<veneer type="S" />
 		<type>O</type>
-		<dataType type="array">uint32_t</dataType>
+		<dataType type="Array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
 		<desc>set pointer for transpose of input matrix </desc>
 	</property>

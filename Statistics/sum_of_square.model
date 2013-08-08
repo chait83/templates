@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id type="array">sum_of_squares</id>
+	<id type="Array">sum_of_squares</id>
 	<name>sum_of_sqrs</name>
 	<size>
 		<h>55</h>
@@ -13,7 +13,7 @@
 		<name>v_input</name>
 		<veneer type="S" />
 		<type>I</type>
-		<dataType type="array">uint32_t</dataType>
+		<dataType type="Array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
 		<desc>Set pointer to input vectors</desc>
 	</property>
@@ -22,7 +22,7 @@
 		<name>v_input</name>
 		<veneer type="S" />
 		<type>I</type>
-		<dataType type="array">uint32_t</dataType>
+		<dataType type="Array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
 		<desc>Set pointer to input vectors</desc>
 	</property>
@@ -40,7 +40,7 @@
 		<name>sum_of_squares</name>
 		<veneer type="S" />
 		<type>O</type>
-		<dataType type="array">uint32_t</dataType>
+		<dataType type="Array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
 		<desc>set output for storing sum of squares of input vectors</desc>
 	</property>

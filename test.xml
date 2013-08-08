@@ -1,37 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>typecast</id>
-	<name>Typecast</name>
+	<id type="Case">IF-Condition</id>
+	<name>If condition</name>
 	<type>M</type>
-	<size>
-		<h>55</h>
-		<w>70</w>
-	</size>
-	<desc>This is a generic variable</desc>
+	<desc>This is a basic true false condition statement</desc>
 
-	<property id="input" st="O">
-		<name>input</name>
-		<defaultValue>0</defaultValue>
-		<type>I</type>
-		<veneer type="T">Name</veneer>
-		<dataType type="D">uint32_t</dataType>
-		<desc>assign value to the variable</desc>
+	<property id="true">
+		<name>true</name>
+		<desc>True condition</desc>
+		<type>C</type>
+	</property>
+	
+
+	<property id="false">
+		<name>false</name>
+		<desc>True condition</desc>
+		<type>C</type>
 	</property>
 
-	<property id="output" st="O">
-		<name>Output</name>
-		<defaultValue> 0</defaultValue>
-		<veneer type="T">Name</veneer>
-		<dataType type="D">uint32_t</dataType>
-		<type>O</type>
-		<desc>Output of the variable</desc>
-	</property>
-
-
-	<includes>
-		<lib>stdio</lib>
-		<lib>string</lib>
-	</includes>
 
 	<validHost>
 		<host>Block</host>
@@ -39,4 +25,3 @@
 	</validHost>
 
 </Properties>
-

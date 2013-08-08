@@ -14,7 +14,7 @@
 		<name>type</name>
 		<defaultValue>unsigned char</defaultValue>
 		<type>F</type>
-		<dataType type="array">
+		<dataType type="Array">
 			<nature type="D">
 				<listner id="output">
 					<clone I="value" O="dataType" />
@@ -31,7 +31,7 @@
 		<name>String Input</name>
 		<veneer type="S" />
 		<defaultValue>unsigned char</defaultValue>
-		<dataType type="array">
+		<dataType type="Array">
 			unsigned char
 			<nature type="D">
 				<listner id="output"></listner>
@@ -48,7 +48,7 @@
 		<name>String Output</name>
 		<veneer type="S" />
 		<defaultValue>Default</defaultValue>
-		<dataType type="array">unsigned char</dataType>
+		<dataType type="Array">unsigned char</dataType>
 		<type>O</type>
 		<desc>Provide string where first string will be concatenated</desc>
 	</property>

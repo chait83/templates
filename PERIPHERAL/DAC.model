@@ -7,8 +7,8 @@
 		<h>55</h>
 		<w>70</w>
 	</size>
-   <desc>Digital to analog conversion</desc>
-   
+	<desc>Digital to analog conversion</desc>
+
 	<property id="AQUISITION_TYPE">
 		<name>AQUISITION TYPE</name>
 		<defaultValue>single_channel</defaultValue>
@@ -27,42 +27,43 @@
 		<desc>Digital signal as an Input o DAC</desc>
 	</property>
 
-<property id="Data_format">
+	<property id="Data_format">
 		<name>Data_format</name>
 		<veneer type="T">name</veneer>
-         <defaultValue>8</defaultValue>
+		<defaultValue>8</defaultValue>
 		<type>I</type>
 		<dataType>uint32_t</dataType>
 		<desc>set data format 8 bit or 12 bit </desc>
 	</property>
-	
+
 	<property id="data_alignment">
 		<name>MODE</name>
 		<veneer type="T">name</veneer>
-         <defaultValue> 0</defaultValue>
+		<defaultValue> 0</defaultValue>
 		<type>F</type>
 		<dataType>uint32_t</dataType>
 		<desc>A entery menu for setting type : LEFT or RIGHT ALIGNED </desc>
 	</property>
-	
+
 	<property id="Conversion_type">
 		<name>Conversion_type</name>
 		<veneer type="T">name</veneer>
-         <defaultValue>Independent</defaultValue>
+		<defaultValue>Independent</defaultValue>
 		<type>F</type>
 		<dataType>uint32_t</dataType>
 		<desc>Set Data conversion type Independent/Simultaneous </desc>
 	</property>
 
-<property id="Conversion_triggering">
+	<property id="Conversion_triggering">
 		<name>Conversion_trigger</name>
 		<veneer type="T">name</veneer>
-         <defaultValue>Timer</defaultValue>
+		<defaultValue>Timer</defaultValue>
 		<type>F</type>
 		<dataType>uint32_t</dataType>
-		<desc>Set Data conversion triggering type Timer Driven or External signal or DMA </desc>
+		<desc>Set Data conversion triggering type Timer Driven or External
+			signal or DMA </desc>
 	</property>
-	
+
 	<property id="channelSel">
 		<name>Chanel_select</name>
 		<type>F</type>
@@ -87,14 +88,14 @@
 		<veneer type="T">name</veneer>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
-		<desc>Analog output/desc>
+		<desc>Analog output</desc>
 	</property>
-	
-    <includes>
+
+	<includes>
 		<lib>stdio</lib>
 		<lib>stdlib</lib>
 	</includes>
-	
+
 	<validHost>
 		<host>Block</host>
 		<host>Loop</host>

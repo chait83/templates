@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id init="Y">Array</id>
+	<id init="Y" type="Array">Array</id>
 	<name>arr</name>
 	<type>M</type>
 	<size>
 		<h>50</h>
 		<w>50</w>
 	</size>
-	<desc>This is used to store the set of arrays</desc>
+	<desc>This is used to store the set of Arrays</desc>
 
 	<property id="type" st="M">
 		<name>type</name>
@@ -24,12 +24,12 @@
 		<desc>assign value to the variable</desc>
 	</property>
 
-	<property id="arraytype">
+	<property id="Arraytype">
 		<name>Array Type</name>
 		<defaultValue>uint32_t</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>F</type>
-		<desc>assign type to the array</desc>
+		<desc>assign type to the Array</desc>
 	</property>
 
 	<property id="Name">
@@ -46,7 +46,7 @@
 			</nature>
 		</dataType>
 		<type>I</type>
-		<desc>Provide an Input and define the array size</desc>
+		<desc>Provide an Input and define the Array size</desc>
 	</property>
 	
 <property id="No_blocks">
@@ -72,7 +72,7 @@
 			</nature>
 		</dataType>
 		<type>O</type>
-		<desc>Output form array </desc>
+		<desc>Output form Array </desc>
 	</property>
 
 	<validHost>

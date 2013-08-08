@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id type="array">Variance</id>
+	<id type="Array">Variance</id>
 	<name>Variance</name>
 	<size>
 		<h>55</h>
@@ -12,7 +12,7 @@
 		<name>sumOfSquares</name>
 		<veneer type="S" />
 		<type>I</type>
-		<dataType type="array">uint32_t</dataType>
+		<dataType type="Array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
 		<desc>Set pointer to sum of square of input vectors</desc>
 	</property>
@@ -21,7 +21,7 @@
 		<name>v_mean</name>
 		<veneer type="S" />
 		<type>I</type>
-		<dataType type="array">uint32_t</dataType>
+		<dataType type="Array">uint32_t</dataType>
 		<defaultValue> Default</defaultValue>
 		<desc>Set mean of input vectors</desc>
 	</property>
@@ -39,7 +39,7 @@
 		<name>Variance</name>
 		<veneer type="S" />
 		<type>I</type>
-		<dataType type="array">uint32_t</dataType>
+		<dataType type="Array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
 		<desc>set output for storing Variance of input vectors</desc>
 	</property>

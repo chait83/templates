@@ -12,7 +12,7 @@
 		<name>vect1</name>
 		<veneer type="S" />
 		<type>I</type>
-		<dataType type="array">uint32_t</dataType>
+		<dataType type="Array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
 		<desc>set pointer which points to the input vector</desc>
 	</property>
@@ -21,7 +21,7 @@
 		<name>vect2</name>
 		<veneer type="S" />
 		<type>I</type>
-		<dataType type="array">uint32_t</dataType>
+		<dataType type="Array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
 		<desc>set pointer which points to the input vector </desc>
 	</property>
@@ -30,7 +30,7 @@
 		<name>dot_prod</name>
 		<veneer type="S" />
 		<type>O</type>
-		<dataType type="array">uint32_t</dataType>
+		<dataType type="Array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
 		<desc>set pointer for output of dot_product  </desc>
 	</property>

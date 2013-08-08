@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id type="array">vector_negate</id>
+	<id type="Array">vector_negate</id>
 	<name>vect_neg</name>
 	<size>
 		<h>55</h>
@@ -12,7 +12,7 @@
 		<name>vect</name>
 		<veneer type="S" />
 		<type>I</type>
-		<dataType type="array">uint32_t</dataType>
+		<dataType type="Array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
 		<desc>set pointer which points to the input vector</desc>
 	</property>
@@ -21,7 +21,7 @@
 		<name>dot_prod</name>
 		<veneer type="S" />
 		<type>O</type>
-		<dataType type="array">uint32_t</dataType>
+		<dataType type="Array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
 		<desc>set pointer for output of Negation of vector </desc>
 	</property>

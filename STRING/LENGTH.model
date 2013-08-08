@@ -31,7 +31,7 @@
 		<name>String Input</name>
 		<veneer type="S" />
 		<defaultValue>unsigned char</defaultValue>
-		<dataType type="array">
+		<dataType type="Array">
 			unsigned char
 			<nature type="D">
 				<listner id="str_length"></listner>

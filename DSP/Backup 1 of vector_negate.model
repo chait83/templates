@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id type="array">vector_negate</id>
+	<name>vect_neg</name>
+	<size>
+		<h>55</h>
+		<w>70</w>
+	</size>
+	<desc>calculate negation of input vector</desc>
+
+	<property id="input_vector">
+		<name>vect</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType type="array">uint32_t</dataType>
+		<defaultValue>0</defaultValue>
+		<desc>set pointer which points to the input vector</desc>
+	</property>
+
+	<property id="vector_negate_result">
+		<name>dot_prod</name>
+		<veneer type="S" />
+		<type>O</type>
+		<dataType type="array">uint32_t</dataType>
+		<defaultValue>0</defaultValue>
+		<desc>set pointer for output of Negation of vector </desc>
+	</property>
+
+	<includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+		<lib>lib</lib>
+	</includes>
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>
