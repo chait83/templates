@@ -3,7 +3,7 @@
 	<id type="array">mean</id>
 	<name>mean</name>
 	<size>
-		<h>55</h>
+		<h>78</h>
 		<w>70</w>
 	</size>
 	<desc> Calculates the mean of the input vector</desc>
@@ -38,7 +38,7 @@
 	<property id="output_vector">
 		<name>mean</name>
 		<veneer type="S" />
-		<type>I</type>
+		<type>O</type>
 		<dataType type="array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
 		<desc>set output for storing mean of input vectors</desc>

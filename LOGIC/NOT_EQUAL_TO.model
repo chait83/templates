@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>Power_function</id>
-	<name>pow</name>
-	<size>
-		<h>55</h>
-		<w>70</w>
-	</size>
+	<id>NOT-EQUAL-TO</id>
+	<name>neq</name>
 	<type>M</type>
-	<desc>This unit is return base raised to the power exponent</desc>
+	<size>
+		<h>50</h>
+		<w>50</w>
+	</size>
+	<desc>This unit is used to provide NOT EQUAL TO logical functionality
+	</desc>
 
 	<property id="type" st="M">
 		<name>type</name>
-		<defaultValue>uint32_t</defaultValue>
+		<veneer type="S" />
 		<type>F</type>
 		<dataType>
 			uint32_t
@@ -19,21 +20,22 @@
 				<listner id="output">
 					<clone I="value" O="dataType" />
 				</listner>
-				<listner id="base">
+				<listner id="input1">
 					<clone I="value" O="dataType" />
 				</listner>
-				<listner id="exponent">
+				<listner id="input2">
 					<clone I="value" O="dataType" />
 				</listner>
 			</nature>
 		</dataType>
+		<defaultValue>uint32_t</defaultValue>
 		<desc>assign value to the variable</desc>
 	</property>
 
-	<property id="base">
+	<property id="input1">
 		<name>Input</name>
 		<veneer type="S" />
-		<defaultValue>0</defaultValue>
+		<type>I</type>
 		<dataType>
 			uint32_t
 			<nature type="D">
@@ -43,14 +45,14 @@
 				</listner>
 			</nature>
 		</dataType>
-		<type>I</type>
-		<desc>Provide a base Input</desc>
+		<defaultValue>0</defaultValue>
+		<desc>Provide an Input</desc>
 	</property>
 
-	<property id="exponent">
+	<property id="input2">
 		<name>Input</name>
 		<veneer type="S" />
-		<defaultValue>0</defaultValue>
+		<type>I</type>
 		<dataType>
 			uint32_t
 			<nature type="D">
@@ -60,27 +62,27 @@
 				</listner>
 			</nature>
 		</dataType>
-		<type>I</type>
-		<desc>Provide an exponenet input</desc>
+		<defaultValue>0</defaultValue>
+		<desc>Provide an Input</desc>
 	</property>
 
 	<property id="output">
 		<name>Output</name>
 		<veneer type="S" />
-		<defaultValue>0</defaultValue>
-		<dataType>uint32_t</dataType>
 		<type>O</type>
-		<desc>Store the calculated base exponent result</desc>
+		<dataType>uint32_t</dataType>
+		<defaultValue>0</defaultValue>
+		<desc>Provides an Output of the input</desc>
 	</property>
-
-	<validHost>
-		<host>Block</host>
-		<host>Loop</host>
-	</validHost>
 	
 	<includes>
 		<lib>stdio</lib>
 		<lib>math</lib>
 	</includes>
+	
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
 
 </Properties>

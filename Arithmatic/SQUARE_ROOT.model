@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-
 	<id>square_root</id>
 	<name>sqrt</name>
 	<type>M</type>
@@ -28,13 +27,14 @@
 		<desc>Store the calculated square-root output</desc>
 	</property>
 
+    <includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+	</includes>
+	
 	<validHost>
 		<host>Block</host>
 		<host>Loop</host>
 	</validHost>
-	<includes>
-		<lib>stdio</lib>
-		<lib>math</lib>
-	</includes>
-
+	
 </Properties>

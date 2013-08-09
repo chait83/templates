@@ -9,22 +9,24 @@
 	<desc>variable for Addition</desc>
 
 	<property id="input1">
-		<name>INPUT</name>
+		<name>input</name>
 		<veneer type="S" />
 		<desc>Set Input for Addition</desc>
+		<dataType>uint32_t</dataType>
 		<type>I</type>
-		<defaultValue> Default</defaultValue>
+		<defaultValue>0</defaultValue>
 	</property>
 
 	<property id="input2">
-		<name>INPUTS</name>
+		<name>input</name>
 		<veneer type="S" />
 		<desc>Set Input for Addition</desc>
+		<dataType>uint32_t</dataType>
 		<type>I</type>
-		<defaultValue> Default</defaultValue>
+		<defaultValue>0</defaultValue>
 	</property>
 
-	<property id="output">
+	<property id="sum">
 		<name>Output</name>
 		<veneer type="S" />
 		<defaultValue>0</defaultValue>
@@ -32,6 +34,7 @@
 		<type>O</type>
 		<desc>set Output after addition</desc>
 	</property>
+	
 	<includes>
 		<lib>stdio</lib>
 		<lib>math</lib>

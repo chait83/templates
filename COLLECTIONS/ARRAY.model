@@ -16,7 +16,7 @@
 		<dataType>
 			uint32_t
 			<nature type="D">
-				<listner id="input">
+				<listner id="arraytype">
 					<clone I="value" O="dataType" />
 				</listner>
 			</nature>
@@ -24,16 +24,70 @@
 		<desc>assign value to the variable</desc>
 	</property>
 
-	<property id="arraytype">
+	<property id="array_type">
 		<name>Array Type</name>
 		<defaultValue>uint32_t</defaultValue>
-		<dataType>uint32_t</dataType>
+		<dataType>
+			uint32_t
+			<nature type="D">
+				<listner id="output">
+				</listner>
+				<listner id="type">
+					<clone O="value" I="dataType" />
+				</listner>
+			</nature>
+		</dataType>
 		<type>F</type>
 		<desc>assign type to the array</desc>
 	</property>
 
-	<property id="Name">
+	<property id="Array_Name">
 		<name>Input</name>
+		<veneer type="S" />
+		<defaultValue>arr</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>F</type>
+		<desc>Provide an Input and define the array size</desc>
+	</property>
+
+	<property id="Input_element ">
+		<name>Input_ele</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>
+			uint32_t
+			<nature type="D">
+				<listner id="output">
+				</listner>
+				<listner id="type">
+					<clone O="value" I="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<type>I</type>
+		<desc>Provide input element to an array</desc>
+	</property>
+
+	<property id="Array_Size ">
+		<name>Size of array</name>
+		<veneer type="S" />
+		<defaultValue>1</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Provide size of an array</desc>
+	</property>
+
+	<property id="array_index ">
+		<name>array_index</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<desc>Provide index of respective element in the array</desc>
+	</property>
+
+	<property id="output">
+		<name>Output</name>
 		<veneer type="S" />
 		<defaultValue>arr</defaultValue>
 		<dataType>
@@ -45,34 +99,8 @@
 				</listner>
 			</nature>
 		</dataType>
-		<type>I</type>
-		<desc>Provide an Input and define the array size</desc>
-	</property>
-	
-<property id="No_blocks">
-		<name>no of blocks to be allocated</name>
-		<veneer type="S" />
-		<defaultValue>0</defaultValue>
-		<dataType>uint32_t</dataType>
-		<type>F</type>
-		<desc>Provide no of  continuous  blocks allocated of specified datatypes</desc>
-	</property>
-
-	<property id="output">
-		<name>Output</name>
-		<veneer type="S" />
-		<defaultValue>0</defaultValue>
-		<dataType>
-			uint32_t
-			<nature type="D">
-				<listner id="output"></listner>
-				<listner id="type">
-					<clone O="value" I="dataType" />
-				</listner>
-			</nature>
-		</dataType>
 		<type>O</type>
-		<desc>Output form array </desc>
+		<desc>Output from array </desc>
 	</property>
 
 	<validHost>
@@ -84,5 +112,4 @@
 		<lib>math</lib>
 		<lib>lib</lib>
 	</includes>
-
 </Properties>

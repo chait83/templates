@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id init="Y">Array</id>
-	<name>arr</name>
+	<id init="Y">Array_2D</id>
+	<name>arr_2D</name>
 	<type>M</type>
 	<size>
 		<h>50</h>
 		<w>50</w>
 	</size>
-	<desc>This is used to store the set of arrays</desc>
+	<desc>This is used to store 2D array</desc>
 
 	<property id="type" st="M">
 		<name>type</name>
@@ -21,22 +21,13 @@
 				</listner>
 			</nature>
 		</dataType>
-	<desc>assign value to the variable</desc>
+		<desc>assign value to the variable</desc>
 	</property>
 
 	<property id="array_type">
 		<name>Array Type</name>
 		<defaultValue>uint32_t</defaultValue>
-		<dataType>
-		uint32_t
-		 <nature type="D">
-		     <listner id="output">
-		       </listner>
-				 <listner id="type">
-				 <clone O="value" I="dataType" />
-		      </listner>
-		</nature>
-		</dataType>
+		<dataType>uint32_t</dataType>
 		<type>F</type>
 		<desc>assign type to the array</desc>
 	</property>
@@ -45,8 +36,7 @@
 		<name>Input</name>
 		<veneer type="S" />
 		<defaultValue>arr</defaultValue>
-		<dataType>uint32_t</dataType>
-		<type>F</type>
+		<type>I</type>
 		<desc>Provide an Input and define the array size</desc>
 	</property>
 
@@ -54,27 +44,35 @@
 		<name>Input_ele</name>
 		<veneer type="S" />
 		<defaultValue>0</defaultValue>
-        <dataType>
-		 uint32_t
-		 <nature type="D">
-		     <listner id="output">
-		       </listner>
-				 <listner id="type">
-				 <clone O="value" I="dataType" />
-		      </listner>
-		</nature>
-		</dataType>	
+		<dataType>
+			uint32_t
+			<nature type="D">
+				<listner id="output"></listner>
+				<listner id="type">
+					<clone O="value" I="dataType" />
+				</listner>
+			</nature>
+		</dataType>
 		<type>I</type>
 		<desc>Provide input element to an array</desc>
 	</property>
 
-	<property id="Array_Size ">
-		<name>Size of array</name>
+	<property id="Row_size ">
+		<name>Array left index size</name>
 		<veneer type="S" />
 		<defaultValue>1</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
-		<desc>Provide size of an array</desc>
+		<desc>Provide left index size of an array</desc>
+	</property>
+
+	<property id="colum_Size ">
+		<name>Array right index size</name>
+		<veneer type="S" />
+		<defaultValue>1</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Provide right index size of an array</desc>
 	</property>
 
 	<property id="array_index ">
@@ -86,10 +84,10 @@
 		<desc>Provide index of respective element in the array</desc>
 	</property>
 
-	<property id="output">
+	<property id="output_array">
 		<name>Output</name>
 		<veneer type="S" />
-		<defaultValue>arr</defaultValue>
+		<defaultValue>0</defaultValue>
 		<dataType>
 			uint32_t
 			<nature type="D">
@@ -110,6 +108,6 @@
 	<includes>
 		<lib>stdio</lib>
 		<lib>math</lib>
-		<lib>lib</lib>
+		
 	</includes>
 </Properties>

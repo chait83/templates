@@ -12,10 +12,22 @@
         <icon>This is FIND-REPLACE</icon>
 </item>
 
-<item id="MATCH">
-        <name>MATCH</name>
-        <desc>This is MATCH</desc>
-        <icon>This is MATCH</icon>
+<item id="COMPARE">
+        <name>COMPARE</name>
+        <desc>This is COMPARE</desc>
+        <icon>This is COMPARE</icon>
+</item>
+
+<item id="COPY">
+        <name>COPY</name>
+        <desc>This is COPY</desc>
+        <icon>This is COPY</icon>
+</item>
+
+<item id="LENGTH">
+        <name>LENGTH</name>
+        <desc>This is LENGTH</desc>
+        <icon>This is LENGTH</icon>
 </item>
 
 </Palette>

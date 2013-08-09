@@ -4,7 +4,7 @@
 	<name>LPF</name>
 	<type>M</type>
 	<size>
-		<h>55</h>
+		<h>77</h>
 		<w>70</w>
 	</size>
 	<desc>Make use of in-built LOW PASS FILTER to carry out DSP operations
@@ -29,20 +29,66 @@
 	</property>
 
 	<property id="input_signal">
-		<name></name>
+		<name>Input</name>
 		<veneer type="S" />
 		<defaultValue>1</defaultValue>
 		<dataType type="array">
 			float32_t
 			<nature type="D">
-				<listner id="output"></listner>
+				<listner id="output_signal"></listner>
 				<listner id="type">
 					<clone O="value" I="dataType" />
 				</listner>
 			</nature>
 		</dataType>
 		<type>I</type>
-		<desc>Provide the input signal on which FILTERING would be done</desc>
+	   <desc>Provide the input signal on which FILTERING would be done</desc>
+	</property>
+
+<property id="arm_fir_instance">
+		<name>struct_arm_fir_instance</name>
+		<veneer type="S" />
+		<defaultValue>1</defaultValue>
+		<dataType type="struct">struct</dataType>
+		<type>I</type>
+		<desc>structure  related to  instances of state buffer ,
+		 fir coefficients and number of filter coefficients in the filter
+		</desc>
+	</property>
+
+
+<property id="firStateF32">
+		<name>Filter_state</name>
+		<veneer type="S" />
+		<defaultValue>1</defaultValue>
+		<dataType type="array">
+			float32_t
+			<nature type="D">
+				<listner id="output_signal"></listner>
+				<listner id="type">
+					<clone O="value" I="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<type>I</type>
+		<desc>Provide  State buffer for FILTERING </desc>
+	</property>
+	
+	<property id="firCoefficents">
+		<name>Filter_Coefficients</name>
+		<veneer type="S" />
+		<defaultValue>1</defaultValue>
+		<dataType type="array">
+			float32_t
+			<nature type="D">
+				<listner id="output_signal"></listner>
+				<listner id="type">
+					<clone O="value" I="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<type>I</type>
+		<desc>Provide the filter Coefficients for FILTERING </desc>
 	</property>
 
 	<property id="output_signal">

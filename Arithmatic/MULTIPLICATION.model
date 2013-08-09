@@ -1,40 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-<id>variable</id>
+<id>Multiply</id>
 	<name>Multiplication</name>
 	<type>M</type>
-	<desc>This is a generic variable</desc>
+	<desc>This is a generic variable for multiplication</desc>
 	<size>
-	<h>140</h>
-	<w>160</w>
-</size>
-	<property id="INPUT1">
-		<name>INPUT</name>
+		<h>55</h>
+		<w>70</w>
+	</size>
+	
+	<property id="input1">
+		<name>input</name>
 		<veneer type="S" />
 		<desc>Set input for Multiplication</desc>
 		<type>I</type>
+		<dataType>uint32_t</dataType>
 		<defaultValue> Default</defaultValue>
 	</property>
 	
-	<property id="INPUT2">
-		<name>INPUT</name>
+	<property id="input2">
+		<name>input</name>
 		<veneer type="S" />
 		<desc>Set input for Multiplication</desc>
 		<type>I</type>
+		<dataType>uint32_t</dataType>
 		<defaultValue> Default</defaultValue>
 	</property>
 
-	<property id="output">
-	    <name>Ouput</name>
+	<property id="Product">
+	    <name>Output</name>
 		<veneer type="S" />
 		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
-		<desc>Integer output</desc>
+		<desc>Integer output after multiplication</desc>
 	</property>
+	
+	<includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+	</includes>
+	
 <validHost>
-<host>Block</host>
-<host>Loop</host>
+       <host>Block</host>
+       <host>Loop</host>
 </validHost>
 
 </Properties>

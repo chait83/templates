@@ -18,7 +18,7 @@
 	</property>
 
 	<property id="decrement_count">
-		<name></name>
+		<name>decrement_count</name>
 		<veneer type="S" />
 		<type>I</type>
 		<dataType>uint32_t</dataType>

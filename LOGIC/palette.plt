@@ -27,10 +27,25 @@
         <desc>This is NOR-LOGIC</desc>
         <icon>This is NOR-LOGIC</icon>
 </item>
-<item id="NOT_EQUAL">
+<item id="NAND">
+        <name>NAND-LOGIC</name>
+        <desc>This is NAND-LOGIC</desc>
+        <icon>This is NAND-LOGIC</icon>
+</item>
+<item id="XOR">
+        <name>XOR-LOGIC</name>
+        <desc>This is XOR-LOGIC</desc>
+        <icon>This is XOR-LOGIC</icon>
+</item>
+<item id="NOT_EQUAL_TO">
         <name>NOT_EQUAL-LOGIC</name>
         <desc>This is NOT_EQUAL-LOGIC</desc>
         <icon>This is NOT_EQUAL-LOGIC</icon>
+</item>
+<item id="NOT">
+        <name>NOT_LOGIC</name>
+        <desc>This is NOT_LOGIC</desc>
+        <icon>This is NOT_LOGIC</icon>
 </item>
 <item id="EQUAL_TO">
         <name>EQUAL_TO</name>
@@ -57,5 +72,24 @@
         <desc>This is LESS_THAN_OR_EQUAL_TO-LOGIC</desc>
         <icon>This is LESS_THAN_OR_EQUAL_TO-LOGIC</icon>
 </item>
-
+<item id="decrement_operator">
+        <name>decrement_operator</name>
+        <desc>This is decrement_operator</desc>
+        <icon>This is decrement_operator</icon>
+</item>
+<item id="Increment_operator">
+        <name>Increment_operator</name>
+        <desc>This is Increment_operator</desc>
+        <icon>This is Increment_operator</icon>
+</item>
+<item id="Left_shift">
+        <name>Left_shift</name>
+        <desc>This is Left_shift</desc>
+        <icon>This is Left_shift</icon>
+</item>
+<item id="right_shift">
+        <name>right_shift</name>
+        <desc>This is right_shift</desc>
+        <icon>This is right_shift</icon>
+</item>
 </palette>

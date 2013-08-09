@@ -10,7 +10,7 @@
 	</size>
 
 	<property id="Dividend">
-		<name>INPUT</name>
+		<name>Dividend</name>
 		<veneer type="S" />
 		<type>I</type>
 		<dataType>float</dataType>
@@ -19,7 +19,7 @@
 	</property>
 
 	<property id="divisor">
-		<name>INPUT</name>
+		<name>divisor</name>
 		<veneer type="S" />
 		<type>I</type>
 		<dataType>float</dataType>
@@ -28,7 +28,7 @@
 	</property>
 
 	<property id="Quotient">
-		<name>Output</name>
+		<name>Quotient</name>
 		<veneer type="S" />
 		<defaultValue>0</defaultValue>
 		<dataType>double</dataType>
@@ -44,6 +44,11 @@
 		<type>O</type>
 		<desc>Remainder of Division </desc>
 	</property>
+	
+	<includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+	</includes>
 	
 	<validHost>
 		<host>Block</host>

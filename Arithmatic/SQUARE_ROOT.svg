@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"
+><!--
+
+    Author: Yves Baelde
+
+
+--><svg width="216" height="162"
+xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360"
+preserveAspectRatio="xMinYMin" stroke-linejoin="round"
+xml:space="preserve"><path fill="#fff" d="m0 0H480V360H0"/><g
+ fill="none"><path stroke="#000" stroke-width="12"
+ d="m9 129h30l70 169 99-239h259M33 132l70 169 6-3"/><path fill="#888"
+ d="m37 123 70 169 99-239"/><path stroke="#fff" stroke-width="6"
+ d="m72 113 12 29-29 12"/></g><text font-family="serif"
+ font-size="189" transform="matrix(1.6 0 -.3 1 207 264)">2</text></svg>

@@ -7,6 +7,12 @@
         <icon>This is ARRAY</icon>
 </item>
 
+<item id="array_2d">
+        <name>array_2d</name>
+        <desc>This is array_2d</desc>
+        <icon>This is array_2d</icon>
+</item>
+
 <item id="STRUCTURES">
         <name>STRUCTURES</name>
         <desc>This is STRUCTURES</desc>

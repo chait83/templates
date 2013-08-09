@@ -3,7 +3,7 @@
 	<id type="array">sum_of_squares</id>
 	<name>sum_of_sqrs</name>
 	<size>
-		<h>55</h>
+		<h>75</h>
 		<w>70</w>
 	</size>
 	<desc> Calculates the um_of_squares of the input vector</desc>
