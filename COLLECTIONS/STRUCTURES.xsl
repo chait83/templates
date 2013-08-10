@@ -3,8 +3,8 @@
 	<xsl:template match="/">
 	
 	struct <xsl:value-of select="stucture/Name" /> {
-        int <xsl:value-of select="stucture/V/I/input_parameters1"/> ;
-        char <xsl:value-of select="stucture/V/I/input_parameters2"/> ;
+        <xsl:value-of select="stucture/struct_type"/> &#160; <xsl:value-of select="stucture/V/I/input_parameters1"/> ;
+        <xsl:value-of select="stucture/struct_type"/> &#160;<xsl:value-of select="stucture/V/I/input_parameters2"/> ;
     };
 
 	</xsl:template>

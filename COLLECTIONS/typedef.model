@@ -19,6 +19,15 @@
 		<desc>Provide an input for typedef</desc>
 	</property>
 
+ <property id="typedef_datatype">
+		<name>typedef_datatype</name>
+		<defaultValue>uint32_t</defaultValue>
+		<veneer type="S" />
+		<dataType>uint32_t</dataType>
+		<type>F</type>
+		<desc>assign type to typedef</desc>
+	</property>
+
 	<property id="output">
 		<name>output</name>
 		<veneer type="S" />

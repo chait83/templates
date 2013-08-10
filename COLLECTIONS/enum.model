@@ -18,6 +18,7 @@
 		<desc>name of enum identifier </desc>
 	</property>
 
+
 	<property id="input_parameters1">
 		<name>Input1</name>
 		<veneer type="S" />
@@ -36,7 +37,7 @@
 		<desc>Provide list of element in enum-list</desc>
 	</property>
 
-	<property id="Variable_of_enumure">
+	<property id="Variable_of_enum">
 		<name>enum var</name>
 		<veneer type="S" />
 		<defaultValue>enum_var</defaultValue>
