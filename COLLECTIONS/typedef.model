@@ -15,7 +15,7 @@
 		<veneer type="S" />
 		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
-		<type>I</type>
+		<type>F</type>
 		<desc>Provide an input for typedef</desc>
 	</property>
 

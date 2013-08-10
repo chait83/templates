@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Palette id="MATH" dispName="MATH" editor="org.wow.editor.logiceditor">
+<Palette id="Arithmatic" dispName="Arithmatic" editor="org.wow.editor.logiceditor">
 <item id="MULTIPLICATION">
         <name>MULTIPLICATION</name>
         <desc>This is MULTIPLICATION</desc>

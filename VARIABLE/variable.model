@@ -7,8 +7,8 @@
 	<type>M</type>
 	<desc>Variable of INTEGER type</desc>
 	<size>
-		<h>40</h>
-		<w>60</w>
+		<h>35</h>
+		<w>38</w>
 	</size>
 	<property id="type" st="M">
 		<name>type</name>
