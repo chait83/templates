@@ -41,6 +41,24 @@
 		<type>I</type>
 		<desc>Set the time perios for Timer</desc>
 	</property>
+	
+	<property id="timer_name">
+		<name>Timer_name</name>
+		<veneer type="S" />
+		<defaultValue>Timer</defaultValue>
+		<dataType>unsigned char </dataType>
+		<type>F</type>
+		<desc>Set the Name for Timer</desc>
+	</property>
+
+<property id="timerCallback_fun_name">
+		<name>timerCallback_fun_name</name>
+		<veneer type="S" />
+		<defaultValue>vTimerCallback</defaultValue>
+		<dataType>unsigned char </dataType>
+		<type>F</type>
+		<desc>Set the Name for Timer</desc>
+	</property>
 
 	<property id="Output">
 		<name>Mode</name>
