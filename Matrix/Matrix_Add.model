@@ -3,17 +3,17 @@
 	<id type="Array">Matrix_add</id>
 	<name>addMatrix</name>
 	<size>
-		<h>55</h>
-		<w>70</w>
+		<h>150</h>
+		<w>85</w>
 	</size>
 	<desc> Addition of Matrices</desc>
 
 	<property id="Matrix1">
 		<name>Matrix1</name>
 		<veneer type="S" />
-		<type>I</type>
+		<type>F</type>
 		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
+		<defaultValue>A</defaultValue>
 		<desc>set pointer which points to the first input matrix structure
 		</desc>
 	</property>
@@ -21,21 +21,75 @@
 	<property id="Matrix2">
 		<name>Matrix1</name>
 		<veneer type="S" />
+		<type>F</type>
+		<dataType type="Array">uint32_t</dataType>
+		<defaultValue>B</defaultValue>
+		<desc>set pointer which points to the second input matrix structure
+		</desc>
+	</property>
+	<property id="m2_rows">
+		<name>rows_m2</name>
+		<veneer type="S" />
 		<type>I</type>
 		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
+		<defaultValue>4</defaultValue>
+		<desc>set pointer which points to the second input matrix structure
+		</desc>
+	</property>
+	<property id="m1_rows">
+		<name>rows_m1</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType type="Array">uint32_t</dataType>
+		<defaultValue>4</defaultValue>
+		<desc>set pointer which points to the second input matrix structure
+		</desc>
+	</property>
+	<property id="m2_colums">
+		<name>colums_m2</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType type="Array">uint32_t</dataType>
+		<defaultValue>4</defaultValue>
+		<desc>set pointer which points to the second input matrix structure
+		</desc>
+	</property>
+	<property id="m1_colums">
+		<name>colums_m1</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType type="Array">uint32_t</dataType>
+		<defaultValue>4</defaultValue>
 		<desc>set pointer which points to the second input matrix structure
 		</desc>
 	</property>
 
-	<property id="Matrix_addition">
+	<property id="Matrix_out">
 		<name>Matrix_add</name>
 		<veneer type="S" />
-		<type>O</type>
+		<type>F</type>
 		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
+		<defaultValue>A_Add_B</defaultValue>
 		<desc>set pointer for addition of matrices which points to output
 			matrix structure  </desc>
+	</property>
+	<property id="mout_colums">
+		<name>colums_mout</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType type="Array">uint32_t</dataType>
+		<defaultValue>4</defaultValue>
+		<desc>set pointer which points to the second input matrix structure
+		</desc>
+	</property>
+	<property id="mout_rows">
+		<name>rows_mout</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType type="Array">uint32_t</dataType>
+		<defaultValue>4</defaultValue>
+		<desc>set pointer which points to the second input matrix structure
+		</desc>
 	</property>
 	<includes>
 		<lib>stdio</lib>
