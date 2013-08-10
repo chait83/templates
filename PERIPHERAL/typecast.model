@@ -13,7 +13,7 @@
 		<name>input</name>
 		<defaultValue>0</defaultValue>
 		<type>I</type>
-		<veneer type="T">Name</veneer>
+		<veneer type="NT">Name</veneer>
 		<dataType type="D">uint32_t</dataType>
 		<desc>assign value to the variable</desc>
 	</property>
@@ -21,7 +21,7 @@
 	<property id="output" st="O">
 		<name>Output</name>
 		<defaultValue> 0</defaultValue>
-		<veneer type="T">Name</veneer>
+		<veneer type="NT">Name</veneer>
 		<dataType type="D">uint32_t</dataType>
 		<type>O</type>
 		<desc>Output of the variable</desc>

@@ -20,7 +20,7 @@
 
 	<property id="input">
 		<name>input</name>
-		<veneer type="T" />
+		<veneer type="NT" />
 		<defaultValue>0</defaultValue>
 		<dataType>
 			uint32_t
@@ -39,7 +39,7 @@
 
 	<property id="output">
 		<name>Ouput</name>
-		<veneer type="T" />
+		<veneer type="NT" />
 		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>O</type>

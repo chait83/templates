@@ -26,7 +26,7 @@
 	<property id="output" st="O">
 		<name>Output</name>
 		<defaultValue> 0</defaultValue>
-		<veneer type="T">name</veneer>
+		<veneer type="NT">name</veneer>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
 		<desc>Output of the variable</desc>

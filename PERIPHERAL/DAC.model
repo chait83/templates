@@ -12,7 +12,7 @@
 	<property id="AQUISITION_TYPE">
 		<name>AQUISITION TYPE</name>
 		<defaultValue>single_channel</defaultValue>
-		<veneer type="T">name</veneer>
+		<veneer type="NT">name</veneer>
 		<dataType>uint32_t</dataType>
 		<type>I</type>
 		<desc>Single channel, Double channel aquisition </desc>
@@ -21,7 +21,7 @@
 	<property id="Digital_Input" st="O">
 		<name>Input</name>
 		<defaultValue> 0</defaultValue>
-		<veneer type="T">name</veneer>
+		<veneer type="NT">name</veneer>
 		<dataType>uint32_t</dataType>
 		<type>I</type>
 		<desc>Digital signal as an Input o DAC</desc>
@@ -29,7 +29,7 @@
 
 	<property id="Data_format">
 		<name>Data_format</name>
-		<veneer type="T">name</veneer>
+		<veneer type="NT">name</veneer>
 		<defaultValue>8</defaultValue>
 		<type>I</type>
 		<dataType>uint32_t</dataType>
@@ -38,7 +38,7 @@
 
 	<property id="data_alignment">
 		<name>MODE</name>
-		<veneer type="T">name</veneer>
+		<veneer type="NT">name</veneer>
 		<defaultValue> 0</defaultValue>
 		<type>F</type>
 		<dataType>uint32_t</dataType>
@@ -47,7 +47,7 @@
 
 	<property id="Conversion_type">
 		<name>Conversion_type</name>
-		<veneer type="T">name</veneer>
+		<veneer type="NT">name</veneer>
 		<defaultValue>Independent</defaultValue>
 		<type>F</type>
 		<dataType>uint32_t</dataType>
@@ -56,7 +56,7 @@
 
 	<property id="Conversion_triggering">
 		<name>Conversion_trigger</name>
-		<veneer type="T">name</veneer>
+		<veneer type="NT">name</veneer>
 		<defaultValue>Timer</defaultValue>
 		<type>F</type>
 		<dataType>uint32_t</dataType>
@@ -67,7 +67,7 @@
 	<property id="channelSel">
 		<name>Chanel_select</name>
 		<type>F</type>
-		<veneer type="T">name</veneer>
+		<veneer type="NT">name</veneer>
 		<dataType>uint32_t</dataType>
 		<defaultValue>DAC1</defaultValue>
 		<desc>set Channel for DAC</desc>
@@ -76,7 +76,7 @@
 	<property id="clock">
 		<name>DAC CLOCK</name>
 		<type>F</type>
-		<veneer type="T">name</veneer>
+		<veneer type="NT">name</veneer>
 		<dataType>uint32_t</dataType>
 		<defaultValue> 100</defaultValue>
 		<desc>A entery menu for setting CLOCK</desc>
@@ -85,7 +85,7 @@
 	<property id="output" st="O">
 		<name>Output</name>
 		<defaultValue> 0</defaultValue>
-		<veneer type="T">name</veneer>
+		<veneer type="NT">name</veneer>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
 		<desc>Analog output</desc>
