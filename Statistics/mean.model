@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id type="array">mean</id>
+	<id type="Array">mean</id>
 	<name>mean</name>
 	<size>
-		<h>78</h>
+		<h>55</h>
 		<w>70</w>
 	</size>
 	<desc> Calculates the mean of the input vector</desc>
@@ -12,7 +12,7 @@
 		<name>v_input</name>
 		<veneer type="S" />
 		<type>I</type>
-		<dataType type="array">uint32_t</dataType>
+		<dataType type="Array">uint32_t</dataType>
 		<defaultValue> Default</defaultValue>
 		<desc>Set pointer to input vector</desc>
 	</property>
@@ -21,7 +21,7 @@
 		<name>v_input</name>
 		<veneer type="S" />
 		<type>I</type>
-		<dataType type="array">uint32_t</dataType>
+		<dataType type="Array">uint32_t</dataType>
 		<defaultValue> Default</defaultValue>
 		<desc>Set pointer to input vector</desc>
 	</property>
@@ -38,8 +38,8 @@
 	<property id="output_vector">
 		<name>mean</name>
 		<veneer type="S" />
-		<type>O</type>
-		<dataType type="array">uint32_t</dataType>
+		<type>I</type>
+		<dataType type="Array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
 		<desc>set output for storing mean of input vectors</desc>
 	</property>

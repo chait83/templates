@@ -3,8 +3,10 @@
 	<xsl:template match="/">
 	<xsl:choose>
 		<xsl:when test="Array/initElement='Y'">
-	<xsl:value-of select="Array/array_type"/> <xsl:value-of select="Array/Array_Name"/> &#160;[10];
-	    <xsl:value-of select="Array/Array_Name"/> = (<xsl:value-of select="Array/array_type" />*)malloc(sizeof(<xsl:value-of select="Array/arraytype"/>*) * <xsl:value-of select="Array/No_blocks"/> );
+	<xsl:value-of select="Array/arraytype"/> &#160;<xsl:value-of select="Array/No_blocks"/>;
+	 <xsl:value-of select="Array/arraytype"/> *&#160;<xsl:value-of select="Array/Name"/>;
+	
+    <xsl:value-of select="Array/Name"/> = (<xsl:value-of select="Array/arraytype" />*)malloc(sizeof(<xsl:value-of select="Array/arraytype"/>*) * <xsl:value-of select="Array/No_blocks"/> );
 		</xsl:when>
 	</xsl:choose>
 	</xsl:template>

@@ -13,7 +13,7 @@
 		<name>type</name>
 		<defaultValue></defaultValue>
 		<type>F</type>
-		<dataType type="array">
+		<dataType type="Array">
 			unsigned char
 			<nature type="D">
 				<listner id="output">
@@ -34,7 +34,7 @@
 		<name>String Input</name>
 		<veneer type="S" />
 		<defaultValue>unsigned char</defaultValue>
-		<dataType type="array">
+		<dataType type="Array">
 			unsigned char
 			<nature type="D">
 				<listner id="output"></listner>
@@ -51,7 +51,7 @@
 		<name>String Input</name>
 		<veneer type="S" />
 		<defaultValue>unsigned char</defaultValue>
-		<dataType type="array">
+		<dataType type="Array">
 			unsigned char
 			<nature type="D">
 				<listner id="output"></listner>

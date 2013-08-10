@@ -13,30 +13,30 @@
   <g stroke="#440060">
     <g transform="translate(25,25)">
           <rect width="600" height="110" fill="none" stroke-width="2"/>
-          <path stroke-dasharray="1 3" fill="none" stroke-width="1"
+          <path stroke-dashArray="1 3" fill="none" stroke-width="1"
               d="M100,0 v110 M200,0 v110 M300,0 v110 M400,0 v110 M500,0 v110" />
-          <path stroke-dasharray="1 3" fill="none" stroke-width="1"
+          <path stroke-dashArray="1 3" fill="none" stroke-width="1"
               d="M0,15 h600 M0,55 h600 M0,95 h600" />
     </g>
     <g transform="translate(25,160)">
           <rect width="600" height="110" fill="none" stroke-width="2"/>
-          <path stroke-dasharray="1 3" fill="none" stroke-width="1"
+          <path stroke-dashArray="1 3" fill="none" stroke-width="1"
               d="M100,0 v110 M200,0 v110 M300,0 v110 M400,0 v110 M500,0 v110" />
-          <path stroke-dasharray="1 3" fill="none" stroke-width="1"
+          <path stroke-dashArray="1 3" fill="none" stroke-width="1"
               d="M0,15 h600 M0,55 h600 M0,95 h600" />
     </g>
     <g transform="translate(25,295)">
           <rect width="600" height="110" fill="none" stroke-width="2"/>
-          <path stroke-dasharray="1 3" fill="none" stroke-width="1"
+          <path stroke-dashArray="1 3" fill="none" stroke-width="1"
               d="M100,0 v110 M200,0 v110 M300,0 v110 M400,0 v110 M500,0 v110" />
-          <path stroke-dasharray="1 3" fill="none" stroke-width="1"
+          <path stroke-dashArray="1 3" fill="none" stroke-width="1"
               d="M0,15 h600 M0,55 h600 M0,95 h600" />
     </g>
     <g transform="translate(25,430)">
           <rect width="600" height="110" fill="none" stroke-width="2"/>
-          <path stroke-dasharray="1 3" fill="none" stroke-width="1"
+          <path stroke-dashArray="1 3" fill="none" stroke-width="1"
               d="M100,0 v110 M200,0 v110 M300,0 v110 M400,0 v110 M500,0 v110" />
-          <path stroke-dasharray="1 3" fill="none" stroke-width="1"
+          <path stroke-dashArray="1 3" fill="none" stroke-width="1"
               d="M0,15 h600 M0,55 h600 M0,95 h600" />
     </g>
   </g>

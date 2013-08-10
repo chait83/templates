@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id type="array">correlation</id>
+	<id type="Array">correlation</id>
 	<name>Co-re</name>
 	<size>
 		<h>55</h>
@@ -12,7 +12,7 @@
 		<name>a[]</name>
 		<veneer type="S" />
 		<type>I</type>
-		<dataType type="array">uint32_t</dataType>
+		<dataType type="Array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
 		<desc>set pointer which points to the first input sequence</desc>
 	</property>
@@ -21,7 +21,7 @@
 		<name>b[]</name>
 		<veneer type="S" />
 		<type>I</type>
-		<dataType type="array">uint32_t</dataType>
+		<dataType type="Array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
 		<desc>set pointer which points to the second input sequence </desc>
 	</property>
@@ -30,7 +30,7 @@
 		<name>out_co-re</name>
 		<veneer type="S" />
 		<type>O</type>
-		<dataType type="array">uint32_t</dataType>
+		<dataType type="Array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
 		<desc>set pointer for output of correlation  </desc>
 	</property>

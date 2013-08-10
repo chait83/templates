@@ -32,7 +32,7 @@
 		<name>Input</name>
 		<veneer type="S" />
 		<defaultValue>1</defaultValue>
-		<dataType type="array">
+		<dataType type="Array">
 			float32_t
 			<nature type="D">
 				<listner id="output_signal"></listner>
@@ -95,7 +95,7 @@
 		<name>Output Data</name>
 		<veneer type="S" />
 		<defaultValue>1</defaultValue>
-		<dataType type="array">float32_t</dataType>
+		<dataType type="Array">float32_t</dataType>
 		<type>O</type>
 		<desc>Output will have the FILTERED values of the input</desc>
 	</property>

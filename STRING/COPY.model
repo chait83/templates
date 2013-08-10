@@ -13,7 +13,7 @@
 	<property id="type" st="M">
 		<name>type</name>
 		<type>F</type>
-		<dataType type="array">
+		<dataType type="Array">
 			unsigned char
 			<nature type="D">
 				<listner id="Str_desn">
@@ -32,7 +32,7 @@
 		<name>Source_string</name>
 		<veneer type="S" />
 		<defaultValue>unsigned char</defaultValue>
-		<dataType type="array">
+		<dataType type="Array">
 			unsigned char
 			<nature type="D">
 				<listner id="Str_desn"></listner>
@@ -49,7 +49,7 @@
 		<name>String Output</name>
 		<veneer type="S" />
 		<defaultValue>unsigned char</defaultValue>
-		<dataType type="array">unsigned char</dataType>
+		<dataType type="Array">unsigned char</dataType>
 		<type>O</type>
 		<desc> Provide destination string where source string is to be copied
 		</desc>

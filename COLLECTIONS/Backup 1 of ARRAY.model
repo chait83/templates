@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id init="Y" type="Array">Array</id>
+	<name>arr</name>
+	<type>M</type>
+	<size>
+		<h>50</h>
+		<w>50</w>
+	</size>
+	<desc>This is used to store the set of arrays</desc>
+
+	<property id="type" st="M">
+		<name>type</name>
+		<defaultValue>uint32_t</defaultValue>
+		<type>F</type>
+		<dataType>
+			uint32_t
+			<nature type="D">
+				<listner id="input">
+					<clone I="value" O="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<desc>assign value to the variable</desc>
+	</property>
+
+	<property id="arraytype">
+		<name>Array Type</name>
+		<defaultValue>uint32_t</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>F</type>
+		<desc>assign type to the array</desc>
+	</property>
+
+	<property id="Name">
+		<name>Input</name>
+		<veneer type="S" />
+		<defaultValue>arr</defaultValue>
+		<dataType>
+			uint32_t
+			<nature type="D">
+				<listner id="output"></listner>
+				<listner id="type">
+					<clone O="value" I="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<type>I</type>
+		<desc>Provide an Input and define the array size</desc>
+	</property>
+	
+<property id="No_blocks">
+		<name>no of blocks to be allocated</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>F</type>
+		<desc>Provide no of  continuous  blocks allocated of specified datatypes</desc>
+	</property>
+
+	<property id="output">
+		<name>Output</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>
+			uint32_t
+			<nature type="D">
+				<listner id="output"></listner>
+				<listner id="type">
+					<clone O="value" I="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<type>O</type>
+		<desc>Output form array </desc>
+	</property>
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+	<includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+		<lib>lib</lib>
+	</includes>
+
+</Properties>
