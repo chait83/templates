@@ -29,7 +29,7 @@
 
 	<property id="Product">
 	    <name>Output</name>
-		<veneer type="DPT"> <nature type="B" /></veneer>
+		<veneer type="DPT"> </veneer>
 		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>O</type>

@@ -28,8 +28,8 @@
 	</property>
 
 	<property id="Quotient">
-		<name>Quotient</name>
-		<veneer type="S" />
+		<name>Quotient</name>	
+		<veneer type="DPT"> <nature type="B" /></veneer>
 		<defaultValue>0</defaultValue>
 		<dataType>double</dataType>
 		<type>O</type>
@@ -38,7 +38,7 @@
 
 	<property id="remainder">
 		<name>Output</name>
-		<veneer type="S" />
+		<veneer type="DPT"> <nature type="B" /></veneer>
 		<defaultValue>0</defaultValue>
 		<dataType>double</dataType>
 		<type>O</type>
