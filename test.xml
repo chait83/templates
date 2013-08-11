@@ -1,33 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id type="Case">IF-Condition</id>
-	<name>If condition</name>
+<id>Multiply</id>
+	<name>Multiplication</name>
 	<type>M</type>
-	<desc>This is a basic true false condition statement</desc>
-
-	<property id="true">
-		<name>true</name>
-		<desc>True condition</desc>
-		<type>C</type>
+	<desc>This is a generic variable for multiplication</desc>
+	<size>
+		<h>55</h>
+		<w>70</w>
+	</size>
+	
+	<property id="input1">
+		<name>input</name>
+		<veneer type="S" />
+		<desc>Set input for Multiplication</desc>
+		<type>I</type>
+		<dataType>uint32_t</dataType>
+		<defaultValue> Default</defaultValue>
 	</property>
 	
-
-	<property id="false">
-		<name>false</name>
-		<desc>True condition</desc>
-		<type>C</type>
+	<property id="input2">
+		<name>input</name>
+		<veneer type="S" />
+		<desc>Set input for Multiplication</desc>
+		<type>I</type>
+		<dataType>uint32_t</dataType>
+		<defaultValue> Default</defaultValue>
 	</property>
 
-
+	<property id="Product">
+	    <name>Output</name>
+		<veneer type="DPT"> 
+		<nature type="B"></nature>
+		</veneer>
+		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Integer output after multiplication</desc>
+	</property>
+	
 	<includes>
 		<lib>stdio</lib>
-		<lib>string</lib>
+		<lib>math</lib>
 	</includes>
-
-	<validHost>
-		<host>Block</host>
-		<host>Loop</host>
-	</validHost>
+	
+<validHost>
+       <host>Block</host>
+       <host>Loop</host>
+</validHost>
 
 </Properties>
-
