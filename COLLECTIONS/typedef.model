@@ -13,7 +13,7 @@
 	<property id="input">
 		<name>input</name>
 		<veneer type="S" />
-		<defaultValue>0</defaultValue>
+		<defaultValue>TYPEDEF</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>F</type>
 		<desc>Provide an input for typedef</desc>

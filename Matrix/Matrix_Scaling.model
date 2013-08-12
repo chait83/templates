@@ -1,49 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
+
 	<id type="Array">Matrix_scale</id>
 	<name>scaleMat</name>
 	<size>
-		<h>55</h>
-		<w>70</w>
+		<h>100</h>
+		<w>85</w>
 	</size>
 	<desc> Scaling of Matrix</desc>
-
+	
 	<property id="Matrix1">
-		<name>Matrix1</name>
+		<name>input_matrix</name>
+		<veneer type="S" />
+		<defaultValue>A</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>F</type>
+		<desc>set pointer which points to the first input matrix structure</desc>
+	</property>
+	
+	<property id="m1_rows">
+		<name>srcRows</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType>uint32_t</dataType>
+		<defaultValue>srcRows</defaultValue>
+		<desc>set pointer which points to the second input matrix structure
+		</desc>
+	</property>
+	
+	<property id="m1_colums">
+		<name>srcColums</name>
 		<veneer type="S" />
 		<type>I</type>
 		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
-		<desc>set pointer which points to the first input matrix structure
+		<defaultValue>srcColums</defaultValue>
+		<desc>set pointer which points to the second input matrix structure
 		</desc>
 	</property>
+	
+	<property id="mout_rows">
+		<name>destRows</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType type="Array">uint32_t</dataType>
+		<defaultValue>mout_rows</defaultValue>
+		<desc>set pointer which points to the output matrix rows
+		</desc>
+	</property>
+	
+	<property id="mout_colums">
+		<name>destColums</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType type="Array">uint32_t</dataType>
+		<defaultValue>destColums</defaultValue>
+		<desc>set pointer which points to the output matrix colums
+		</desc>
+	</property>
+	
 
-	<property id="scaling_factor">
+ <property id="scaling_factor">
 		<name>scale_fact</name>
 		<veneer type="S" />
 		<type>I</type>
 		<dataType>uint32_t</dataType>
-		<defaultValue>0</defaultValue>
+		<defaultValue>1</defaultValue>
 		<desc>set scaling factor for Matrix</desc>
 	</property>
 
-	<property id="output_Matrix">
-		<name>out_Matrix</name>
+	<property id="Matrix_output">
+		<name>output</name>
 		<veneer type="S" />
-		<type>O</type>
-		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
+		<defaultValue>A_OUT</defaultValue>
+		<dataType>unsigned char</dataType>
+		<type>F</type>
 		<desc>set pointer for output of matrix after scaling </desc>
 	</property>
-	<includes>
-		<lib>stdio</lib>
-		<lib>math</lib>
-		<lib>lib</lib>
-	</includes>
 
 	<validHost>
 		<host>Block</host>
 		<host>Loop</host>
 	</validHost>
+	<includes>
+		<lib>stdio</lib>
+		<lib>arm_math</lib>
+		<lib>math_helper</lib>
+		<lib>stdlib</lib>
+		<lib>string</lib>
+		
+	</includes>
 
 </Properties>
