@@ -48,7 +48,9 @@
 	<includes>
 		<lib>stdio</lib>
 		<lib>math</lib>
-		<lib>lib</lib>
+		<lib>stdlib</lib>
+		<lib>arm_math</lib>
+		
 	</includes>
 
 	<validHost>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>Convolution</id>
-	<name>Convolution</name>
+	<id>correlation</id>
+	<name>correlation</name>
 	<size>
 		<h>55</h>
 		<w>70</w>
 	</size>
-	<desc> Convolution of input sequences</desc>
+	<desc> correlation of input sequences</desc>
 
 	<property id="sequence1">
 		<name>vect1</name>
@@ -45,13 +45,13 @@
 		<desc>length of the first input sequence</desc>
 	</property>
 
-	<property id="Convolution_result">
+	<property id="correlation_result">
 		<name>dot_prod</name>
 		<veneer type="S" />
 		<type>F</type>
 		<dataType type="Array">uint32_t</dataType>
 		<defaultValue>Vect_out</defaultValue>
-		<desc>set pointer for output of Convolution  </desc>
+		<desc>set pointer for output of correlation  </desc>
 	</property>
 
 	<includes>
