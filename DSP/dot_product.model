@@ -11,27 +11,37 @@
 	<property id="vector1">
 		<name>vect1</name>
 		<veneer type="S" />
-		<type>I</type>
+		<type>F</type>
 		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
+		<defaultValue>Vect1</defaultValue>
 		<desc>set pointer which points to the input vector</desc>
 	</property>
 
 	<property id="vector2">
 		<name>vect2</name>
 		<veneer type="S" />
-		<type>I</type>
+		<type>F</type>
 		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
+		<defaultValue>Vect2</defaultValue>
 		<desc>set pointer which points to the input vector </desc>
+	</property>
+
+
+	<property id="Blocksize">
+		<name>block_size</name>
+		<veneer type="S" />
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<defaultValue>blockSize</defaultValue>
+		<desc>Set Blocksize of input vector</desc>
 	</property>
 
 	<property id="dot_product_result">
 		<name>dot_prod</name>
 		<veneer type="S" />
-		<type>O</type>
+		<type>F</type>
 		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
+		<defaultValue>Vect_out</defaultValue>
 		<desc>set pointer for output of dot_product  </desc>
 	</property>
 

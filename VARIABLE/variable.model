@@ -47,6 +47,7 @@
 	<validHost>
 		<host>Block</host>
 		<host>Loop</host>
+		<host>LIB</host>
 	</validHost>
 	<includes>
 		<lib>stdio</lib>

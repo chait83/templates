@@ -1,93 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-
-	<id>Matrix_scale</id>
-	<name>scaleMat</name>
+	<id type="Array">Convolution</id>
+	<name>Conv</name>
 	<size>
-		<h>100</h>
-		<w>85</w>
+		<h>90</h>
+		<w>80</w>
 	</size>
-	<desc> Scaling of Matrix</desc>
+	<desc> Convolution of input sequences</desc>
 
-	<property id="Matrix1">
-		<name>input_matrix</name>
+	<property id="sequence1">
+		<name>sequence1</name>
 		<veneer type="S" />
-		<defaultValue>A</defaultValue>
-		<dataType>uint32_t</dataType>
 		<type>F</type>
-		<desc>set pointer which points to the first input matrix structure
-		</desc>
+		<dataType type="Array">uint32_t</dataType>
+		<defaultValue>sequence1</defaultValue>
+		<desc>set pointer which points to the first input sequence</desc>
 	</property>
 
-	<property id="m1_rows">
-		<name>srcRows</name>
+   <property id="seq1Len">
+		<name>seq1Len</name>
 		<veneer type="S" />
-		<type>I</type>
 		<dataType>uint32_t</dataType>
-		<defaultValue>srcRows</defaultValue>
-		<desc>set pointer which points to the second input matrix structure
-		</desc>
-	</property>
-
-	<property id="m1_colums">
-		<name>srcColums</name>
-		<veneer type="S" />
 		<type>I</type>
-		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>srcColums</defaultValue>
-		<desc>set pointer which points to the second input matrix structure
-		</desc>
+		<defaultValue>seq1Len</defaultValue>
+		<desc> length of the first input sequence</desc>
 	</property>
-
-	<property id="mout_rows">
-		<name>destRows</name>
+	
+	<property id="sequence2">
+		<name>sequence2</name>
 		<veneer type="S" />
-		<type>I</type>
-		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>mout_rows</defaultValue>
-		<desc>set pointer which points to the output matrix rows
-		</desc>
-	</property>
-
-	<property id="mout_colums">
-		<name>destColums</name>
-		<veneer type="S" />
-		<type>I</type>
-		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>destColums</defaultValue>
-		<desc>set pointer which points to the output matrix colums
-		</desc>
-	</property>
-
-
-	<property id="scaling_factor">
-		<name>scale_fact</name>
-		<veneer type="S" />
-		<type>I</type>
-		<dataType>uint32_t</dataType>
-		<defaultValue>1</defaultValue>
-		<desc>set scaling factor for Matrix</desc>
-	</property>
-
-	<property id="Matrix_output">
-		<name>output</name>
-		<veneer type="S" />
-		<defaultValue>A_OUT</defaultValue>
-		<dataType>unsigned char</dataType>
 		<type>F</type>
-		<desc>set pointer for output of matrix after scaling </desc>
+		<dataType type="Array">uint32_t</dataType>
+		<defaultValue>sequence2</defaultValue>
+		<desc>set pointer which points to the second input sequence </desc>
 	</property>
+
+   <property id="seq2Len">
+		<name>seq2Len</name>
+		<veneer type="S" />
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<defaultValue>seq2Len</defaultValue>
+		<desc>length of the second input sequence</desc>
+	</property>
+	
+	<property id="Convolution_result">
+		<name>Convolution_result</name>
+		<veneer type="S" />
+		<type>F</type>
+		<dataType type="Array">uint32_t</dataType>
+		<defaultValue>Convolution_result</defaultValue>
+		<desc>set pointer for output of Convolution  </desc>
+	</property>
+
+	<includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+		<lib>lib</lib>
+	</includes>
 
 	<validHost>
 		<host>Block</host>
 		<host>Loop</host>
 	</validHost>
-	<includes>
-		<lib>stdio</lib>
-		<lib>arm_math</lib>
-		<lib>math_helper</lib>
-		<lib>stdlib</lib>
-		<lib>string</lib>
-   </includes>
 
 </Properties>

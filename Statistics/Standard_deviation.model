@@ -1,53 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
 	<id type="Array">Standard_deviation</id>
-	<name>Std_devi</name>
+	<name>Standard_deviation</name>
 	<size>
 		<h>55</h>
 		<w>70</w>
 	</size>
 	<desc> Calculates the Standard_deviation of the input vector</desc>
 
-	<property id="sum_of_square_of_input_vectors">
-		<name>sumOfSquares</name>
+	<property id="input_vector">
+		<name>v_input</name>
 		<veneer type="S" />
-		<type>I</type>
+		<type>F</type>
 		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
-		<desc>Set pointer to sum of square of input vectors</desc>
+		<defaultValue>Vect</defaultValue>
+		<desc>Set pointer to input vector</desc>
 	</property>
 
-	<property id="mean_of_input_vector2">
-		<name>v_mean</name>
-		<veneer type="S" />
-		<type>I</type>
-		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
-		<desc>Set mean of input vectors</desc>
-	</property>
 
 	<property id="Blocksize">
 		<name>block_size</name>
 		<veneer type="S" />
 		<dataType>uint32_t</dataType>
 		<type>I</type>
-		<defaultValue>0</defaultValue>
+		<defaultValue>blockSize</defaultValue>
 		<desc>Set Blocksize of input vector</desc>
 	</property>
 
-	<property id="output_vector">
+	<property id="Standard_deviation_out">
 		<name>Standard_deviation</name>
 		<veneer type="S" />
-		<type>I</type>
+		<type>F</type>
 		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
+		<defaultValue>Standard_deviation</defaultValue>
 		<desc>set output for storing Standard_deviation of input vectors
 		</desc>
 	</property>
+
 	<includes>
 		<lib>stdio</lib>
 		<lib>math</lib>
-		<lib>lib</lib>
+		<lib>string</lib>
+		<lib>arm_math</lib>
 	</includes>
 
 	<validHost>

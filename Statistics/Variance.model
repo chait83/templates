@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id type="Array">Variance</id>
+<id type="Array">Variance</id>
 	<name>Variance</name>
 	<size>
 		<h>55</h>
@@ -8,51 +8,44 @@
 	</size>
 	<desc> Calculates the Variance of the input vector</desc>
 
-	<property id="sum_of_square_of_input_vectors">
-		<name>sumOfSquares</name>
+	<property id="input_vector">
+		<name>v_input</name>
 		<veneer type="S" />
-		<type>I</type>
+		<type>F</type>
 		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
-		<desc>Set pointer to sum of square of input vectors</desc>
+		<defaultValue>Vect</defaultValue>
+		<desc>Set pointer to input vector</desc>
 	</property>
 
-	<property id="mean_of_input_vector2">
-		<name>v_mean</name>
-		<veneer type="S" />
-		<type>I</type>
-		<dataType type="Array">uint32_t</dataType>
-		<defaultValue> Default</defaultValue>
-		<desc>Set mean of input vectors</desc>
-	</property>
 
 	<property id="Blocksize">
 		<name>block_size</name>
 		<veneer type="S" />
 		<dataType>uint32_t</dataType>
 		<type>I</type>
-		<defaultValue>0</defaultValue>
+		<defaultValue>blockSize</defaultValue>
 		<desc>Set Blocksize of input vector</desc>
 	</property>
 
-	<property id="output_vector">
+	<property id="Variance_out">
 		<name>Variance</name>
 		<veneer type="S" />
-		<type>I</type>
+		<type>F</type>
 		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
+		<defaultValue>Variance</defaultValue>
 		<desc>set output for storing Variance of input vectors</desc>
 	</property>
 	
 	<includes>
 		<lib>stdio</lib>
 		<lib>math</lib>
-		<lib>lib</lib>
+		<lib>string</lib>
+		<lib>arm_math</lib>
 	</includes>
 
-	<validHost>
+    <validHost>
 		<host>Block</host>
 		<host>Loop</host>
 	</validHost>
-
+    
 </Properties>
