@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+<id>Multiply</id>
+	<name>Multiplication</name>
+	<type>M</type>
+	<desc>This is a generic variable for multiplication</desc>
+	<size>
+		<h>55</h>
+		<w>70</w>
+	</size>
+	
+	<property id="input1">
+		<name>input</name>
+		<veneer type="S" />
+		<desc>Set input for Multiplication</desc>
+		<type>I</type>
+		<dataType>uint32_t</dataType>
+		<defaultValue> Default</defaultValue>
+	</property>
+	
+	<property id="input2">
+		<name>input</name>
+		<veneer type="S" />
+		<desc>Set input for Multiplication</desc>
+		<type>I</type>
+		<dataType>uint32_t</dataType>
+		<defaultValue> Default</defaultValue>
+	</property>
+
+	<property id="Product">
+	    <name>Output</name>
+		<veneer type="DPT"> <nature type="B" /></veneer>
+		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Integer output after multiplication</desc>
+	</property>
+	
+	<includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+	</includes>
+	
+<validHost>
+       <host>Block</host>
+       <host>Loop</host>
+</validHost>
+
+</Properties>

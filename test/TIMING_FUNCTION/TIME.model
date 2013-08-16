@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+
+<size>
+	<h>140</h>
+	<w>160</w>
+</size>
+
+    <id>Init_TIME</id>
+        <name>Initialize TIME</name>
+    	<type>M</type>
+	    <desc>This unit is used to get the time</desc>
+	    
+	     
+	<property id="type" st="M">
+		<name>type</name>
+		<defaultValue>uint32_t</defaultValue>
+		<type>F</type>
+		<dataType>uint32_t<nature type="D">
+				<listner id="time">
+					<clone I="value" O="dataType" /> 
+					</listner>
+			</nature>
+		</dataType>
+		<desc>assign value to the variable</desc>
+	</property>
+
+	<property id="time">
+	    <name>Time</name>
+		<veneer type="S" />
+		<defaultValue>10</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Get the time</desc>
+	</property>
+
+
+<validHost>
+<host>Block</host>
+<host>Loop</host>
+</validHost>
+
+</Properties>

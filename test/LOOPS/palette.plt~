@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Palette id="LOOPS" dispName="LOOPS" editor="org.wow.editor.logiceditor">
+<item id="DO-LOOP">
+        <name>DO-LOOP</name>
+        <desc>This is DO-LOOP</desc>
+        <icon>This is DO-LOOP</icon>
+</item>
+
+<item id="FOR LOOP">
+        <name>FOR LOOP</name>
+        <desc>This is FOR LOOP</desc>
+        <icon>This is FOR LOOP</icon>
+</item>
+
+<item id="WHILE LOOP">
+        <name>WHILE LOOP</name>
+        <desc>This is WHILE LOOP</desc>
+        <icon>This is WHILE LOOP</icon>
+</item>
+
+<item id="VARIABLE">
+        <name>VARIABLE</name>
+        <desc>This is IO</desc>
+        <icon>This is IO</icon>
+</item>
+
+</Palette>

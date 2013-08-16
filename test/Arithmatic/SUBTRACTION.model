@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id>Subtract</id>
+	<name>Substraction</name>
+	<type>M</type>
+    <size>
+		<h>55</h>
+		<w>70</w>
+	</size>
+	
+	<property id="input1">
+		<name>input</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType>uint32_t</dataType>
+		<defaultValue>0</defaultValue>
+		<desc>Set Input For subtraction</desc>
+	</property>
+	
+	<property id="input2">
+		<name>input</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType>uint32_t</dataType>
+		<defaultValue>0</defaultValue>
+		<desc>Set Input For subtraction</desc>
+	</property>
+
+	<property id="output">
+		<name>Output</name>
+		<veneer type="DPT"> <nature type="B" /></veneer>
+		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>integer output </desc>
+	</property>
+	
+	<includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+	</includes>
+	
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>
+

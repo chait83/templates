@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id>GPIO</id>
+	<name>GPIO</name>
+	<type>M</type>
+	<size>
+		<h>55</h>
+		<w>70</w>
+	</size>
+	<desc>This unit is used to provide input or output functionality</desc>
+
+	<property id="Mode">
+		<name>Mode_of_operation</name>
+		<defaultValue> Input floating</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<desc>select one of the mode mentioned below
+			1. Analog
+			2. Input pull-down
+			3. Input pull-up
+			4. Input floating
+			5. Output open-drain
+			6. Output push-pull
+			7. Alternate function open-drain
+			8. Alternate function push-pull
+		</desc>
+	</property>
+
+	<property id="Pin_assignement">
+		<name>PIN_NO</name>
+		<defaultValue>Pin_1</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<desc>
+			select input/ouput Pin number for specified operation
+			e.g PA1 for LCD_Backlight,PA$ for DAC1 output<desc>
+
+
+      <property id="Output_speed">
+		 <name>output_speed</name>
+		 <defaultValue>2MHz</defaultValue>
+		 <dataType>uint32_t</dataType>
+		 <type>I</type>
+		 <desc> configure output speed of operation
+				NOTE:for reasons of power consumption and noise,
+				it is desirable to use the lowest speed consistent
+				with the I/O requirements.</desc>
+				
+	<property id="Output">
+		<name>GPIO_out</name>
+		<defaultValue></defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<desc>output from GPIO</desc>
+
+	<includes>
+		<lib>stdio</lib>
+		<lib>stdlib</lib>
+	</includes>
+
+	<validHost>
+        <host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>

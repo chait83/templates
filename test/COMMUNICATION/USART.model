@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id>USART</id>
+	<name>USART</name>
+	<type>M</type>
+	<desc>This is a generic variable</desc>
+	<size>
+		<h>88</h>
+		<w>70</w>
+	</size>
+
+	<property id="INPUT1">
+		<name>BAUD RATE</name>
+		<veneer type="S" />
+		<desc>Set Baud Rate for Serial Communication</desc>
+		<type>I</type>
+		<defaultValue> Default</defaultValue>
+	</property>
+
+	<property id="INPUT2">
+		<name>DATA BITS</name>
+		<veneer type="S" />
+		<desc>Set Data bits for Serial Communication</desc>
+		<type>I</type>
+		<defaultValue> Default</defaultValue>
+	</property>
+
+	<property id="INPUT3">
+		<name>PARTIY</name>
+		<veneer type="S" />
+		<desc>Set Parity bits for Serial Communication</desc>
+		<type>I</type>
+		<defaultValue> Default</defaultValue>
+	</property>
+
+	<property id="INPUT4">
+		<name>STOP BITS</name>
+		<veneer type="S" />
+		<desc>Set Stop bits for Serial Communication</desc>
+		<type>I</type>
+		<defaultValue> Default</defaultValue>
+	</property>
+
+	<property id="INPUT5">
+		<name>FLOW CONTROL</name>
+		<veneer type="S" />
+		<desc>Set flow control for Serial Communication</desc>
+		<type>I</type>
+		<defaultValue> Default</defaultValue>
+	</property>
+
+	<property id="OUTPUT">
+		<name>OUTPUT</name>
+		<veneer type="S" />
+		<desc>Set OUTPUT After Serial Communication</desc>
+		<type>O</type>
+		<defaultValue> Default</defaultValue>
+	</property>
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>

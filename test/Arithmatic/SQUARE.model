@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+
+    	<id>square</id>
+        <name>square</name>
+    	<type>M</type>	
+        <size>
+			<h>55</h>
+			<w>70</w>
+		</size>
+	    <desc>This unit is return squared value of input</desc>
+
+	<property id="input">
+	    <name>Input</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<desc>Provide an Input</desc>
+	</property>
+	
+    <property id="output">
+	    <name>Output</name>
+		<veneer type="DPT"> <nature type="B" /></veneer>
+		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Store the calculated squared output</desc>
+	</property>
+	
+	<includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+	</includes>
+	
+   <validHost>
+	   <host>Block</host>
+	   <host>Loop</host>
+   </validHost>
+
+</Properties>

@@ -1,0 +1,13 @@
+<function>
+
+	<name>greatestNumber</name>
+	<returnType>int</returnType>
+	<params>
+		<paramType>
+			int 
+		</paramType>
+		<paramType>
+			int 
+		</paramType>
+	</params>
+</function>

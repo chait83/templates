@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id>Add</id>
+	<name>Addition</name>
+	<size>
+		<h>55</h>
+		<w>70</w>
+	</size>
+	<desc>variable for Addition</desc>
+
+	<property id="input1">
+		<name>input</name>
+		<veneer type="S" />
+		<desc>Set Input for Addition</desc>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<defaultValue>0</defaultValue>
+	</property>
+
+	<property id="input2">
+		<name>input</name>
+		<veneer type="S" />
+		<desc>Set Input for Addition</desc>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<defaultValue>0</defaultValue>
+	</property>
+
+	<property id="sum">
+		<name>Output</name>
+		<veneer type="DPT"> <nature type="B" /></veneer>
+		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>set Output after addition</desc>
+	</property>
+	
+	<includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+		<lib>lib</lib>
+	</includes>
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>

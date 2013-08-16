@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+
+	<id>Init_COUNTER</id>
+	<name>Initialiase COUNTER</name>
+	<type>M</type>
+	<desc>This unit is used to assign a counter</desc>
+	<size>
+		<h>80</h>
+		<w>70</w>
+	</size>
+
+	<property id="type" st="M">
+		<name>type</name>
+		<defaultValue>uint32_t</defaultValue>
+		<type>F</type>
+		<dataType>
+			uint32_t
+			<nature type="D">
+				<listner id="input">
+					<clone I="value" O="dataType" />
+				</listner>
+				<listner id="output">
+					<clone I="value" O="dataType" />
+				</listner>
+
+			</nature>
+		</dataType>
+		<desc>assign value to the variable</desc>
+	</property>
+
+	<property id="input">
+		<name>Type of Counter</name>
+		<veneer type="S" />
+		<defaultValue>Decade Counter</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<desc>The type of counter that is to be used</desc>
+	</property>
+
+	<property id="OUTPUT">
+		<name>Type of Counter</name>
+		<veneer type="S" />
+		<defaultValue>Decade Counter</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Output of counter</desc>
+	</property>
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>

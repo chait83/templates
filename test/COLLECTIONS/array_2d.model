@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id init="Y">Array_2D</id>
+	<name>arr_2D</name>
+	<type>M</type>
+	<size>
+		<h>50</h>
+		<w>50</w>
+	</size>
+	<desc>This is used to store 2D array</desc>
+
+	<property id="type" st="M">
+		<name>type</name>
+		<defaultValue>uint32_t</defaultValue>
+		<veneer type="S" />
+		<type>F</type>
+		<dataType>
+			uint32_t
+			<nature type="D">
+				<listner id="arraytype">
+					<clone I="value" O="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<desc>assign value to the variable</desc>
+	</property>
+
+	<property id="array_type">
+		<name>Array Type</name>
+		<veneer type="S" />
+		<defaultValue>uint32_t</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>F</type>
+		<desc>assign type to the array</desc>
+	</property>
+
+	<property id="Array_Name">
+		<name>Input</name>
+		<veneer type="S" />
+		<defaultValue>arr</defaultValue>
+		<type>I</type>
+		<desc>Provide an Input and define the array size</desc>
+	</property>
+
+	<property id="Input_element ">
+		<name>Input_ele</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>
+			uint32_t
+			<nature type="D">
+				<listner id="output"></listner>
+				<listner id="type">
+					<clone O="value" I="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<type>I</type>
+		<desc>Provide input element to an array</desc>
+	</property>
+
+	<property id="Row_size ">
+		<name>Array left index size</name>
+		<veneer type="DPT"> <nature type="B" /></veneer>
+		<defaultValue>1</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Provide left index size of an array</desc>
+	</property>
+
+	<property id="colum_Size ">
+		<name>Array right index size</name>
+		<veneer type="DPT"> <nature type="B" /></veneer>
+		<defaultValue>1</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Provide right index size of an array</desc>
+	</property>
+
+	<property id="array_index ">
+		<name>array_index</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<desc>Provide index of respective element in the array</desc>
+	</property>
+
+	<property id="output_array">
+		<name>Output</name>
+		<veneer type="S" />
+		<veneer type="DPT"> <nature type="B" /></veneer>
+		<dataType>
+			uint32_t
+			<nature type="D">
+				<listner id="output"></listner>
+				<listner id="type">
+					<clone O="value" I="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<type>O</type>
+		<desc>Output from array </desc>
+	</property>
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+	<includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+		
+	</includes>
+</Properties>

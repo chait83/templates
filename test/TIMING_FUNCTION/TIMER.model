@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id>TIMER</id>
+	<name>TIMER</name>
+	<type>M</type>
+	<desc>This unit is used to set a timer</desc>
+	<size>
+		<h>55</h>
+		<w>70</w>
+	</size>
+
+	<property id="type" st="M">
+		<name>type</name>
+		<defaultValue>uint32_t</defaultValue>
+		<type>F</type>
+		<dataType>
+			uint32_t
+			<nature type="D">
+				<listner id="time">
+					<clone I="value" O="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<desc>assign value to the variable</desc>
+	</property>
+
+	<property id="mode">
+		<name>Mode</name>
+		<veneer type="S" />
+		<defaultValue>Default</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>F</type>
+		<desc>Define the mode of the timer</desc>
+	</property>
+
+	<property id="time">
+		<name>Time</name>
+		<veneer type="S" />
+		<defaultValue>10</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<desc>Set the time perios for Timer</desc>
+	</property>
+	
+	<property id="timer_name">
+		<name>Timer_name</name>
+		<veneer type="S" />
+		<defaultValue>Timer</defaultValue>
+		<dataType>unsigned char </dataType>
+		<type>F</type>
+		<desc>Set the Name for Timer</desc>
+	</property>
+
+<property id="timerCallback_fun_name">
+		<name>timerCallback_fun_name</name>
+		<veneer type="S" />
+		<defaultValue>vTimerCallback</defaultValue>
+		<dataType>unsigned char </dataType>
+		<type>F</type>
+		<desc>Set the Name for Timer</desc>
+	</property>
+
+	<property id="Output">
+		<name>Mode</name>
+		<veneer type="S" />
+		<defaultValue>Default</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Output of timer</desc>
+	</property>
+
+    <includes>
+		<lib>stdio</lib>
+		<lib>stdlib</lib>
+	</includes>
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id>ADC</id>
+	<size>
+		<h>75</h>
+		<w>70</w>
+	</size>
+	<name>ADC</name>
+	<type>M</type>
+	<desc>This unit is used to initialize ADC.
+		Default mode of operation is
+		interrupt based continuous mode. The ADC is
+		interrupt driven.
+		After
+		completion of every conversion the data would be stored in a buffer
+		of
+		500 elements.
+		The buffer would cleared on overrun and data would be
+		lost, hence
+		the user has to perform a read operation before the buffer
+		is overrun
+	</desc>
+
+<property id="Analog_input">
+		<name>A_Input</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<type>I</type>
+		<dataType>volts</dataType>
+		<desc>Set analog input like Pressure ,temperature,humidity sensor to ADC</desc>
+	</property>
+
+	<property id="resolution">
+		<name>Resolution</name>
+		<veneer type="S" />
+		<defaultValue> 12</defaultValue>
+		<type>I</type>
+		<dataType>uint32_t</dataType>
+		<desc>Set the resolution for data conversion</desc>
+	</property>
+
+	<property id="samplingRate">
+		<name>Sampling Rate</name>
+		<defaultValue> Default</defaultValue>
+		<dataType>uint32_t</dataType>
+		<veneer type="S" />
+		<type>I</type>
+		<desc>Sampling rate for ADC conversion. As per Nquist criteria is
+			should be at least
+			twice the frequency of most significant hormonic
+		</desc>
+	</property>
+
+	<property id="channel">
+		<name>CHANNEL SELECTION</name>
+		<defaultValue> 1</defaultValue>
+		<veneer type="S" />
+		<dataType>uint32_t</dataType>
+		<type>F</type>
+		<desc>The channel for which the data conversion has to be done</desc>
+	</property>
+
+	<property id="output" st="O">
+		<name>Output</name>
+		<defaultValue> 0</defaultValue>
+		<veneer type="NT">name</veneer>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Output of the ADC</desc>
+	</property>
+
+	<includes>
+		<lib>stdio</lib>
+		<lib>stdlib</lib>
+	</includes>
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>
