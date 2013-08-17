@@ -8,7 +8,5 @@
        <xsl:for-each select="lib/children/block">
            static void <xsl:value-of select="Name"></xsl:value-of> ();
        </xsl:for-each> 
-       
-		&#35;endif
     </xsl:template>
 </xsl:stylesheet>

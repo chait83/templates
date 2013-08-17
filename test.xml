@@ -1,62 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id type="Array">Convolution</id>
-	<name>Conv</name>
+	<id>Multiply</id>
+	<name>Multiplication</name>
+	<type>M</type>
+	<desc>This is a generic variable for multiplication</desc>
 	<size>
-		<h>90</h>
-		<w>80</w>
+		<h>55</h>
+		<w>70</w>
 	</size>
-	<desc> Convolution of input sequences</desc>
 
-	<property id="sequence1">
-		<name>sequence1</name>
+	<property id="input1">
+		<name>input</name>
 		<veneer type="S" />
-		<type>F</type>
-		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>sequence1</defaultValue>
-		<desc>set pointer which points to the first input sequence</desc>
-	</property>
-
-   <property id="seq1Len">
-		<name>seq1Len</name>
-		<veneer type="S" />
-		<dataType>uint32_t</dataType>
+		<desc>Set input for Multiplication</desc>
 		<type>I</type>
-		<defaultValue>seq1Len</defaultValue>
-		<desc> length of the first input sequence</desc>
-	</property>
-	
-	<property id="sequence2">
-		<name>sequence2</name>
-		<veneer type="S" />
-		<type>F</type>
-		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>sequence2</defaultValue>
-		<desc>set pointer which points to the second input sequence </desc>
+		<dataType>uint32_t</dataType>
+		<defaultValue> Default</defaultValue>
 	</property>
 
-   <property id="seq2Len">
-		<name>seq2Len</name>
+	<property id="input2">
+		<name>input</name>
 		<veneer type="S" />
-		<dataType>uint32_t</dataType>
+		<desc>Set input for Multiplication</desc>
 		<type>I</type>
-		<defaultValue>seq2Len</defaultValue>
-		<desc>length of the second input sequence</desc>
+		<dataType>uint32_t</dataType>
+		<defaultValue> Default</defaultValue>
 	</property>
-	
-	<property id="Convolution_result">
-		<name>Convolution_result</name>
-		<veneer type="S" />
-		<type>F</type>
-		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>Convolution_result</defaultValue>
-		<desc>set pointer for output of Convolution  </desc>
+
+	<property id="Product">
+		<name>Output</name>
+		<veneer type="DPT">
+			<nature type="B" />
+		</veneer>
+		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Integer output after multiplication</desc>
 	</property>
 
 	<includes>
 		<lib>stdio</lib>
 		<lib>math</lib>
-		<lib>lib</lib>
 	</includes>
 
 	<validHost>
