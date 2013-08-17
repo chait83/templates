@@ -9,15 +9,27 @@
 		<name>true</name>
 		<desc>True condition</desc>
 		<type>C</type>
+		<case-start>{</case-start>
+		<case-end>}</case-end>
 	</property>
 
 	<property id="false">
 		<name>false</name>
 		<desc>True condition</desc>
 		<type>C</type>
+		<case-start>{</case-start>
+		<case-end>}</case-end>
 	</property>
 
 
+	<property id="condition" st="M">
+		<name>Input</name>
+		<defaultValue> 0</defaultValue>
+		<veneer type="NT">name</veneer>
+		<dataType>boolean</dataType>
+		<type>I</type>
+		<desc>Digital signal as an Input o DAC</desc>
+	</property>
 	<validHost>
 		<host>Block</host>
 		<host>Loop</host>

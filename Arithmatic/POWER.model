@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>Power_function</id>
+<id>Power_function</id>
 	<name>pow</name>
 	<size>
 		<h>55</h>
@@ -8,8 +8,8 @@
 	</size>
 	<type>M</type>
 	<desc>This unit is return base raised to the power exponent</desc>
-
-	<property id="type" st="M">
+	
+		<property id="type" st="M">
 		<name>type</name>
 		<defaultValue>uint32_t</defaultValue>
 		<type>F</type>
@@ -63,24 +63,25 @@
 		<type>I</type>
 		<desc>Provide an exponenet input</desc>
 	</property>
-
 	<property id="output">
 		<name>Output</name>
-		<veneer type="S" />
+		<veneer type="DPT"> 
+		<nature type="B"></nature>
+		</veneer>
 		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
 		<desc>Store the calculated base exponent result</desc>
 	</property>
-
-	<validHost>
-		<host>Block</host>
-		<host>Loop</host>
-	</validHost>
 	
 	<includes>
 		<lib>stdio</lib>
 		<lib>math</lib>
 	</includes>
+	
+<validHost>
+       <host>Block</host>
+       <host>Loop</host>
+</validHost>
 
 </Properties>

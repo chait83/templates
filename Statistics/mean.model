@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id type="Array">mean</id>
+	<id>mean</id>
 	<name>mean</name>
 	<size>
 		<h>55</h>
@@ -38,7 +38,7 @@
 	<property id="output_vector">
 		<name>mean</name>
 		<veneer type="S" />
-		<type>I</type>
+		<type>O</type>
 		<dataType type="Array">uint32_t</dataType>
 		<defaultValue>0</defaultValue>
 		<desc>set output for storing mean of input vectors</desc>

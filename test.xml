@@ -1,51 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-<id>Multiply</id>
-	<name>Multiplication</name>
-	<type>M</type>
-	<desc>This is a generic variable for multiplication</desc>
+	<id>mean</id>
+	<name>mean</name>
 	<size>
 		<h>55</h>
 		<w>70</w>
 	</size>
-	
-	<property id="input1">
-		<name>input</name>
+	<desc> Calculates the mean of the input vector</desc>
+
+	<property id="input_vector1">
+		<name>v_input</name>
 		<veneer type="S" />
-		<desc>Set input for Multiplication</desc>
 		<type>I</type>
-		<dataType>uint32_t</dataType>
+		<dataType type="Array">uint32_t</dataType>
 		<defaultValue> Default</defaultValue>
-	</property>
-	
-	<property id="input2">
-		<name>input</name>
-		<veneer type="S" />
-		<desc>Set input for Multiplication</desc>
-		<type>I</type>
-		<dataType>uint32_t</dataType>
-		<defaultValue> Default</defaultValue>
+		<desc>Set pointer to input vector</desc>
 	</property>
 
-	<property id="Product">
-	    <name>Output</name>
-		<veneer type="DPT"> 
-		<nature type="B"></nature>
-		</veneer>
-		<defaultValue>0</defaultValue>
-		<dataType>uint32_t</dataType>
-		<type>O</type>
-		<desc>Integer output after multiplication</desc>
+<property id="input_vector2">
+		<name>v_input</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType type="Array">uint32_t</dataType>
+		<defaultValue> Default</defaultValue>
+		<desc>Set pointer to input vector</desc>
 	</property>
 	
+	<property id="Blocksize">
+		<name>block_size</name>
+		<veneer type="S" />
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<defaultValue>0</defaultValue>
+		<desc>Set Blocksize of input vector</desc>
+	</property>
+
+	<property id="output_vector">
+		<name>mean</name>
+		<veneer type="S" />
+		<type>O</type>
+		<dataType type="Array">uint32_t</dataType>
+		<defaultValue>0</defaultValue>
+		<desc>set output for storing mean of input vectors</desc>
+	</property>
 	<includes>
 		<lib>stdio</lib>
 		<lib>math</lib>
+		<lib>lib</lib>
 	</includes>
-	
-<validHost>
-       <host>Block</host>
-       <host>Loop</host>
-</validHost>
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
 
 </Properties>

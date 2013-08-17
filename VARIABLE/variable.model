@@ -14,7 +14,18 @@
 		<name>type</name>
 		<defaultValue>uint32_t</defaultValue>
 		<type>F</type>
-		<dataType>uint32_t</dataType>
+		<dataType>uint32_t
+				uint32_t
+			<nature type="D">
+				<listner id="input">
+					<clone I="value" O="dataType" />
+				</listner>
+				<listner id="output">
+					<clone I="value" O="dataType" />
+				</listner>
+			</nature>
+		
+		</dataType>
 		<desc>assigned type to the variable</desc>
 	</property>
 
@@ -49,6 +60,7 @@
 	<validHost>
 		<host>Block</host>
 		<host>Loop</host>
+		<host>Case</host>
 	</validHost>
 	<includes>
 		<lib>stdio</lib>
