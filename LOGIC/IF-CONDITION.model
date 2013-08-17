@@ -5,16 +5,29 @@
 	<type>M</type>
 	<desc>This is a basic true false condition statement</desc>
 
+
+	<property id="cond">
+		<name>cond</name>
+		<veneer type="S" />
+		<desc>Condition for if</desc>
+		<type>I</type>
+		<dataType>boolean</dataType>
+		<defaultValue> false</defaultValue>
+	</property>
 	<property id="true">
 		<name>true</name>
 		<desc>True condition</desc>
 		<type>C</type>
+		<case-start>{</case-start>
+		<case-end>}</case-end>
 	</property>
 
 	<property id="false">
 		<name>false</name>
 		<desc>True condition</desc>
 		<type>C</type>
+		<case-start>{</case-start>
+		<case-end>}</case-end>
 	</property>
 
 

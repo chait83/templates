@@ -1,47 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>Multiply</id>
-	<name>Multiplication</name>
+	<id type="Case">IF-Condition</id>
+	<name>If condition</name>
 	<type>M</type>
-	<desc>This is a generic variable for multiplication</desc>
-	<size>
-		<h>55</h>
-		<w>70</w>
-	</size>
+	<desc>This is a basic true false condition statement</desc>
 
-	<property id="input1">
-		<name>input</name>
+
+	<property id="cond">
+		<name>cond</name>
 		<veneer type="S" />
-		<desc>Set input for Multiplication</desc>
+		<desc>Condition for if</desc>
 		<type>I</type>
-		<dataType>uint32_t</dataType>
-		<defaultValue> Default</defaultValue>
+		<dataType>boolean</dataType>
+		<defaultValue> false</defaultValue>
+	</property>
+	<property id="true">
+		<name>true</name>
+		<desc>True condition</desc>
+		<type>C</type>
+		<case-start>{</case-start>
+		<case-end>}</case-end>
 	</property>
 
-	<property id="input2">
-		<name>input</name>
-		<veneer type="S" />
-		<desc>Set input for Multiplication</desc>
-		<type>I</type>
-		<dataType>uint32_t</dataType>
-		<defaultValue> Default</defaultValue>
+	<property id="false">
+		<name>false</name>
+		<desc>True condition</desc>
+		<type>C</type>
+		<case-start>{</case-start>
+		<case-end>}</case-end>
 	</property>
-
-	<property id="Product">
-		<name>Output</name>
-		<veneer type="DPT">
-			<nature type="B" />
-		</veneer>
-		<defaultValue>0</defaultValue>
-		<dataType>uint32_t</dataType>
-		<type>O</type>
-		<desc>Integer output after multiplication</desc>
-	</property>
-
-	<includes>
-		<lib>stdio</lib>
-		<lib>math</lib>
-	</includes>
 
 	<validHost>
 		<host>Block</host>

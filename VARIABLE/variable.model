@@ -40,7 +40,7 @@
 					<clone O="value" I="dataType" />
 				</listner>
 				<listner id="output">
-					<clone I="value" O="dataType" />
+					<clone I="dataType" O="dataType" />
 				</listner>
 			</nature>
 		</dataType>

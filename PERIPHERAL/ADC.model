@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id type="task">ADC</id>
+	<id type="Handler">ADC</id>
 	<size>
 		<h>75</h>
 		<w>70</w>
