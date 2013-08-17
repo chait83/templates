@@ -1,4 +1,0 @@
-id should be same as that of the dir name
-Define the editor for which the 
-model name should be same as item id
-Specify valid host items
