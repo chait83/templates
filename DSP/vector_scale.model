@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id type="Array">vector_scale</id>
-	<name>vect_scale</name>
+	<id>vector_scale</id>
+	<name>vector_scale</name>
 	<size>
 		<h>55</h>
 		<w>70</w>
 	</size>
-	<desc>calculate scaling of input vector</desc>
+	<desc> vector_scale of input sequences</desc>
 
-	<property id="input_vector">
-		<name>vect</name>
+	<property id="vector1">
+		<name>vect1</name>
 		<veneer type="S" />
-		<type>I</type>
+		<type>F</type>
 		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
+		<defaultValue>Vect1</defaultValue>
 		<desc>set pointer which points to the input vector</desc>
 	</property>
 
@@ -22,23 +22,35 @@
 		<veneer type="S" />
 		<type>I</type>
 		<dataType>uint32_t</dataType>
-		<defaultValue>0</defaultValue>
+		<defaultValue>Scaling_factor</defaultValue>
 		<desc>set scaling factor for input vector</desc>
 	</property>
 
-	<property id="vector_scale_result">
-		<name>vect_result</name>
+
+	<property id="Blocksize">
+		<name>block_size</name>
 		<veneer type="S" />
-		<type>O</type>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<defaultValue>blockSize</defaultValue>
+		<desc>Set Blocksize of input vector</desc>
+	</property>
+
+	<property id="vector_scale_result">
+		<name>vector_scale</name>
+		<veneer type="S" />
+		<type>F</type>
 		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
-		<desc>set pointer for output after scaling of vector</desc>
+		<defaultValue>Vect_out</defaultValue>
+		<desc>set pointer for output of vector_scale  </desc>
 	</property>
 
 	<includes>
 		<lib>stdio</lib>
 		<lib>math</lib>
-		<lib>lib</lib>
+		<lib>stdlib</lib>
+		<lib>arm_math</lib>
+		
 	</includes>
 
 	<validHost>

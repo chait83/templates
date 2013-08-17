@@ -1,39 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id type="Array">Matrix_transpose</id>
-	<name>tranMatrix</name>
+
+	<id>Matrix_transpose</id>
+	<name>Matrix_transpose</name>
+	<type>M</type>
 	<size>
-		<h>55</h>
-		<w>70</w>
+		<h>90</h>
+		<w>85</w>
 	</size>
-	<desc> Transpose of Matrix</desc>
+	<desc>This unit is used to give another name to entity </desc>
 
 	<property id="Matrix1">
-		<name>Matrix1</name>
+		<name>input_matrix</name>
+		<veneer type="S" />
+		<defaultValue>A</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>F</type>
+		<desc>set pointer which points to the first input matrix structure</desc>
+	</property>
+
+	<property id="m1_rows">
+		<name>srcRows</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType>uint32_t</dataType>
+		<defaultValue>srcRows</defaultValue>
+		<desc>set pointer which points to the 1st input matrix structure
+		</desc>
+	</property>
+	
+	<property id="m1_colums">
+		<name>srcColums</name>
 		<veneer type="S" />
 		<type>I</type>
 		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
-		<desc>set pointer which points to the input matrix structure</desc>
+		<defaultValue>srcColums</defaultValue>
+		<desc>set pointer which points to the 1st input matrix structure
+		</desc>
 	</property>
-
-	<property id="transpose_of_Matrix">
-		<name>Matrix_trans</name>
+	
+	<property id="mout_rows">
+		<name>destRows</name>
 		<veneer type="S" />
-		<type>O</type>
+		<type>I</type>
 		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
-		<desc>set pointer for transpose of input matrix </desc>
+		<defaultValue>mout_rows</defaultValue>
+		<desc>set pointer which points to the output matrix rows
+		</desc>
+	</property>
+	
+	<property id="mout_colums">
+		<name>destColums</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType type="Array">uint32_t</dataType>
+		<defaultValue>destColums</defaultValue>
+		<desc>set pointer which points to the output matrix colums
+		</desc>
+	</property>
+	
+  <property id="Matrix_output">
+		<name>output</name>
+		<veneer type="S" />
+		<defaultValue>A_TRANSPOSE_OUT</defaultValue>
+		<dataType>unsigned char</dataType>
+		<type>F</type>
+		<desc>set pointer for output of matrix after Subtraction</desc>
 	</property>
 
-	<includes>
-		<lib>stdio</lib>
-		<lib>math</lib>
-		<lib>lib</lib>
-	</includes>
-
-	<validHost>
+    <validHost>
 		<host>Block</host>
 		<host>Loop</host>
 	</validHost>
+	<includes>
+		<lib>stdio</lib>
+		<lib>stdlib</lib>
+		<lib>string</lib>
+		<lib>math</lib>
+		<lib>arm_math</lib>
+		<lib>math_helper</lib>
+		
+	</includes>
+
 </Properties>

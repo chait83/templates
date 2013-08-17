@@ -2,8 +2,13 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:template match="/">
 	
-       <xsl:value-of select="Standard_deviation/V/O/output_vector"/> = sqrt[((<xsl:value-of select="Standard_deviation/V/I/sum_of_square_of_input_vectors"/> - <xsl:value-of select="Standard_deviation/V/I/mean_of_input_vector2"/>)) /  (<xsl:value-of select="Standard_deviation/V/I/Blocksize"/> - 1)] ;
-       
+	float32_t &#160; <xsl:value-of select="Standard_deviation/input_vector"/>[ <xsl:value-of select="Standard_deviation/V/I/Blocksize"/> ];
+    float32_t  <xsl:value-of select="Standard_deviation/Standard_deviation_out"/>;
+    
+    arm_std_f32( <xsl:value-of select="Standard_deviation/input_vector"/> , <xsl:text disable-output-escaping="yes">&amp;</xsl:text><xsl:value-of select="Standard_deviation/V/I/Blocksize"/> , <xsl:text disable-output-escaping="yes">&amp;</xsl:text> <xsl:value-of select="Standard_deviation/Standard_deviation_out"/> ) ;
+     
+    
+ 
+		
 	</xsl:template>
 </xsl:stylesheet>
-																																																																																																																																																																							

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-
-
 	<id init="Y">variable</id>
 	<name>var</name>
 	<type>M</type>
@@ -60,6 +58,7 @@
 	<validHost>
 		<host>Block</host>
 		<host>Loop</host>
+		<host>LIB</host>
 		<host>Case</host>
 	</validHost>
 	<includes>

@@ -28,7 +28,7 @@
 
 	<property id="output">
 		<name>Output</name>
-		<veneer type="S" />
+		<veneer type="DPT"> <nature type="B" /></veneer>
 		<type>O</type>
 		<dataType>uint32_t</dataType>
 		<defaultValue>0</defaultValue>

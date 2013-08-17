@@ -29,10 +29,11 @@
 
 	<property id="Product">
 	    <name>Output</name>
-		<veneer type="DPT"> 
+<<<<<<< .mine		<veneer type="DPT"> 
 		<nature type="B"></nature>
 		</veneer>
-		<defaultValue>0</defaultValue>
+=======		<veneer type="DPT"> <nature type="B" /></veneer>
+>>>>>>> .theirs		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
 		<desc>Integer output after multiplication</desc>

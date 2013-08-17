@@ -65,10 +65,7 @@
 	</property>
 	<property id="output">
 		<name>Output</name>
-		<veneer type="DPT"> 
-		<nature type="B"></nature>
-		</veneer>
-		<defaultValue>0</defaultValue>
+		<veneer type="S" />		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
 		<desc>Store the calculated base exponent result</desc>

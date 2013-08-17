@@ -1,49 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id type="Array">Matrix_scale</id>
-	<name>scaleMat</name>
+
+	<id>Matrix_scale</id>
+	<name>Matrix_scale</name>
+	<type>M</type>
 	<size>
-		<h>55</h>
-		<w>70</w>
+		<h>90</h>
+		<w>85</w>
 	</size>
-	<desc> Scaling of Matrix</desc>
+	<desc>This unit is used to give another name to entity </desc>
 
 	<property id="Matrix1">
-		<name>Matrix1</name>
+		<name>input_matrix</name>
+		<veneer type="S" />
+		<defaultValue>A</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>F</type>
+		<desc>set pointer which points to the first input matrix structure</desc>
+	</property>
+
+	<property id="m1_rows">
+		<name>srcRows</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType>uint32_t</dataType>
+		<defaultValue>srcRows</defaultValue>
+		<desc>set pointer which points to the 1st input matrix structure
+		</desc>
+	</property>
+	
+	<property id="m1_colums">
+		<name>srcColums</name>
 		<veneer type="S" />
 		<type>I</type>
 		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
-		<desc>set pointer which points to the first input matrix structure
+		<defaultValue>srcColums</defaultValue>
+		<desc>set pointer which points to the 1st input matrix structure
 		</desc>
 	</property>
-
+	
 	<property id="scaling_factor">
 		<name>scale_fact</name>
 		<veneer type="S" />
 		<type>I</type>
 		<dataType>uint32_t</dataType>
-		<defaultValue>0</defaultValue>
+		<defaultValue>1</defaultValue>
 		<desc>set scaling factor for Matrix</desc>
 	</property>
-
-	<property id="output_Matrix">
-		<name>out_Matrix</name>
+	
+	<property id="mout_rows">
+		<name>destRows</name>
 		<veneer type="S" />
-		<type>O</type>
+		<type>I</type>
 		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
-		<desc>set pointer for output of matrix after scaling </desc>
+		<defaultValue>mout_rows</defaultValue>
+		<desc>set pointer which points to the output matrix rows
+		</desc>
 	</property>
-	<includes>
-		<lib>stdio</lib>
-		<lib>math</lib>
-		<lib>lib</lib>
-	</includes>
+	
+	<property id="mout_colums">
+		<name>destColums</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType type="Array">uint32_t</dataType>
+		<defaultValue>destColums</defaultValue>
+		<desc>set pointer which points to the output matrix colums
+		</desc>
+	</property>
+	
+  <property id="Matrix_output">
+		<name>output</name>
+		<veneer type="S" />
+		<defaultValue>Scale_A__OUT</defaultValue>
+		<dataType>unsigned char</dataType>
+		<type>F</type>
+		<desc>set pointer for output of matrix after Subtraction</desc>
+	</property>
 
-	<validHost>
+    <validHost>
 		<host>Block</host>
 		<host>Loop</host>
 	</validHost>
+	<includes>
+		<lib>stdio</lib>
+		<lib>stdlib</lib>
+		<lib>string</lib>
+		<lib>math</lib>
+		<lib>arm_math</lib>
+		<lib>math_helper</lib>
+		
+	</includes>
 
 </Properties>

@@ -12,6 +12,7 @@
 	<property id="type" st="M">
 		<name>type</name>
 		<defaultValue>uint32_t</defaultValue>
+		<veneer type="S" />
 		<type>F</type>
 		<dataType>
 			uint32_t
@@ -26,6 +27,7 @@
 
 	<property id="array_type">
 		<name>Array Type</name>
+		<veneer type="S" />
 		<defaultValue>uint32_t</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>F</type>
@@ -59,7 +61,7 @@
 
 	<property id="Row_size ">
 		<name>Array left index size</name>
-		<veneer type="S" />
+		<veneer type="DPT"> <nature type="B" /></veneer>
 		<defaultValue>1</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
@@ -68,7 +70,7 @@
 
 	<property id="colum_Size ">
 		<name>Array right index size</name>
-		<veneer type="S" />
+		<veneer type="DPT"> <nature type="B" /></veneer>
 		<defaultValue>1</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
@@ -87,7 +89,7 @@
 	<property id="output_array">
 		<name>Output</name>
 		<veneer type="S" />
-		<defaultValue>0</defaultValue>
+		<veneer type="DPT"> <nature type="B" /></veneer>
 		<dataType>
 			uint32_t
 			<nature type="D">

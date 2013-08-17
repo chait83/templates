@@ -1,44 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id type="Array">vector_sub</id>
-	<name>vect_sub</name>
+	<id>vector_sub</id>
+	<name>vector_sub</name>
 	<size>
 		<h>55</h>
 		<w>70</w>
 	</size>
-	<desc> calculate element-by-element subtraction of two vectors</desc>
+	<desc> vector_sub of input sequences</desc>
 
 	<property id="vector1">
 		<name>vect1</name>
 		<veneer type="S" />
-		<type>I</type>
+		<type>F</type>
 		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
+		<defaultValue>Vect1</defaultValue>
 		<desc>set pointer which points to the input vector</desc>
 	</property>
 
 	<property id="vector2">
 		<name>vect2</name>
 		<veneer type="S" />
-		<type>I</type>
+		<type>F</type>
 		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
+		<defaultValue>Vect2</defaultValue>
 		<desc>set pointer which points to the input vector </desc>
+	</property>
+
+
+	<property id="Blocksize">
+		<name>block_size</name>
+		<veneer type="S" />
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<defaultValue>blockSize</defaultValue>
+		<desc>Set Blocksize of input vector</desc>
 	</property>
 
 	<property id="vector_sub_result">
 		<name>dot_prod</name>
 		<veneer type="S" />
-		<type>O</type>
+		<type>F</type>
 		<dataType type="Array">uint32_t</dataType>
-		<defaultValue>0</defaultValue>
-		<desc>set pointer for output of vector subtraction </desc>
+		<defaultValue>Vect_out</defaultValue>
+		<desc>set pointer for output of vector_sub  </desc>
 	</property>
 
 	<includes>
 		<lib>stdio</lib>
 		<lib>math</lib>
-		<lib>lib</lib>
+		<lib>stdlib</lib>
+		<lib>arm_math</lib>
+		
 	</includes>
 
 	<validHost>
