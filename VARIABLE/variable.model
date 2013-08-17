@@ -8,6 +8,7 @@
 		<h>35</h>
 		<w>38</w>
 	</size>
+	
 	<property id="type" st="M">
 		<name>type</name>
 		<defaultValue>uint32_t</defaultValue>
@@ -15,6 +16,7 @@
 		<dataType>uint32_t
 				uint32_t
 			<nature type="D">
+			<!-- prop.id.I = listener.id.O -->
 				<listner id="input">
 					<clone I="value" O="dataType" />
 				</listner>
