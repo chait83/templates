@@ -21,13 +21,13 @@
 		is overrun
 	</desc>
 
-<property id="Analog_input">
-		<name>A_Input</name>
+<property id="adc">
+		<name>Adc</name>
 		<veneer type="S" />
-		<defaultValue>0</defaultValue>
+		<defaultValue>1</defaultValue>
 		<type>I</type>
-		<dataType>volts</dataType>
-		<desc>Set analog input like Pressure ,temperature,humidity sensor to ADC</desc>
+		<dataType>uint32_t</dataType>
+		<desc>The channel for which the data conversion has to be done</desc>
 	</property>
 
 	<property id="resolution">
@@ -41,7 +41,7 @@
 
 	<property id="samplingRate">
 		<name>Sampling Rate</name>
-		<defaultValue> Default</defaultValue>
+		<defaultValue> 3</defaultValue>
 		<dataType>uint32_t</dataType>
 		<veneer type="S" />
 		<type>I</type>
@@ -56,22 +56,28 @@
 		<defaultValue> 1</defaultValue>
 		<veneer type="S" />
 		<dataType>uint32_t</dataType>
-		<type>F</type>
+		<type>I</type>
 		<desc>The channel for which the data conversion has to be done</desc>
 	</property>
 
-	<property id="output" st="O">
+	<property id="output" >
 		<name>Output</name>
-		<defaultValue> 0</defaultValue>
-		<veneer type="NT">name</veneer>
+		<defaultValue>0</defaultValue>
+		<veneer type="S" />
 		<dataType>uint32_t</dataType>
 		<type>O</type>
 		<desc>Output of the ADC</desc>
 	</property>
 
 	<includes>
-		<lib>stdio</lib>
+		<lib>stm32f4xx</lib>
+		<lib>FreeRTOS</lib>
+                <lib>task</lib>
+		<lib>arm_math</lib>
+                <lib>math_helper</lib>
 		<lib>stdlib</lib>
+                <lib>stdio</lib>
+		<lib>math</lib>
 	</includes>
 
 	<validHost>
