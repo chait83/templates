@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>ADC</id>
+	<id type="task">ADC</id>
 	<size>
 		<h>75</h>
 		<w>70</w>
@@ -25,7 +25,7 @@
 		<name>Adc</name>
 		<veneer type="S" />
 		<defaultValue>1</defaultValue>
-		<type>I</type>
+		<type>F</type>
 		<dataType>uint32_t</dataType>
 		<desc>The channel for which the data conversion has to be done</desc>
 	</property>
@@ -34,7 +34,7 @@
 		<name>Resolution</name>
 		<veneer type="S" />
 		<defaultValue> 12</defaultValue>
-		<type>I</type>
+		<type>F</type>
 		<dataType>uint32_t</dataType>
 		<desc>Set the resolution for data conversion</desc>
 	</property>
@@ -44,7 +44,7 @@
 		<defaultValue> 3</defaultValue>
 		<dataType>uint32_t</dataType>
 		<veneer type="S" />
-		<type>I</type>
+		<type>F</type>
 		<desc>Sampling rate for ADC conversion. As per Nquist criteria is
 			should be at least
 			twice the frequency of most significant hormonic
@@ -56,14 +56,14 @@
 		<defaultValue> 1</defaultValue>
 		<veneer type="S" />
 		<dataType>uint32_t</dataType>
-		<type>I</type>
+		<type>F</type>
 		<desc>The channel for which the data conversion has to be done</desc>
 	</property>
 
 	<property id="output" >
 		<name>Output</name>
-		<defaultValue>0</defaultValue>
-		<veneer type="S" />
+		<defaultValue>adcvalue</defaultValue>
+		<veneer type="DPT"> <nature type="B" /></veneer>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
 		<desc>Output of the ADC</desc>
@@ -72,11 +72,11 @@
 	<includes>
 		<lib>stm32f4xx</lib>
 		<lib>FreeRTOS</lib>
-                <lib>task</lib>
+         <lib>task</lib>
 		<lib>arm_math</lib>
-                <lib>math_helper</lib>
+         <lib>math_helper</lib>
 		<lib>stdlib</lib>
-                <lib>stdio</lib>
+         <lib>stdio</lib>
 		<lib>math</lib>
 	</includes>
 

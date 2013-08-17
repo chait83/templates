@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<condition>
+		<input1>1</input1>
+	</condition>
+	<case>
+		<case-start>{</case-start>
+		<id>true</id>
+		<name>true</name>
+		<case-end>}</case-end>
+	</case>
+</root>

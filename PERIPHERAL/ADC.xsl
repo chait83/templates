@@ -25,7 +25,7 @@
     void ADC_IRQHandler(void){
 
 	    adcValue= (float)ADC_GetConversionValue(ADCx);
-	    <xsl:value-of select="ADC/V/O/output"/> = adcValue * (5.0/4096.0);
+	  double  <xsl:value-of select="ADC/V/O/output"/> = adcValue * (5.0/4096.0);
 
     }
 
