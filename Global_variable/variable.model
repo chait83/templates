@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id init="Y">variable</id>
+	<name>var</name>
+	<type>M</type>
+	<desc>Variable of INTEGER type</desc>
+	<size>
+		<h>35</h>
+		<w>38</w>
+	</size>
+	
+	<property id="type" st="M">
+		<name>type</name>
+		<defaultValue>uint32_t</defaultValue>
+		<type>F</type>
+		<dataType>uint32_t
+				uint32_t
+			<nature type="D">
+			<!-- prop.id.I = listener.id.O -->
+				<listner id="input">
+					<clone I="value" O="dataType" />
+				</listner>
+				<listner id="output">
+					<clone I="value" O="dataType" />
+				</listner>
+			</nature>
+		
+		</dataType>
+		<desc>assigned type to the variable</desc>
+	</property>
+
+	<property id="input">
+		<name>input</name>
+		<veneer type="NT" />
+		<defaultValue>0</defaultValue>
+		<dataType>
+			uint32_t
+			<nature type="D">
+				<listner id="type">
+					<clone O="value" I="dataType" />
+				</listner>
+				<listner id="output">
+					<clone I="dataType" O="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<type>I</type>
+		<desc>Integer input</desc>
+	</property>
+
+	<property id="output">
+		<name>Ouput</name>
+		<veneer type="NT" />
+		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Integer output</desc>
+	</property>
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+		<host>LIB</host>
+		<host>Case</host>
+	</validHost>
+	<includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+	</includes>
+</Properties>
