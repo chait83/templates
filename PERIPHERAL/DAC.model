@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>DAC</id>
+	<id type>DAC</id>
 	<name>DAC</name>
 	<type>M</type>
 	<size>
