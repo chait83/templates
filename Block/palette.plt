@@ -18,5 +18,4 @@
         <desc>This is operations</desc>
         <icon>This is operations</icon>
 </item>
-
 </Palette>

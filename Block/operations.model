@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id type="Operations">operations</id>
+	<id type="Operation">operations</id>
 	<name>var</name>
 	<type>M</type>
 	<desc>operations of INTEGER type</desc>

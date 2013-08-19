@@ -5,8 +5,8 @@
 	<type>M</type>
 	<desc>This is a generic function</desc>
  
- <block>
-   <case-start>{</case-start>
+   <block-start>{</block-start>
+   
 	<property id="type" st="M">
 		<name>type</name>
 		<defaultValue>uint32_t</defaultValue>
@@ -24,7 +24,7 @@
 			</nature>
 		</dataType>
 		<desc>assigned type to the variable</desc>
-		
+	</property>	
 	<property id="input">
 		<name>input</name>
 		<defaultValue>param1</defaultValue>
@@ -51,12 +51,10 @@
 		<type>O</type>
 		<desc>Output from the function as its return value</desc>
 	</property>
-   <case-end>}</case-end>
-</block>	
+   <block-end>}</block-end>
 
 	<validHost>
-		<host>Block</host>
-		<host>Loop</host>
+		<host>Lib</host>
 	</validHost>
 		
 	
