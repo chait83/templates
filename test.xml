@@ -1,38 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id type="Case">IF-Condition</id>
-	<name>If condition</name>
+  <id>function</id>
+	<name>function</name>
 	<type>M</type>
-	<desc>This is a basic true false condition statement</desc>
-
-
-	<property id="cond">
-		<name>cond</name>
-		<veneer type="S" />
-		<desc>Condition for if</desc>
+	<desc>This is a generic function</desc>
+ 
+ <block>
+   <case-start>{</case-start>
+	<property id="type" st="M">
+		<name>type</name>
+		<defaultValue>uint32_t</defaultValue>
+		<type>F</type>
+		<dataType>uint32_t
+				uint32_t
+			<nature type="D">
+			<!-- prop.id.I = listener.id.O -->
+				<listner id="input">
+					<clone I="value" O="dataType" />
+				</listner>
+				<listner id="output">
+					<clone I="value" O="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<desc>assigned type to the variable</desc>
+		
+	<property id="input">
+		<name>input</name>
+		<defaultValue>param1</defaultValue>
 		<type>I</type>
-		<dataType>boolean</dataType>
-		<defaultValue> false</defaultValue>
-	</property>
-	<property id="true">
-		<name>true</name>
-		<desc>True condition</desc>
-		<type>C</type>
-		<case-start>{</case-start>
-		<case-end>}</case-end>
+		<veneer type="NT">Name</veneer>
+		<dataType>uint32_t</dataType>
+		<desc>assign Input value to the function as its Parameters</desc>
 	</property>
 
-	<property id="false">
-		<name>false</name>
-		<desc>True condition</desc>
-		<type>C</type>
-		<case-start>{</case-start>
-		<case-end>}</case-end>
+	<property id="output">
+		<name>return_type</name>
+		<defaultValue> void</defaultValue>
+		<veneer type="NT">Name</veneer>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Output from the function as its return value</desc>
 	</property>
+   <case-end>}</case-end>
+</block>	
 
 	<validHost>
 		<host>Block</host>
 		<host>Loop</host>
 	</validHost>
-
+		
+	
 </Properties>
+

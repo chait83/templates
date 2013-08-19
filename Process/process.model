@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id>Process</id>
+	<name>Process</name>
+	<type>M</type>
+	<desc>This is a generic Process used to Store Section of code or  groping of Particular element together to form one single Uniform element  </desc>
+
+	<property id="type" st="M">
+		<name>type</name>
+		<defaultValue>uintt32_t</defaultValue>
+		<type>F</type>
+		<dataType>uint32_t</dataType>
+		<desc>assign value to the Process</desc>
+	</property>
+	
+<property id="Process_Name" >
+		<name>Process</name>
+		<defaultValue>Process</defaultValue>
+		<type>F</type>
+		<veneer type="NT">Name</veneer>
+		<dataType>uint32_t</dataType>
+		<desc>assign value to the variable</desc>
+	</property>
+
+	<!-- I/P and O/P are Dynamic -->
+	
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>
+

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id type="Operations">operations</id>
+	<id init="Y">global_variable</id>
 	<name>var</name>
 	<type>M</type>
-	<desc>operations of INTEGER type</desc>
+	<desc>Global variable of INTEGER type</desc>
 	<size>
 		<h>35</h>
 		<w>38</w>
@@ -26,27 +26,42 @@
 			</nature>
 		
 		</dataType>
-		<desc>assigned type to the operations</desc>
+		<desc>assigned type to the Global variable</desc>
 	</property>
 
-	<!-- I/P and O/P are dynamics -->
+	<property id="input">
+		<name>input</name>
+		<veneer type="NT" />
+		<defaultValue>0</defaultValue>
+		<dataType>
+			uint32_t
+			<nature type="D">
+				<listner id="type">
+					<clone O="value" I="dataType" />
+				</listner>
+				<listner id="output">
+					<clone I="dataType" O="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<type>I</type>
+		<desc>Integer input</desc>
+	</property>
 
-	
-<property id="operations_Name" >
-		<name>operations</name>
-		<defaultValue>operations</defaultValue>
-		<type>F</type>
-		<veneer type="NT">Name</veneer>
+	<property id="output">
+		<name>Ouput</name>
+		<veneer type="NT" />
+		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
-		<desc>Name of operations</desc>
+		<type>O</type>
+		<desc>Integer output</desc>
 	</property>
 
 	<validHost>
 		<host>Block</host>
-		<host>Loop</host>
 		<host>LIB</host>
-		<host>Case</host>
 	</validHost>
+	
 	<includes>
 		<lib>stdio</lib>
 		<lib>math</lib>

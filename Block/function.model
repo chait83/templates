@@ -1,40 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-
-	<id>variable</id>
-	<name>Variable</name>
+  <id>function</id>
+	<name>function</name>
 	<type>M</type>
-	<desc>This is a generic variable</desc>
-
+	<desc>This is a generic function</desc>
+ 
+ <block>
+   <case-start>{</case-start>
 	<property id="type" st="M">
 		<name>type</name>
-		<defaultValue>float32_t</defaultValue>
+		<defaultValue>uint32_t</defaultValue>
 		<type>F</type>
-		<dataType>float32_t</dataType>
-		<desc>assign value to the variable</desc>
-	</property>
-
-	<property id="input" st="O">
+		<dataType>uint32_t
+				uint32_t
+			<nature type="D">
+			<!-- prop.id.I = listener.id.O -->
+				<listner id="input">
+					<clone I="value" O="dataType" />
+				</listner>
+				<listner id="output">
+					<clone I="value" O="dataType" />
+				</listner>
+			</nature>
+		</dataType>
+		<desc>assigned type to the variable</desc>
+		
+	<property id="input">
 		<name>input</name>
-		<defaultValue>0</defaultValue>
+		<defaultValue>param1</defaultValue>
 		<type>I</type>
 		<veneer type="NT">Name</veneer>
-		<dataType type="BD">float32_t</dataType>
-		<desc>assign value to the variable</desc>
+		<dataType>uint32_t</dataType>
+		<desc>assign Input value to the function as its Parameters</desc>
+	</property>
+	
+	<property id="Name">
+		<name>Function_Name</name>
+		<defaultValue>Fun</defaultValue>
+		<type>F</type>
+		<veneer type="NT">Name</veneer>
+		<dataType>unsigned char</dataType>
+		<desc>assign Name to function </desc>
 	</property>
 
-	<property id="output" st="O">
-		<name>Output</name>
-		<defaultValue> 0</defaultValue>
+	<property id="output">
+		<name>return_type</name>
+		<defaultValue> void</defaultValue>
 		<veneer type="NT">Name</veneer>
-		<dataType type="BD">float32_t</dataType>
+		<dataType>uint32_t</dataType>
 		<type>O</type>
-		<desc>Output of the variable</desc>
+		<desc>Output from the function as its return value</desc>
 	</property>
+   <case-end>}</case-end>
+</block>	
+
 	<validHost>
 		<host>Block</host>
 		<host>Loop</host>
 	</validHost>
-
+		
+	
 </Properties>
 
