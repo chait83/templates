@@ -27,7 +27,6 @@ static void DacTask(void *pvParameters){
 
 		initx();
 
-		//AdcTask to capture data from Temperature Sensor and convert to Digital
 		xTaskCreate(DacTask, (signed char*)"DacTask", 128, NULL,
 		tskIDLE_PRIORITY+1, NULL);
 

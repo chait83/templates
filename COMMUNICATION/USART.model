@@ -5,53 +5,78 @@
 	<type>M</type>
 	<desc>This is a generic variable</desc>
 	<size>
-		<h>120</h>
-		<w>140</w>
+		<h>75</h>
+		<w>55</w>
 	</size>
 
 	<property id="INPUT1">
 		<name>BAUD RATE</name>
 		<veneer type="S" />
+		<dataType>uint32_t</dataType>
 		<desc>Set Baud Rate for Serial Communication</desc>
-		<type>I</type>
+		<type>F</type>
 		<defaultValue> Default</defaultValue>
 	</property>
 
 	<property id="INPUT2">
 		<name>DATA BITS</name>
 		<veneer type="S" />
+		<dataType>uint32_t</dataType>
 		<desc>Set Data bits for Serial Communication</desc>
-		<type>I</type>
+		<type>F</type>
 		<defaultValue> Default</defaultValue>
 	</property>
 
 	<property id="INPUT3">
 		<name>PARTIY</name>
 		<veneer type="S" />
+		<dataType>uint32_t</dataType>
 		<desc>Set Parity bits for Serial Communication</desc>
-		<type>I</type>
+		<type>F</type>
 		<defaultValue> Default</defaultValue>
 	</property>
 
 	<property id="INPUT4">
 		<name>STOP BITS</name>
 		<veneer type="S" />
+		<dataType>uint32_t</dataType>
 		<desc>Set Stop bits for Serial Communication</desc>
-		<type>I</type>
+		<type>F</type>
 		<defaultValue> Default</defaultValue>
 	</property>
+	
+	<property id="input_data">
+		<name>Input_data</name>
+		<veneer type="S" />
+		<type>I</type>
+		<dataType>unsigned char</dataType>
+		<defaultValue>usartdata</defaultValue>
+		<desc>Set input data to be send</desc>
+	</property>
+	
+	<property id="usart_channel">
+		<name>usart</name>
+        <veneer type="S" />
+		<defaultValue>USART1</defaultValue>
+		<dataType>unsigned char</dataType>
+		<type>F</type>
+		<desc>The channel for which the data conversion has to be done</desc>
+	</property>
+ 
 
 	<property id="INPUT5">
 		<name>FLOW CONTROL</name>
 		<veneer type="S" />
+		<dataType>uint32_t</dataType>
 		<desc>Set flow control for Serial Communication</desc>
-		<type>I</type>
+		<type>F</type>
 		<defaultValue> Default</defaultValue>
 	</property>
 
 	<property id="OUTPUT">
 		<name>OUTPUT</name>
 		<veneer type="S" />
+		<dataType>uint32_t</dataType>
 		<desc>Set OUTPUT After Serial Communication</desc>
 		<type>O</type>
 		<defaultValue> Default</defaultValue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Palette id="COMMUNICATION" dispName="COMMUNICATION" editor="org.wow.editor.logiceditor">
+<palette id="COMMUNICATION" dispName="COMMUNICATION" editor="org.wow.editor.logiceditor">
 <item id="USART">
         <name>USART</name>
        <desc>This is USART</desc>
@@ -18,10 +18,4 @@
         <desc>This is ETHERNET</desc>
 </item>
 
-<item id="Variable">
-        <name>Variable</name>
-        <desc>This is Variable</desc>
-</item>
-
-
-</Palette>
+</palette>

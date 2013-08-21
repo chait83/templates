@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>GPIO</id>
+	<id type="Collection">GPIO</id>
 	<name>GPIO</name>
 	<type>M</type>
 	<size>
@@ -8,6 +8,16 @@
 		<w>70</w>
 	</size>
 	<desc>This unit is used to provide input or output functionality</desc>
+
+
+<property id="struct_name">
+		<name>Struct_Name</name>
+		<veneer type="S" />
+		<defaultValue>GPIO_InitStructure</defaultValue>
+		<dataType> const unsigned char</dataType>
+		<type>F</type>
+		<desc>Name of structure</desc>
+	</property>
 
 	<property id="Mode">
 		<name>Mode_of_operation</name>
@@ -30,21 +40,31 @@
 		<name>PIN_NO</name>
 		<defaultValue>Pin_1</defaultValue>
 		<dataType>uint32_t</dataType>
-		<type>I</type>
+		<type>F</type>
 		<desc>
 			select input/ouput Pin number for specified operation
-			e.g PA1 for LCD_Backlight,PA$ for DAC1 output<desc>
-
+			e.g PA1 for LCD_Backlight,PA$ for DAC1 output</desc>
+</property>
 
       <property id="Output_speed">
 		 <name>output_speed</name>
 		 <defaultValue>2MHz</defaultValue>
 		 <dataType>uint32_t</dataType>
-		 <type>I</type>
+		 <type>F</type>
 		 <desc> configure output speed of operation
 				NOTE:for reasons of power consumption and noise,
 				it is desirable to use the lowest speed consistent
 				with the I/O requirements.</desc>
+			</property>
+				
+	<property id="set_GPIO_value">
+		<name>value</name>
+		<veneer type="S" />
+		<defaultValue>GPIO_Pin_12</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<desc>set value to structure element</desc>
+	</property>
 				
 	<property id="Output">
 		<name>GPIO_out</name>
@@ -52,7 +72,7 @@
 		<dataType>uint32_t</dataType>
 		<type>I</type>
 		<desc>output from GPIO</desc>
-
+</property>
 	<includes>
 		<lib>stdio</lib>
 		<lib>stdlib</lib>

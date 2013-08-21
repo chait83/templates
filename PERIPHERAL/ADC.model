@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>Init_ADC</id>
+	<id>ADC</id>
 	<size>
-		<h>120</h>
-		<w>140</w>
+		<h>75</h>
+		<w>55</w>
 	</size>
 	<name>Initialize ADC</name>
 	<type>M</type>
@@ -21,11 +21,20 @@
 		is overrun
 	</desc>
 
+<property id="adc">
+		<name>ADC Selection</name>
+        <veneer type="S" />
+		<defaultValue>ADC1</defaultValue>
+		<dataType>unsigned char</dataType>
+		<type>F</type>
+		<desc>The channel for which the data conversion has to be done</desc>
+	</property>
+    	
 	<property id="resolution">
 		<name>Resolution</name>
 		<veneer type="S" />
 		<defaultValue> 12</defaultValue>
-		<type>I</type>
+		<type>F</type>
 		<dataType>uint32_t</dataType>
 		<desc>Set the resolution for data conversion</desc>
 	</property>
@@ -35,7 +44,7 @@
 		<defaultValue> Default</defaultValue>
 		<dataType>uint32_t</dataType>
 		<veneer type="S" />
-		<type>I</type>
+		<type>F</type>
 		<desc>Sampling rate for ADC conversion. As per Nquist criteria is
 			should be at least
 			twice the frequency of most significant hormonic
@@ -46,16 +55,17 @@
 		<name>CHANNEL SELECTION</name>
 		<defaultValue> 1</defaultValue>
 		<dataType>uint32_t</dataType>
+		<veneer type="S" />
 		<type>F</type>
 		<desc>The channel for which the data conversion has to be done</desc>
 	</property>
 
-	<property id="output" st="O">
+	<property id="output">
 		<name>Output</name>
-		<defaultValue> 0</defaultValue>
+		<defaultValue>adc_voltage</defaultValue>
 		<veneer type="T">name</veneer>
 		<dataType>uint32_t</dataType>
-		<type>O</type>
+		<type>F</type>
 		<desc>Output of the variable</desc>
 	</property>
 

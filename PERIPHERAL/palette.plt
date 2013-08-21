@@ -13,17 +13,10 @@
         <icon>This is DAC</icon>
 </item>
 
-
-<item id="IO">
-        <name>IO</name>
-        <desc>This is IO</desc>
-        <icon>This is IO</icon>
-</item>
-
-<item id="variable">
-        <name>variable</name>
-        <desc>This is IO</desc>
-        <icon>This is IO</icon>
+<item id="GPIO">
+        <name>GPIO</name>
+        <desc>This is GPIO</desc>
+        <icon>This is GPIO</icon>
 </item>
 
 </Palette>

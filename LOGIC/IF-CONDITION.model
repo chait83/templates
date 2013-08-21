@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
 	<id>Conditional statement</id>
-	<name>Variable</name>
+	<name>If-cond</name>
 	<type>M</type>
 	<desc>This is a generic variable for conditional statement </desc>
 	<size>
@@ -16,6 +16,7 @@
 		<type>I</type>
 		<defaultValue> Default</defaultValue>
 	</property>
+	
 <property id="OUTPUT">
 		<name>CONDITION</name>
 		<veneer type="S" />
