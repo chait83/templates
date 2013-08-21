@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id type="Handler">ADC</id>
+	<id>Init_ADC</id>
 	<size>
-		<h>75</h>
-		<w>70</w>
+		<h>120</h>
+		<w>140</w>
 	</size>
-	<name>ADC</name>
+	<name>Initialize ADC</name>
 	<type>M</type>
 	<desc>This unit is used to initialize ADC.
 		Default mode of operation is
@@ -21,30 +21,21 @@
 		is overrun
 	</desc>
 
-<property id="adc">
-		<name>Adc</name>
-		<veneer type="S" />
-		<defaultValue>1</defaultValue>
-		<type>F</type>
-		<dataType>uint32_t</dataType>
-		<desc>The channel for which the data conversion has to be done</desc>
-	</property>
-
 	<property id="resolution">
 		<name>Resolution</name>
 		<veneer type="S" />
 		<defaultValue> 12</defaultValue>
-		<type>F</type>
+		<type>I</type>
 		<dataType>uint32_t</dataType>
 		<desc>Set the resolution for data conversion</desc>
 	</property>
 
 	<property id="samplingRate">
 		<name>Sampling Rate</name>
-		<defaultValue> 3</defaultValue>
+		<defaultValue> Default</defaultValue>
 		<dataType>uint32_t</dataType>
 		<veneer type="S" />
-		<type>F</type>
+		<type>I</type>
 		<desc>Sampling rate for ADC conversion. As per Nquist criteria is
 			should be at least
 			twice the frequency of most significant hormonic
@@ -54,31 +45,19 @@
 	<property id="channel">
 		<name>CHANNEL SELECTION</name>
 		<defaultValue> 1</defaultValue>
-		<veneer type="S" />
 		<dataType>uint32_t</dataType>
 		<type>F</type>
 		<desc>The channel for which the data conversion has to be done</desc>
 	</property>
 
-	<property id="output" >
+	<property id="output" st="O">
 		<name>Output</name>
-		<defaultValue>adcvalue</defaultValue>
-		<veneer type="DPT"> <nature type="B" /></veneer>
+		<defaultValue> 0</defaultValue>
+		<veneer type="T">name</veneer>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
-		<desc>Output of the ADC</desc>
+		<desc>Output of the variable</desc>
 	</property>
-
-	<includes>
-		<lib>stm32f4xx</lib>
-		<lib>FreeRTOS</lib>
-         <lib>task</lib>
-		<lib>arm_math</lib>
-         <lib>math_helper</lib>
-		<lib>stdlib</lib>
-         <lib>stdio</lib>
-		<lib>math</lib>
-	</includes>
 
 	<validHost>
 		<host>Block</host>

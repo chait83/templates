@@ -1,55 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-  <id>function</id>
-	<name>function</name>
+
+
+	<id init="Y">INTEGER</id>
+	<name>var</name>
 	<type>M</type>
-	<desc>This is a generic function</desc>
- 
- <block>
-   <case-start>{</case-start>
+	<desc>Variable of INTEGER type</desc>
+	<size>
+		<h>40</h>
+		<w>60</w>
+	</size>
 	<property id="type" st="M">
 		<name>type</name>
 		<defaultValue>uint32_t</defaultValue>
 		<type>F</type>
-		<dataType>uint32_t
-				uint32_t
-			<nature type="D">
-			<!-- prop.id.I = listener.id.O -->
-				<listner id="input">
-					<clone I="value" O="dataType" />
-				</listner>
-				<listner id="output">
-					<clone I="value" O="dataType" />
-				</listner>
-			</nature>
-		</dataType>
+		<dataType>uint32_t</dataType>
 		<desc>assigned type to the variable</desc>
-		
+	</property>
+
 	<property id="input">
 		<name>input</name>
-		<defaultValue>param1</defaultValue>
-		<type>I</type>
-		<veneer type="NT">Name</veneer>
+		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
-		<desc>assign Input value to the function as its Parameters</desc>
+		<type>I</type>
+		<desc>Integer input</desc>
 	</property>
 
 	<property id="output">
-		<name>return_type</name>
-		<defaultValue> void</defaultValue>
-		<veneer type="NT">Name</veneer>
+		<name>Ouput</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
-		<desc>Output from the function as its return value</desc>
+		<desc>Integer output</desc>
 	</property>
-   <case-end>}</case-end>
-</block>	
 
 	<validHost>
 		<host>Block</host>
 		<host>Loop</host>
 	</validHost>
-		
-	
+	<includes>
+		<lib>stdio</lib>
+		<lib>math</lib>
+	</includes>
 </Properties>
-

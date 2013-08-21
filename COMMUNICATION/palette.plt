@@ -18,4 +18,10 @@
         <desc>This is ETHERNET</desc>
 </item>
 
+<item id="Variable">
+        <name>Variable</name>
+        <desc>This is Variable</desc>
+</item>
+
+
 </Palette>

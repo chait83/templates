@@ -1,33 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id type="Case">IF-Condition</id>
-	<name>If condition</name>
+	<id>Conditional statement</id>
+	<name>Variable</name>
 	<type>M</type>
-	<desc>This is a basic true false condition statement</desc>
+	<desc>This is a generic variable for conditional statement </desc>
+	<size>
+		<h>80</h>
+		<w>120</w>
+	</size>
 
-
-	<property id="cond">
-		<name>cond</name>
+	<property id="INPUT1">
+		<name>CONDITION</name>
 		<veneer type="S" />
-		<desc>Condition for if</desc>
+		<desc>Set the Input for condition</desc>
 		<type>I</type>
-		<dataType>boolean</dataType>
-		<defaultValue> false</defaultValue>
+		<defaultValue> Default</defaultValue>
 	</property>
-	<property id="true">
-		<name>true</name>
-		<desc>True condition</desc>
-		<type>C</type>
-		<case-start>{</case-start>
-		<case-end>}</case-end>
-	</property>
-
-	<property id="false">
-		<name>false</name>
-		<desc>True condition</desc>
-		<type>C</type>
-		<case-start>{</case-start>
-		<case-end>}</case-end>
+<property id="OUTPUT">
+		<name>CONDITION</name>
+		<veneer type="S" />
+		<desc>Set the Input for condition</desc>
+		<type>O</type>
+		<defaultValue> Default</defaultValue>
 	</property>
 
 

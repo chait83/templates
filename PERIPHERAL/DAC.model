@@ -1,82 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id type>DAC</id>
-	<name>DAC</name>
+	<id>DAC_init</id>
+	<name>Initailze DAC</name>
 	<type>M</type>
+	<desc>This is a generic variable</desc>
 	<size>
-		<h>75</h>
-		<w>70</w>
+		<h>120</h>
+		<w>140</w>
 	</size>
-	<desc>Digital to analog conversion</desc>
 
-	<property id="AQUISITION_TYPE">
+	<property id="INPUT">
 		<name>AQUISITION TYPE</name>
-		<defaultValue>single_channel</defaultValue>
-		<veneer type="NT">name</veneer>
+		<defaultValue> Default</defaultValue>
+		<veneer type="T">name</veneer>
 		<dataType>uint32_t</dataType>
 		<type>I</type>
 		<desc>Single channel, Double channel aquisition </desc>
 	</property>
 
-	<property id="Digital_Input" st="O">
+	<property id="Input" st="O">
 		<name>Input</name>
 		<defaultValue> 0</defaultValue>
-		<veneer type="NT">name</veneer>
+		<veneer type="T">name</veneer>
 		<dataType>uint32_t</dataType>
 		<type>I</type>
-		<desc>Digital signal as an Input o DAC</desc>
+		<desc>Intput of the variable</desc>
 	</property>
 
-	<property id="Data_format">
-		<name>Data_format</name>
-		<veneer type="NT">name</veneer>
-		<defaultValue>8</defaultValue>
-		<type>I</type>
-		<dataType>uint32_t</dataType>
-		<desc>set data format 8 bit or 12 bit </desc>
-	</property>
-
-	<property id="data_alignment">
+	<property id="mode">
 		<name>MODE</name>
-		<veneer type="NT">name</veneer>
-		<defaultValue> 0</defaultValue>
+		<veneer type="T">name</veneer>
+                <defaultValue> 0</defaultValue>
 		<type>F</type>
 		<dataType>uint32_t</dataType>
 		<desc>A entery menu for setting type : LEFT or RIGHT ALIGNED </desc>
 	</property>
 
-	<property id="Conversion_type">
-		<name>Conversion_type</name>
-		<veneer type="NT">name</veneer>
-		<defaultValue>Independent</defaultValue>
-		<type>F</type>
-		<dataType>uint32_t</dataType>
-		<desc>Set Data conversion type Independent/Simultaneous </desc>
-	</property>
-
-	<property id="Conversion_triggering">
-		<name>Conversion_trigger</name>
-		<veneer type="NT">name</veneer>
-		<defaultValue>Timer</defaultValue>
-		<type>F</type>
-		<dataType>uint32_t</dataType>
-		<desc>Set Data conversion triggering type Timer Driven or External
-			signal or DMA </desc>
-	</property>
-
 	<property id="channelSel">
-		<name>Chanel_select</name>
+		<name>CHANNEL SELECTION</name>
 		<type>F</type>
-		<veneer type="NT">name</veneer>
+		<veneer type="T">name</veneer>
 		<dataType>uint32_t</dataType>
-		<defaultValue>DAC1</defaultValue>
-		<desc>set Channel for DAC</desc>
+		<defaultValue> 0</defaultValue>
+		<desc>Channel selection</desc>
 	</property>
 
 	<property id="clock">
 		<name>DAC CLOCK</name>
 		<type>F</type>
-		<veneer type="NT">name</veneer>
+		<veneer type="T">name</veneer>
 		<dataType>uint32_t</dataType>
 		<defaultValue> 100</defaultValue>
 		<desc>A entery menu for setting CLOCK</desc>
@@ -85,16 +57,11 @@
 	<property id="output" st="O">
 		<name>Output</name>
 		<defaultValue> 0</defaultValue>
-		<veneer type="NT">name</veneer>
+		<veneer type="T">name</veneer>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
-		<desc>Analog output</desc>
+		<desc>Output of the variable</desc>
 	</property>
-
-	<includes>
-		<lib>stdio</lib>
-		<lib>stdlib</lib>
-	</includes>
 
 	<validHost>
 		<host>Block</host>

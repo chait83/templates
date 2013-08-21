@@ -1,104 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
     <id>Find_and_Replace</id>
-	<name>strfnr</name>
+	<name>Variable</name>
 	<type>M</type>
 	<desc>This is a generic variable</desc>
 	<size>
-		<h>65</h>
-		<w>70</w>
+		<h>100</h>
+		<w>140</w>
 	</size>
 	
-	<property id="type" st="M">
-		<name>type</name>
-		<defaultValue></defaultValue>
-		<type>F</type>
-		<dataType type="array">
-			unsigned char
-			<nature type="D">
-				<listner id="Str_result">
-					<clone I="value" O="dataType" />
-				</listner>
-				<listner id="Str_source">
-					<clone I="value" O="dataType" />
-				</listner>
-				<listner id="Str_find">
-					<clone I="value" O="dataType" />
-				</listner>
-				<listner id="Str_replace">
-					<clone I="value" O="dataType" />
-				</listner>
-			</nature>
-		</dataType>
-		<desc>  Strings input for string find and replace</desc>
-	</property>
-	
-	<property id="Str_source">
-		<name>Source_string</name>
+	<property id="Input1">
+		<name>FIND</name>
+		<defaultValue>Default</defaultValue>
 		<veneer type="S" />
-		<defaultValue>unsigned char</defaultValue>
-		<dataType type="array">
-			unsigned char
-			<nature type="D">
-				<listner id="Str_result"></listner>
-				<listner id="type">
-					<clone O="value" I="dataType" />
-				</listner>
-			</nature>
-		</dataType>
+		<desc>Set the resolution for data conversion</desc>
 		<type>I</type>
-		<desc>Provide Source string</desc>
 	</property>
 
-	
-	<property id="Str_find">
-		<name>find_string</name>
+	<property id="input2">
+		<name>REPLACE</name>
 		<veneer type="S" />
-		<defaultValue>unsigned char</defaultValue>
-		<dataType type="array">
-			unsigned char
-			<nature type="D">
-				<listner id="Str_result"></listner>
-				<listner id="type">
-					<clone O="value" I="dataType" />
-				</listner>
-			</nature>
-		</dataType>
+		<desc>Set the resolution for data conversion</desc>
 		<type>I</type>
-		<desc>Provide string which is to be search</desc>
+		<defaultValue> Default</defaultValue>
 	</property>
-	
-	<property id="Str_replace">
-		<name>replace_string</name>
+
+	<property id ="Output">
+		<name>Output</name>
 		<veneer type="S" />
-		<defaultValue>unsigned char</defaultValue>
-		<dataType type="array">
-			unsigned char
-			<nature type="D">
-				<listner id="Str_result"></listner>
-				<listner id="type">
-					<clone O="value" I="dataType" />
-				</listner>
-			</nature>
-		</dataType>
-		<type>I</type>
-		<desc>Provide string which is to be replace </desc>
-	</property>
-	
-	<property id="Str_result">
-		<name>String Output</name>
-		<veneer type="S" />
-		<defaultValue>unsigned char</defaultValue>
-		<dataType type="array">unsigned char</dataType>
+		<desc>Set Output of inputs</desc>
 		<type>O</type>
-		<desc> Provide resulting string after find and replace </desc>
+		<defaultValue> Default</defaultValue>
 	</property>
-	
-	<includes>
-		<lib>stdio</lib>
-		<lib>string</lib>
-	</includes>
-	
+
 	<validHost>
 		<host>Block</host>
 		<host>Loop</host>

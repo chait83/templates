@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-
+<size>
+	<h>80</h>
+	<w>100</w>
+</size>
 	<property id="proName1">
 		<name>DIRECTION</name>
 		<veneer type="S" />
-		<size>
-	        <h>57</h>
-	        <w>70</w>
-         </size>
 		<desc>Set the resolution for data conversion</desc>
 		<type>I</type>
                 <defaultValue> Default</defaultValue>
@@ -26,20 +25,15 @@
 	<property id="output" st="O">
 		<name>Output</name>
 		<defaultValue> 0</defaultValue>
-		<veneer type="NT">name</veneer>
+		<veneer type="T">name</veneer>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
 		<desc>Output of the variable</desc>
 	</property>
 
-   <includes>
-		<lib>stdio</lib>
-		<lib>stdlib</lib>
-	</includes>
-
 <validHost>
-     <host>Block</host>
-     <host>Loop</host>
+<host>Block</host>
+<host>Loop</host>
 </validHost>
 
 </Properties>
