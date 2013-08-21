@@ -2,7 +2,7 @@
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:template match="/">
 	<xsl:choose>
-		<xsl:when test="variable/initElement='Y'">
+		<xsl:when test="variable/initElement='B'">
 		  <xsl:value-of select="variable/type" /> &#160; <xsl:value-of select="variable/Name" /> = <xsl:value-of select="variable/input_def"></xsl:value-of>;
 		</xsl:when>
 		<xsl:otherwise>

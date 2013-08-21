@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id init="Y">constant</id>
+	<id init="L" type="Def">constant</id>
 	<name>var</name>
 	<type>M</type>
 	<desc>constant value</desc>

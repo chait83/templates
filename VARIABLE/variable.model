@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id init="Y">variable</id>
+	<id init="B">variable</id>
 	<name>var</name>
 	<type>M</type>
 	<desc>Variable of INTEGER type</desc>
