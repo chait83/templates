@@ -6,8 +6,8 @@
         <icon>This is IF-CONDITION</icon>
 </item>
 
-<item id="SWITCH-CASE">
-        <name>SWITCH-CASE</name>
+<item id="switch_case">
+        <name>Switch case</name>
         <desc>This is SWITCH-CASE</desc>
         <icon>This is SWITCH-CASE</icon>
 </item>
