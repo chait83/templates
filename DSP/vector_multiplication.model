@@ -38,7 +38,9 @@
 
 	<property id="vector_mul_result">
 		<name>vector_mul</name>
-		<veneer type="S" />
+		<!-- DPT= Dynamic properties B=Buffer 
+		used only when variable taken as  output -->
+		<veneer type="DPT"> <nature type="B" /></veneer>
 		<type>F</type>
 		<dataType type="Array">uint32_t</dataType>
 		<defaultValue>Vect_out</defaultValue>

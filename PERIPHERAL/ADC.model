@@ -69,6 +69,7 @@
 		<desc>Output of the variable</desc>
 	</property>
 
+
 	<validHost>
 		<host>Block</host>
 		<host>Loop</host>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>stucture</id>
+	<id init="B" type="Collection">stucture</id>
 	<name>Struct</name>
 	<type>M</type>
 	<size>
@@ -65,9 +65,9 @@
 	<includes>
 		<lib>stdio</lib>
 		<lib>math</lib>
-		<lib>lib</lib>
+		<lib>stdlib</lib>
+		
 	</includes>
-
 
 	<validHost>
 		<host>Block</host>

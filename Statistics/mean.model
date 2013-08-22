@@ -37,7 +37,6 @@
 	<includes>
 		<lib>stdio</lib>
 		<lib>math</lib>
-		<lib>string</lib>
 		<lib>arm_math</lib>
 	</includes>
 

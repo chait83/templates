@@ -6,7 +6,7 @@
 		<h>55</h>
 		<w>70</w>
 	</size>
-	<desc> dot_product of input sequences</desc>
+	<desc> dot product of input sequences</desc>
 
 	<property id="vector1">
 		<name>vect1</name>
@@ -42,7 +42,7 @@
 		<type>F</type>
 		<dataType type="Array">uint32_t</dataType>
 		<defaultValue>Vect_out</defaultValue>
-		<desc>set pointer for output of dot_product  </desc>
+		<desc>set pointer for output of dot product  </desc>
 	</property>
 
 	<includes>

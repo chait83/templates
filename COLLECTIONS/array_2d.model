@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id init="Y">Array_2D</id>
+	<id init="B">Array_2D</id>
 	<name>arr_2D</name>
 	<type>M</type>
 	<size>
@@ -22,7 +22,7 @@
 				</listner>
 			</nature>
 		</dataType>
-		<desc>assign value to the variable</desc>
+		<desc>assign value to the variable Dynamically</desc>
 	</property>
 
 	<property id="array_type">
@@ -88,7 +88,8 @@
 
 	<property id="output_array">
 		<name>Output</name>
-		<veneer type="S" />
+		<!-- DPT= Dynamic properties B=Buffer 
+		used only when variable taken as  output -->
 		<veneer type="DPT"> <nature type="B" /></veneer>
 		<dataType>
 			uint32_t

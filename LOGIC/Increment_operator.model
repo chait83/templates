@@ -37,7 +37,6 @@
 
 	<includes>
 		<lib>stdio</lib>
-		<lib>math</lib>
 	</includes>
 	<validHost>
 		<host>Block</host>

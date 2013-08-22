@@ -63,9 +63,15 @@
 		<type>I</type>
 		<desc>Provide an exponenet input</desc>
 	</property>
+	
 	<property id="output">
 		<name>Output</name>
-		<veneer type="S" />		<defaultValue>0</defaultValue>
+		<!-- DPT= Dynamic properties B=Buffer 
+		used only when variable taken as  output -->
+		<veneer type="DPT">
+			<nature type="B" />
+		</veneer>
+		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
 		<desc>Store the calculated base exponent result</desc>

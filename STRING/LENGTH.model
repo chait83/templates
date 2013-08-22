@@ -55,7 +55,6 @@
 
 	<includes>
 		<lib>stdio</lib>
-		<lib>math</lib>
 		<lib>string</lib>
 	</includes>
 

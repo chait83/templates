@@ -78,7 +78,6 @@
     
     <includes>
 		<lib>stdio</lib>
-		<lib>math</lib>
 	</includes>
 
 

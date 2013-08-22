@@ -6,7 +6,7 @@
 		<h>55</h>
 		<w>70</w>
 	</size>
-	<desc> vector_add of input sequences</desc>
+	<desc> vector addition of input sequences</desc>
 
 	<property id="vector1">
 		<name>vect1</name>
@@ -38,7 +38,9 @@
 
 	<property id="vector_add_result">
 		<name>dot_prod</name>
-		<veneer type="S" />
+		<!-- DPT= Dynamic properties B=Buffer 
+		used only when variable taken as  output -->
+		<veneer type="DPT"> <nature type="B" /></veneer>
 		<type>F</type>
 		<dataType type="Array">uint32_t</dataType>
 		<defaultValue>Vect_out</defaultValue>

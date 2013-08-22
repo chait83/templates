@@ -28,7 +28,9 @@
 	</property>
 
 	<property id="Quotient">
-		<name>Quotient</name>	
+		<name>Quotient</name>
+		<!-- DPT= Dynamic properties B=Buffer 
+		used only when variable taken as  output -->	
 		<veneer type="DPT"> <nature type="B" /></veneer>
 		<defaultValue>0</defaultValue>
 		<dataType>double</dataType>
@@ -38,6 +40,8 @@
 
 	<property id="remainder">
 		<name>Output</name>
+		<!-- DPT= Dynamic properties B=Buffer 
+		used only when variable taken as  output -->
 		<veneer type="DPT"> <nature type="B" /></veneer>
 		<defaultValue>0</defaultValue>
 		<dataType>double</dataType>

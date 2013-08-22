@@ -20,6 +20,8 @@
 
 	<property id="output">
 		<name>output</name>
+		<!-- DPT= Dynamic properties B=Buffer 
+		used only when variable taken as  output -->
 		<veneer type="DPT"> <nature type="B" /></veneer>
 		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>

@@ -71,6 +71,9 @@
 
     <includes>
 		<lib>stdio</lib>
+		<lib>FreeRTOS</lib>
+		<lib>math</lib>
+		<lib>timers</lib>
 		<lib>stdlib</lib>
 	</includes>
 	<validHost>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id init="Y">Array</id>
+	<id init="B">Array</id>
 	<name>arr</name>
 	<type>M</type>
 	<desc>Variable of INTEGER type</desc>
@@ -75,7 +75,9 @@
 
 	<property id="output_array">
 		<name>Output</name>
-		<veneer type="S" />
+		<!-- DPT= Dynamic properties B=Buffer 
+		used only when variable taken as  output -->
+		<veneer type="DPT"> <nature type="B" /></veneer>
 		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>O</type>

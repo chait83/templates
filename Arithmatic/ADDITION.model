@@ -28,6 +28,8 @@
 
 	<property id="sum">
 		<name>Output</name>
+		<!-- DPT= Dynamic properties B=Buffer 
+		used only when variable taken as  output -->
 		<veneer type="DPT"> <nature type="B" /></veneer>
 		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
@@ -38,7 +40,6 @@
 	<includes>
 		<lib>stdio</lib>
 		<lib>math</lib>
-		<lib>lib</lib>
 	</includes>
 
 	<validHost>

@@ -75,7 +75,11 @@
 </property>
 	<includes>
 		<lib>stdio</lib>
+		<lib>FreeRTOS</lib>
+		<lib>task</lib>
+		<lib>math</lib>
 		<lib>stdlib</lib>
+		<lib>stm32f4xx</lib>
 	</includes>
 
 	<validHost>

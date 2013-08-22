@@ -3,11 +3,12 @@
 	<id init="B" type="Def">global_variable</id>
 	<name>var</name>
 	<type>M</type>
-	<desc>Global variable of INTEGER type</desc>
 	<size>
 		<h>35</h>
 		<w>38</w>
 	</size>
+	<desc>Global variable of generic type</desc>
+	
 	
 	<property id="type" st="M">
 		<name>type</name>
@@ -49,12 +50,12 @@
 	</property>
 
 	<property id="output">
-		<name>Ouput</name>
+		<name>Output</name>
 		<veneer type="NT" />
 		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
-		<desc>Integer output</desc>
+		<desc>global variable output</desc>
 	</property>
 
 	<validHost>

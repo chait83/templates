@@ -33,6 +33,11 @@
 		<defaultValue> Default</defaultValue>
 	</property>
 
+
+	<includes>
+		<lib>stdio</lib>
+		<lib>string</lib>
+	</includes>
 	<validHost>
 		<host>Block</host>
 		<host>Loop</host>

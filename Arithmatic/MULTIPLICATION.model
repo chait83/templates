@@ -12,10 +12,10 @@
 	<property id="input1">
 		<name>input</name>
 		<veneer type="S" />
-		<desc>Set input for Multiplication</desc>
 		<type>I</type>
 		<dataType>uint32_t</dataType>
-		<defaultValue> Default</defaultValue>
+		<defaultValue>0</defaultValue>
+		<desc>Set input for Multiplication</desc>
 	</property>
 
 	<property id="input2">
@@ -24,11 +24,13 @@
 		<desc>Set input for Multiplication</desc>
 		<type>I</type>
 		<dataType>uint32_t</dataType>
-		<defaultValue> Default</defaultValue>
+		<defaultValue>0</defaultValue>
 	</property>
 
 	<property id="Product">
 		<name>Output</name>
+		<!-- DPT= Dynamic properties B=Buffer 
+		used only when variable taken as  output -->
 		<veneer type="DPT">
 			<nature type="B" />
 		</veneer>

@@ -89,7 +89,9 @@
   
   <property id="output_signal">
     <name>Output Data</name>
-    <veneer type="S"/>
+    <!-- DPT= Dynamic properties B=Buffer 
+		used only when variable taken as  output -->
+		<veneer type="DPT"> <nature type="B" /></veneer>
     <defaultValue>1</defaultValue>
     <dataType type="Array">float32_t</dataType>
     <type>O</type>
@@ -97,8 +99,8 @@
     </property>
   
   <includes>
-     <lib>stdio</lib>
-    <lib>string</lib>
+    <lib>arm_math</lib>
+    <lib>math_helper</lib>
   </includes>
   
   <validHost>

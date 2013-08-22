@@ -3,7 +3,8 @@
 	<id>Process</id>
 	<name>Process</name>
 	<type>M</type>
-	<desc>This is a generic Process used to Store Section of code or  groping of Particular element together to form one single Uniform element  </desc>
+	<desc>This is a generic Process used to Store Section of code or 
+	 groping of Particular element together to form one single Uniform element  </desc>
 
 	<property id="type" st="M">
 		<name>type</name>

@@ -3,7 +3,7 @@
 	<id>USART</id>
 	<name>USART</name>
 	<type>M</type>
-	<desc>This is a generic variable</desc>
+	<desc>This is a generic variable used for USART</desc>
 	<size>
 		<h>75</h>
 		<w>55</w>
@@ -81,6 +81,15 @@
 		<type>O</type>
 		<defaultValue> Default</defaultValue>
 	</property>
+	
+	<includes>
+		<lib>stm32f4xx</lib>
+		<lib>FreeRTOS</lib>
+		<lib>task</lib>
+		<lib>math</lib>
+		<lib>stdlib</lib>
+		<lib>stdio</lib>
+	</includes>
 
 	<validHost>
 		<host>Block</host>

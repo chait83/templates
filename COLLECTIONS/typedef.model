@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
 
-	<id>typedef</id>
+	<id init="B" type="Collection">typedef</id>
 	<name>typedef</name>
 	<type>M</type>
 	<size>
@@ -43,7 +43,6 @@
 	</validHost>
 	<includes>
 		<lib>stdio</lib>
-		<lib>math</lib>
 	</includes>
 
 </Properties>

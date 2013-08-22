@@ -63,8 +63,8 @@
 		<host>LIB</host>
 		<host>Case</host>
 	</validHost>
+	
 	<includes>
 		<lib>stdio</lib>
-		<lib>math</lib>
 	</includes>
 </Properties>
