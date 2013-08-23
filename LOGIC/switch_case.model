@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root>
-	<condition>
-		<input1>xyz</input1>
-	</condition>
-	<case>
+<Properties>
+	<id>switch-case</id>
+	<name>Switch case</name>
+	<type>M</type>
+	<desc>This is a generic variable for conditional statement </desc>
+	<size>
+		<h>80</h>
+		<w>120</w>
+	</size>
+
+	<property id="INPUT1">
+		<name>CONDITION</name>
+		<veneer type="D" />
+		<desc>Set the Input for condition</desc>
+		<type>I</type>
+		<defaultValue> 0</defaultValue>
+		<dataType>uint32_t</dataType>
+	</property>
+	<property id="default">
+		<type>C</type>
+		<name>default</name>
+		<desc>default case</desc>
 		<case-start>{</case-start>
-		<id>true</id>
-		<name>true</name>
 		<case-end>}</case-end>
-		<count>0</count>
-	</case>
-</root>
+	</property>
+
+	<validHost>
+		<host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>
