@@ -13,6 +13,5 @@
 	</xsl:choose>
 	
   
-    
-	</xsl:template>
+    </xsl:template>
 </xsl:stylesheet>
