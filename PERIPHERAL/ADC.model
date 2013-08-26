@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>ADC</id>
+	<id type="Handler">ADC</id>
 	<size>
 		<h>75</h>
 		<w>55</w>
 	</size>
-	<name>Initialize ADC</name>
+	<name>ADC</name>
 	<type>M</type>
 	<desc>This unit is used to initialize ADC.
 		Default mode of operation is
@@ -24,7 +24,7 @@
 <property id="adc">
 		<name>ADC Selection</name>
         <veneer type="S" />
-		<defaultValue>ADC1</defaultValue>
+		<defaultValue>1</defaultValue>
 		<dataType>unsigned char</dataType>
 		<type>F</type>
 		<desc>The channel for which the data conversion has to be done</desc>
@@ -41,7 +41,7 @@
 
 	<property id="samplingRate">
 		<name>Sampling Rate</name>
-		<defaultValue> Default</defaultValue>
+		<defaultValue>3</defaultValue>
 		<dataType>uint32_t</dataType>
 		<veneer type="S" />
 		<type>F</type>
@@ -65,11 +65,19 @@
 		<defaultValue>adc_voltage</defaultValue>
 		<veneer type="T">name</veneer>
 		<dataType>uint32_t</dataType>
-		<type>F</type>
-		<desc>Output of the variable</desc>
+		<type>O</type>
+		<desc>Output after Aanalog to Digital Conversion</desc>
 	</property>
 
-
+ <includes>
+   <lib>stm32f4xx</lib>
+   <lib>FreeRTOS</lib>
+   <lib>task</lib>
+   <lib>stdio</lib>
+   <lib>math</lib>
+   <lib>stdlib</lib>
+ </includes>
+ 
 	<validHost>
 		<host>Block</host>
 		<host>Loop</host>

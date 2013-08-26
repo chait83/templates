@@ -2,11 +2,34 @@
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:template match="/">
 	
-	ADC_Resolution_Xb = ADC_Resolution_<xsl:value-of select="ADC/resolution"/>b ;
-	ADC_SampleTime_XCycles = ADC_SampleTime_<xsl:value-of select="ADC/samplingRate"/>Cycles ;
-	ADC_Channel_X = ADC_Channel_<xsl:value-of select="ADC/channel"/> ;
-	ADCx = ADC<xsl:value-of select="ADC/adc"/> ;
+	 <xsl:choose>
+		<xsl:when test="ADC/type='Handler'">
+		  ADC_Resolution_Xb = ADC_Resolution_<xsl:value-of select="ADC/resolution"/>b ;
+	      ADC_SampleTime_XCycles = ADC_SampleTime_<xsl:value-of select="ADC/samplingRate"/>Cycles ;
+	      ADC_Channel_X = ADC_Channel_<xsl:value-of select="ADC/channel"/> ;
+	      ADCx = ADC<xsl:value-of select="ADC/adc"/> ;
+	      initx(){
+
+                adcInit();
+                usartInit();
+
+                }
+         </xsl:when>
 	
+	<xsl:otherwise>
+	
+	 <xsl:if test="ADC/V/O/output">
+	 
+         void ADC_IRQHandler(void){
+                adcValue= (float)ADC_GetConversionValue(ADCx);
+	             <xsl:value-of select="ADC/V/O/output"/> = adcValue * (5.0/4096.0);
+              }
+	
+		</xsl:if>
+		</xsl:otherwise>
+	</xsl:choose>
+		
+		
 	static void AdcTask(void *pvParameters){
 
     	ADC_SoftwareStartConv(ADCx);
@@ -21,22 +44,12 @@
     			
     	}
     }
-    
-    void ADC_IRQHandler(void){
-
-	    adcValue= (float)ADC_GetConversionValue(ADCx);
-	    <xsl:value-of select="ADC/V/O/output"/> = adcValue * (5.0/4096.0);
-
-    }
-
-    initx(){
-
-        adcInit();
-        usartInit();
-
-    }
+	
+		   
     
     int main(void){
+
+          initx();
 	
     	xTaskCreate(AdcTask, (signed char*)"AdcTask", 128, NULL, tskIDLE_PRIORITY+1, NULL);
     

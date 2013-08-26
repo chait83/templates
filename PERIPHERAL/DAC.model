@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id>DAC_init</id>
-	<name>Initailze DAC</name>
+	<id>DAC</id>
+	<name>DAC</name>
 	<type>M</type>
 	<desc>This is a generic variable</desc>
 	<size>
-		<h>120</h>
-		<w>140</w>
+		<h>75</h>
+		<w>55</w>
 	</size>
 
 	<property id="INPUT">
@@ -63,6 +63,15 @@
 		<desc>Output of the variable</desc>
 	</property>
 
+ <includes>
+   <lib>stm32f4xx</lib>
+   <lib>FreeRTOS</lib>
+   <lib>task</lib>
+   <lib>stdio</lib>
+   <lib>math</lib>
+   <lib>stdlib</lib>
+ </includes>
+ 
 	<validHost>
 		<host>Block</host>
 		<host>Loop</host>

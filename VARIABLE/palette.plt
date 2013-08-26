@@ -4,4 +4,8 @@
         <name>variable</name>
         <desc>This is generic variable</desc>
 </item>
+<item id="constant">
+        <name>constant</name>
+        <desc>This is constant</desc>
+</item>
 </Palette>

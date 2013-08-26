@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id init="B" type="Def">global_variable</id>
+	<id init="Y" type="Def">global_variable</id>
 	<name>var</name>
 	<type>M</type>
 	<size>
@@ -60,7 +60,6 @@
 
 	<validHost>
 		<host>Block</host>
-		<host>LIB</host>
 	</validHost>
 	
 	<includes>
