@@ -18,7 +18,7 @@
 		<desc>Set input for Multiplication</desc>
 	</property>
 
-	<property id="input2">
+	<property id="input2" clone="Y">
 		<name>input</name>
 		<veneer type="S" />
 		<desc>Set input for Multiplication</desc>

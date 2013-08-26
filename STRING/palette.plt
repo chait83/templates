@@ -12,10 +12,4 @@
         <icon>This is FIND-REPLACE</icon>
 </item>
 
-<item id="MATCH">
-        <name>MATCH</name>
-        <desc>This is MATCH</desc>
-        <icon>This is MATCH</icon>
-</item>
-
 </Palette>
