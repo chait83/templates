@@ -3,7 +3,7 @@
 	<id init="Y">Array</id>
 	<name>arr</name>
 	<type>M</type>
-	<desc>Variable of INTEGER type</desc>
+	<desc>Variable of Array type</desc>
 	<size>
 		<h>50</h>
 		<w>50</w>
@@ -12,16 +12,16 @@
 	<property id="type" st="M">
 		<name>type</name>
 		<defaultValue>uint32_t</defaultValue>
-		<veneer type="S" />
+		<veneer type="Array" />
 		<type>F</type>
 		<dataType>uint32_t</dataType>
 		<desc>assign value to the variable</desc>
 	</property>
 
 	<property id="Input_element">
-		<name>input</name>
-		<veneer type="S" />
-		<defaultValue>0</defaultValue>
+		<name>Array_input</name>
+		<veneer type="Array" />
+		<defaultValue>arr_src</defaultValue>
 		<dataType>
 			uint32_t
 			<nature type="D">
@@ -38,7 +38,7 @@
 	</property>
 
 <property id="arraytype">
-		<name>Array Type</name>
+		<name>Array_Type</name>
 		<defaultValue>uint32_t</defaultValue>
 		<veneer type="S" />
 		<dataType>uint32_t</dataType>
@@ -57,9 +57,9 @@
 	 
 <property id="array_size">
 		<name>size of array</name>
-		<veneer type="S" />
+		<veneer type="NT" />
 		<defaultValue>10</defaultValue>
-		<dataType>#define</dataType>
+		<dataType>uint32_t</dataType>
 		<type>I</type>
 		<desc>Provide no of  continuous  blocks allocated of specified datatypes</desc>
 	</property>
@@ -69,7 +69,7 @@
 		<veneer type="S" />
 		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
-		<type>F</type>
+		<type>I</type>
 		<desc>Provide index of respective element in the array</desc>
 	</property>
 
@@ -77,9 +77,9 @@
 		<name>Output</name>
 		<!-- DPT= Dynamic properties B=Buffer 
 		used only when variable taken as  output -->
-		<veneer type="DPT"> <nature type="B" /></veneer>
+		<veneer type="Array"></veneer>
 		<defaultValue>0</defaultValue>
-		<dataType>uint32_t</dataType>
+		<dataType type="Array">uint32_t</dataType>
 		<type>O</type>
 		<desc>Integer output</desc>
 	</property>

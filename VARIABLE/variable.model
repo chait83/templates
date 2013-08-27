@@ -3,7 +3,7 @@
 	<id init="B">variable</id>
 	<name>var</name>
 	<type>M</type>
-	<desc>Variable of INTEGER type</desc>
+	<desc>Variable of Generic type</desc>
 	<size>
 		<h>35</h>
 		<w>38</w>
@@ -14,7 +14,6 @@
 		<defaultValue>uint32_t</defaultValue>
 		<type>F</type>
 		<dataType>uint32_t
-				uint32_t
 			<nature type="D">
 			<!-- prop.id.I = listener.id.O -->
 				<listner id="input">
@@ -49,12 +48,12 @@
 	</property>
 
 	<property id="output">
-		<name>Ouput</name>
+		<name>Output</name>
 		<veneer type="NT" />
 		<defaultValue>0</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
-		<desc>Integer output</desc>
+		<desc>  output from Variable</desc>
 	</property>
 
 	<validHost>
