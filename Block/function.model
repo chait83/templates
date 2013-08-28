@@ -25,6 +25,7 @@
 		</dataType>
 		<desc>assigned type to the variable</desc>
 	</property>	
+	
 	<property id="input">
 		<name>input</name>
 		<defaultValue>param1</defaultValue>
@@ -32,6 +33,15 @@
 		<veneer type="NT">Name</veneer>
 		<dataType>uint32_t</dataType>
 		<desc>assign Input value to the function as its Parameters</desc>
+	</property>
+	
+	<property id="function_Name">
+		<name>Function_Name</name>
+		<defaultValue>Fun</defaultValue>
+		<type>F</type>
+		<veneer type="NT">Name</veneer>
+		<dataType>unsigned char</dataType>
+		<desc>assign Name to function </desc>
 	</property>
 	
 	
@@ -44,33 +54,6 @@
 		<desc>Name of structure</desc>
 	</property>
 	
-	 <property id="struct_ele_datatype">
-		<name>structure Type</name>
-		<defaultValue>uint32_t</defaultValue>
-		<veneer type="S" />
-		<dataType>uint32_t</dataType>
-		<type>F</type>
-		<desc>set datatype to the input element of structure</desc>
-	</property>
-	
-	<property id="struct_input_parameters1">
-		<name>Input1</name>
-		<veneer type="S" />
-		<defaultValue>a</defaultValue>
-		<dataType>uint32_t</dataType>
-		<type>O</type>
-		<desc>Provide an input and define the structure</desc>
-	</property>
-
-	<property id="struct_input_parameters2">
-		<name>Input2</name>
-		<veneer type="S" />
-		<defaultValue>b</defaultValue>
-		<dataType>uint32_t</dataType>
-		<type>O</type>
-		<desc>Provide an input and define the structure</desc>
-	</property>
-	
 	<property id="Variable_of_structure">
 		<name>struct variable</name>
 		<veneer type="S" />
@@ -81,17 +64,18 @@
 	</property>
 	
 	
-	
-	<property id="Name">
-		<name>Function_Name</name>
-		<defaultValue>Fun</defaultValue>
-		<type>F</type>
-		<veneer type="NT">Name</veneer>
-		<dataType>unsigned char</dataType>
-		<desc>assign Name to function </desc>
+	<property id="output">
+		<name>output</name>
+		<veneer type="S" />
+		<defaultValue>uint32_t</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Provide an input and define the structure</desc>
 	</property>
-
-
+	
+	
+	
+	
    <block-end>}</block-end>
 
 	<validHost>
