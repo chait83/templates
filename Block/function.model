@@ -20,12 +20,7 @@
 		<desc>assign Input value to the function as its Parameters</desc>
 	</property>
 	
-	
-	
-	
-	
-	
-	<property id="Name">
+	<property id="function_Name">
 		<name>Function_Name</name>
 		<defaultValue>Fun</defaultValue>
 		<type>F</type>
@@ -33,15 +28,20 @@
 		<dataType>unsigned char</dataType>
 		<desc>assign Name to function </desc>
 	</property>
-
-	<property id="output" clone="Y">
-		<name>return_type</name>
-		<defaultValue> void</defaultValue>
-		<veneer type="NT">Name</veneer>
+	
+	
+	
+	<property id="output">
+		<name>output</name>
+		<veneer type="S" />
+		<defaultValue>uint32_t</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
-		<desc>Output from the function as its return value</desc>
+		<desc>Provide an input and define the structure</desc>
 	</property>
+	
+	
+
    	<validHost>
 		<host>LibBlock</host>
 	</validHost>
