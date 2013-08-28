@@ -34,6 +34,54 @@
 		<desc>assign Input value to the function as its Parameters</desc>
 	</property>
 	
+	
+	<property id="Struct_name">
+		<name>Struct_Name</name>
+		<veneer type="S" />
+		<defaultValue>struct_Name</defaultValue>
+		<dataType>unsigned char</dataType>
+		<type>F</type>
+		<desc>Name of structure</desc>
+	</property>
+	
+	 <property id="struct_ele_datatype">
+		<name>structure Type</name>
+		<defaultValue>uint32_t</defaultValue>
+		<veneer type="S" />
+		<dataType>uint32_t</dataType>
+		<type>F</type>
+		<desc>set datatype to the input element of structure</desc>
+	</property>
+	
+	<property id="struct_input_parameters1">
+		<name>Input1</name>
+		<veneer type="S" />
+		<defaultValue>a</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Provide an input and define the structure</desc>
+	</property>
+
+	<property id="struct_input_parameters2">
+		<name>Input2</name>
+		<veneer type="S" />
+		<defaultValue>b</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>O</type>
+		<desc>Provide an input and define the structure</desc>
+	</property>
+	
+	<property id="Variable_of_structure">
+		<name>struct variable</name>
+		<veneer type="S" />
+		<defaultValue>S1</defaultValue>
+		<dataType>const unsigned char </dataType>
+		<type>F</type>
+		<desc>Provide variable of structure</desc>
+	</property>
+	
+	
+	
 	<property id="Name">
 		<name>Function_Name</name>
 		<defaultValue>Fun</defaultValue>
@@ -43,14 +91,7 @@
 		<desc>assign Name to function </desc>
 	</property>
 
-	<property id="output">
-		<name>return_type</name>
-		<defaultValue> void</defaultValue>
-		<veneer type="NT">Name</veneer>
-		<dataType>uint32_t</dataType>
-		<type>O</type>
-		<desc>Output from the function as its return value</desc>
-	</property>
+
    <block-end>}</block-end>
 
 	<validHost>
