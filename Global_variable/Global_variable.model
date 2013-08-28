@@ -60,7 +60,6 @@
 
 	<validHost>
 		<host>Block</host>
-		<host>LIB</host>
 	</validHost>
 	
 	<includes>

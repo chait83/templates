@@ -18,7 +18,7 @@ static void DacTask(void *pvParameters){
 
 
 		initx(void){
-   DAC_init();
+            DAC_init();
 
 		}
 

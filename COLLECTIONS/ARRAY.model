@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id init="B">Array</id>
+	<id init="Y">Array</id>
 	<name>arr</name>
 	<type>M</type>
 	<desc>Array of INTEGER type</desc>
@@ -12,7 +12,7 @@
 	<property id="type" st="M">
 		<name>type</name>
 		<defaultValue>uint32_t</defaultValue>
-		<veneer type="S" />
+		<veneer type="Array" />
 		<type>F</type>
 		<dataType>
 			uint32_t
@@ -31,9 +31,9 @@
 	</property>
 
 	<property id="input">
-		<name>input</name>
-		<veneer type="S" />
-		<defaultValue>0</defaultValue>
+		<name>Array_input</name>
+		<veneer type="Array" />
+		<defaultValue>arr_src</defaultValue>
 		<dataType>
 			uint32_t
 			<nature type="D">
@@ -49,10 +49,28 @@
 		<desc>Integer input</desc>
 	</property>
 
-	<property id="array_size">
-		<name>size of array</name>
+<property id="arraytype">
+		<name>Array_Type</name>
+		<defaultValue>uint32_t</defaultValue>
 		<veneer type="S" />
-		<defaultValue>0</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>F</type>
+		<desc>assign type to the array</desc>
+	</property>
+	 
+	 <property id="Name">
+		<name>Input</name>
+		<veneer type="S" />
+		<defaultValue>arr</defaultValue>
+		<dataType>unsigned char</dataType>
+		<type>F</type>
+		<desc>Provide an Input and define the array size</desc>
+	</property>
+	 
+<property id="array_size">
+		<name>size of array</name>
+		<veneer type="NT" />
+		<defaultValue>10</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>F</type>
 		<desc>Provide no of continuous blocks allocated of specified datatypes
@@ -66,6 +84,17 @@
 		<dataType>uint32_t</dataType>
 		<type>I</type>
 		<desc>Provide index of respective element in the array</desc>
+	</property>
+
+	<property id="output_array">
+		<name>Output</name>
+		<!-- DPT= Dynamic properties B=Buffer 
+		used only when variable taken as  output -->
+		<veneer type="Array"></veneer>
+		<defaultValue>0</defaultValue>
+		<dataType type="Array">uint32_t</dataType>
+		<type>O</type>
+		<desc>Integer output</desc>
 	</property>
 
 	<validHost>

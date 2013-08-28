@@ -18,13 +18,13 @@
 		<desc>Name of structure</desc>
 	</property>
 
-  <property id="struct_type">
+  <property id="struct_ele_datatype">
 		<name>structure Type</name>
 		<defaultValue>uint32_t</defaultValue>
 		<veneer type="S" />
 		<dataType>uint32_t</dataType>
 		<type>F</type>
-		<desc>assign type to the Array</desc>
+		<desc>set datatype to the input element of structure</desc>
 	</property>
 
 	<property id="input_parameters1">
