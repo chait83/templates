@@ -4,8 +4,7 @@
 	<name>function</name>
 	<type>M</type>
 	<desc>This is a generic function</desc>
- 
-   <block-start>{</block-start>
+    <block-start>{</block-start>
    <block-end>}</block-end>
 
 	<property id="input" clone="Y">
@@ -13,23 +12,10 @@
 		<defaultValue>param1</defaultValue>
 		<type>I</type>
 		<veneer type="NT">Name
-		<nature type="D" /> 
-
-</veneer>
+		<nature type="D" /> </veneer>
 		<dataType>uint32_t</dataType>
 		<desc>assign Input value to the function as its Parameters</desc>
 	</property>
-	
-	<property id="function_Name">
-		<name>Function_Name</name>
-		<defaultValue>Fun</defaultValue>
-		<type>F</type>
-		<veneer type="NT">Name</veneer>
-		<dataType>unsigned char</dataType>
-		<desc>assign Name to function </desc>
-	</property>
-	
-	
 	
 	<property id="output">
 		<name>output</name>
@@ -37,11 +23,8 @@
 		<defaultValue>uint32_t</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
-		<desc>Provide an input and define the structure</desc>
+		<desc>Provide an output. Each output would contribute to the structure element which would be the return type of the function model</desc>
 	</property>
-	
-	
-
    	<validHost>
 		<host>LibBlock</host>
 	</validHost>
