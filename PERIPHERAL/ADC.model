@@ -63,7 +63,7 @@
 	<property id="output">
 		<name>Output</name>
 		<defaultValue>adc_voltage</defaultValue>
-		<veneer type="T">name</veneer>
+		<veneer type="S"/>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
 		<desc>Output after Aanalog to Digital Conversion</desc>

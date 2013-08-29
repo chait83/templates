@@ -8,60 +8,36 @@
 		<h>75</h>
 		<w>55</w>
 	</size>
-
-	<property id="INPUT">
-		<name>AQUISITION TYPE</name>
-		<defaultValue> Default</defaultValue>
-		<veneer type="T">name</veneer>
-		<dataType>uint32_t</dataType>
-		<type>I</type>
-		<desc>Single channel, Double channel aquisition </desc>
-	</property>
-
-	<property id="Input" st="O">
+	
+	<property id="Input_Data" >
 		<name>Input</name>
 		<defaultValue> 0</defaultValue>
-		<veneer type="T">name</veneer>
+		<veneer type="S"/>
 		<dataType>uint32_t</dataType>
 		<type>I</type>
-		<desc>Intput of the variable</desc>
+		<desc> DAC Input Data</desc>
 	</property>
 
-	<property id="mode">
-		<name>MODE</name>
-		<veneer type="T">name</veneer>
-                <defaultValue> 0</defaultValue>
-		<type>F</type>
+	<property id="channel">
+		<name>Channel select</name>
+		<defaultValue> 1</defaultValue>
 		<dataType>uint32_t</dataType>
-		<desc>A entery menu for setting type : LEFT or RIGHT ALIGNED </desc>
-	</property>
-
-	<property id="channelSel">
-		<name>CHANNEL SELECTION</name>
+		<veneer type="S" />
 		<type>F</type>
-		<veneer type="T">name</veneer>
-		<dataType>uint32_t</dataType>
-		<defaultValue> 0</defaultValue>
-		<desc>Channel selection</desc>
+		<desc>The channel for which the data conversion has to be done</desc>
 	</property>
 
-	<property id="clock">
-		<name>DAC CLOCK</name>
-		<type>F</type>
-		<veneer type="T">name</veneer>
-		<dataType>uint32_t</dataType>
-		<defaultValue> 100</defaultValue>
-		<desc>A entery menu for setting CLOCK</desc>
-	</property>
-
-	<property id="output" st="O">
-		<name>Output</name>
-		<defaultValue> 0</defaultValue>
-		<veneer type="T">name</veneer>
+	<property id="output_data">
+		<name>DAC_Output</name>
+		<defaultValue>0</defaultValue>
+		<!-- DPT= Dynamic properties B=Buffer 
+		used only when variable taken as  output -->
+		<veneer type="DPT"> <nature type="B" /></veneer>
 		<dataType>uint32_t</dataType>
 		<type>O</type>
-		<desc>Output of the variable</desc>
+		<desc>Output after  Digital to Analog   Conversion</desc>
 	</property>
+
 
  <includes>
    <lib>stm32f4xx</lib>
