@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id type="Collection">GPIO</id>
+	<id>GPIO</id>
 	<name>GPIO</name>
 	<type>M</type>
 	<size>
@@ -27,13 +27,13 @@
 		</desc>
 	</property>
 
-	<property id="Pin_assignement">
+	<property id="Pin_assignment">
 		<name>PIN_NO</name>
 		<defaultValue>Pin_1</defaultValue>
 		<dataType>uint32_t</dataType>
 		<type>F</type>
 		<desc>
-			select input/ouput Pin number for specified operation
+			select input/output Pin number for specified operation
 			e.g PA1 for LCD_Backlight,PA$ for DAC1 output</desc>
      </property>
 
@@ -64,12 +64,9 @@
 		<type>O</type>
 		<desc>output from GPIO</desc>
 </property>
+
 	<includes>
 		<lib>stdio</lib>
-		<lib>FreeRTOS</lib>
-		<lib>task</lib>
-		<lib>math</lib>
-		<lib>stdlib</lib>
 		<lib>stm32f4xx</lib>
 	</includes>
 

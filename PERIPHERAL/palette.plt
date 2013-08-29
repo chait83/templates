@@ -18,5 +18,16 @@
         <desc>This is GPIO</desc>
         <icon>This is GPIO</icon>
 </item>
+<item id="GPIO_Set_Reset">
+        <name>GPIO_Set_Reset</name>
+        <desc>This is GPIO_Set_Reset</desc>
+        <icon>This is GPIO_Set_Reset</icon>
+</item>
+
+<item id="GPIO_RD_WR">
+        <name>GPIO_RD_WR</name>
+        <desc>This is GPIO_RD_WR</desc>
+        <icon>This is GPIO_RD_WR</icon>
+</item>
 
 </Palette>

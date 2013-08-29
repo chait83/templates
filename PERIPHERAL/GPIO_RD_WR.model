@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id>GPIO_RD_WR</id>
+	<name>GPIO_RD_WR</name>
+	<type>M</type>
+	<size>
+		<h>55</h>
+		<w>70</w>
+	</size>
+	<desc>This unit is used to provide Bit_value or output functionality</desc>
+
+	<property id="Status_Bit">
+		<name>Mode_of_operation</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>boolean</dataType>
+		<type>I</type>
+		<desc>select Status of operations 
+			if Status bit = 0 then  read operation 
+			otherwise  write operation 
+		</desc>
+	</property>
+	
+	<property id="Bit_value">
+		<name>Bit_value</name>
+		<veneer type="S" />
+		<dataType>uint32_t</dataType>
+		<type>I</type>
+		<defaultValue>1</defaultValue>
+		<desc>Set Bit_value which to be written on Particular Port</desc>
+	</property>
+	
+
+	<property id="Pin_assignment">
+		<name>PIN_NO</name>
+		<defaultValue>GPIO_Pin_1</defaultValue>
+		<veneer type="S" />
+		<dataType>uint32_t</dataType>
+		<type>F</type>
+		<desc>
+			select Pin number for Read or write operation  </desc>
+     </property>
+
+	<property id="select_GPIO">
+		<name>select_GPIO</name>
+		<veneer type="S" />
+		<defaultValue>GPIOA</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>F</type>
+		<desc>set GPIO ports  from following list GPIOA,GPIOB,GPIOC,GPIOD,GPIOE</desc>
+	</property>
+				
+	<includes>
+		<lib>stdio</lib>
+		<lib>stm32f4xx</lib>
+	</includes>
+
+	<validHost>
+        <host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>

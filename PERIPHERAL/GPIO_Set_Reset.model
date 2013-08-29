@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<id>GPIO_Set_Reset</id>
+	<name>GPIO_Set_Reset</name>
+	<type>M</type>
+	<size>
+		<h>55</h>
+		<w>70</w>
+	</size>
+	<desc>This unit is used to provide input or output functionality</desc>
+
+	<property id="Mode_Bit">
+		<name>Mode_of_operation</name>
+		<veneer type="S" />
+		<defaultValue>0</defaultValue>
+		<dataType>boolean</dataType>
+		<type>I</type>
+		<desc>select  mode of operations 
+			if Mode bit = 0 then  bit reset operation 
+			otherwise  bit set operation 
+		</desc>
+	</property>
+
+	<property id="Pin_assignment">
+		<name>PIN_NO</name>
+		<defaultValue>GPIO_Pin_1</defaultValue>
+		<veneer type="S" />
+		<dataType>uint32_t</dataType>
+		<type>F</type>
+		<desc>
+			select Pin number for set bit or reset bit opeartions</desc>
+     </property>
+
+	<property id="select_GPIO">
+		<name>select_GPIO</name>
+		<veneer type="S" />
+		<defaultValue>GPIOA</defaultValue>
+		<dataType>uint32_t</dataType>
+		<type>F</type>
+		<desc>set GPIO ports  from following list GPIOA,GPIOB,GPIOC,GPIOD,GPIOE</desc>
+	</property>
+				
+	<includes>
+		<lib>stdio</lib>
+		<lib>stm32f4xx</lib>
+	</includes>
+
+	<validHost>
+        <host>Block</host>
+		<host>Loop</host>
+	</validHost>
+
+</Properties>

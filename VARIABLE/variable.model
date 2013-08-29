@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Properties>
-	<id init="B">variable</id>
+	<id init="Y">variable</id>
 	<name>var</name>
 	<type>M</type>
 	<desc>Variable of Generic type</desc>

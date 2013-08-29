@@ -14,6 +14,7 @@
 		<dataType>boolean</dataType>
 		<defaultValue> false</defaultValue>
 	</property>
+	
 	<property id="true">
 		<name>true</name>
 		<desc>True condition</desc>
