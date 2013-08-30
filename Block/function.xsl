@@ -2,7 +2,7 @@
 <xsl:template match="/">
 <xsl:choose>
  <xsl:when test="function/V/O/output" >
-<xsl:for-each select="function/id[output &gt;'1']"></xsl:for-each> 
+<xsl:for-each select="function/id[output &gt;'1']">
 struct struct_<xsl:value-of select="function/Name" />{
       
           
@@ -14,6 +14,7 @@ struct struct_<xsl:value-of select="function/Name" />{
     
    return  struct_<xsl:value-of select="function/Name" />_Var;
 }
+</xsl:for-each> 
  </xsl:when>
   <xsl:otherwise>
   void <xsl:value-of select="function/Name" />  ( <xsl:for-each select="function/V/I/input"></xsl:for-each>) 
